@@ -20,7 +20,7 @@ public class SingleDomain {
 		this.createdate = createdate;
 		this.updatedate = updatedate;
 		this.isdead = isdead;
-	}
+}
 	/**
 	 * @return the domain
 	 */

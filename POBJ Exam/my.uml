@@ -54,4 +54,55 @@
       <ownedOperation xmi:id="_15CEQHXyEeuMHOX924W5Xg" name="FiltersCollection"/>
     </packagedElement>
   </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_i_tYYHXzEeuMHOX924W5Xg" name="singledataclasses">
+    <packagedElement xmi:type="uml:Class" xmi:id="_njmaUHXzEeuMHOX924W5Xg" name="SingleDomain" visibility="public">
+      <ownedAttribute xmi:id="_x-IfgHXzEeuMHOX924W5Xg" name="domain" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1F0pMHXzEeuMHOX924W5Xg" name="country" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KdBQQHX0EeuMHOX924W5Xg" name="Date" visibility="public">
+      <ownedAttribute xmi:id="_P9zYQHX0EeuMHOX924W5Xg" name="year" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_P_7fMHX0EeuMHOX924W5Xg" name="month" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QBx5UHX0EeuMHOX924W5Xg" name="day" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QDctQHX0EeuMHOX924W5Xg" name="hour" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m2-vcHX0EeuMHOX924W5Xg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QFIIQHX0EeuMHOX924W5Xg" name="minute" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_biHI8HX0EeuMHOX924W5Xg" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_v8DdkHX0EeuMHOX924W5Xg" name="getYear"/>
+      <ownedOperation xmi:id="_xhdVIHX0EeuMHOX924W5Xg" name="getMonth"/>
+      <ownedOperation xmi:id="_xvCeIHX0EeuMHOX924W5Xg" name="getDay"/>
+      <ownedOperation xmi:id="_x9VY0HX0EeuMHOX924W5Xg" name="getHour"/>
+      <ownedOperation xmi:id="_yJ7qYHX0EeuMHOX924W5Xg" name="getMinute"/>
+      <ownedOperation xmi:id="_AMoJEHX1EeuMHOX924W5Xg" name="Date">
+        <ownedParameter xmi:id="_CCEnwHX1EeuMHOX924W5Xg" name="year">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_LVZNQHX1EeuMHOX924W5Xg" name="month">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Lr96MHX1EeuMHOX924W5Xg" name="day">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_MtCVoHX1EeuMHOX924W5Xg" name="hour">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_M8NaEHX1EeuMHOX924W5Xg" name="minute">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
 </uml:Model>

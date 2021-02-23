@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EkRGcHXvEeuMHOX924W5Xg" name="NewModel">
+  <packageImport xmi:id="_uyYAEHXxEeuMHOX924W5Xg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_jQKzEHXvEeuMHOX924W5Xg" name="Actor1">
+    <eAnnotations xmi:id="_jQKzEXXvEeuMHOX924W5Xg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_jQLaIHXvEeuMHOX924W5Xg" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_oHAmMHXvEeuMHOX924W5Xg" name="Key Words"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_oTN2MHXvEeuMHOX924W5Xg" name="Statistics"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_om_GwHXvEeuMHOX924W5Xg" name="Find Sites"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pOCfsHXvEeuMHOX924W5Xg" name="Database Filters"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qafrwHXvEeuMHOX924W5Xg" memberEnd="_qagS0HXvEeuMHOX924W5Xg _qagS0XXvEeuMHOX924W5Xg">
+    <ownedEnd xmi:id="_qagS0HXvEeuMHOX924W5Xg" type="_jQKzEHXvEeuMHOX924W5Xg" association="_qafrwHXvEeuMHOX924W5Xg"/>
+    <ownedEnd xmi:id="_qagS0XXvEeuMHOX924W5Xg" type="_oHAmMHXvEeuMHOX924W5Xg" association="_qafrwHXvEeuMHOX924W5Xg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_q8DgsHXvEeuMHOX924W5Xg" memberEnd="_q8EHwHXvEeuMHOX924W5Xg _q8EHwXXvEeuMHOX924W5Xg">
+    <ownedEnd xmi:id="_q8EHwHXvEeuMHOX924W5Xg" type="_jQKzEHXvEeuMHOX924W5Xg" association="_q8DgsHXvEeuMHOX924W5Xg"/>
+    <ownedEnd xmi:id="_q8EHwXXvEeuMHOX924W5Xg" type="_oTN2MHXvEeuMHOX924W5Xg" association="_q8DgsHXvEeuMHOX924W5Xg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rrsN4HXvEeuMHOX924W5Xg" memberEnd="_rrsN4XXvEeuMHOX924W5Xg _rrsN4nXvEeuMHOX924W5Xg">
+    <ownedEnd xmi:id="_rrsN4XXvEeuMHOX924W5Xg" type="_jQKzEHXvEeuMHOX924W5Xg" association="_rrsN4HXvEeuMHOX924W5Xg"/>
+    <ownedEnd xmi:id="_rrsN4nXvEeuMHOX924W5Xg" type="_om_GwHXvEeuMHOX924W5Xg" association="_rrsN4HXvEeuMHOX924W5Xg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_svyIIHXvEeuMHOX924W5Xg" memberEnd="_svyIIXXvEeuMHOX924W5Xg _svyvMHXvEeuMHOX924W5Xg">
+    <ownedEnd xmi:id="_svyIIXXvEeuMHOX924W5Xg" type="_jQKzEHXvEeuMHOX924W5Xg" association="_svyIIHXvEeuMHOX924W5Xg"/>
+    <ownedEnd xmi:id="_svyvMHXvEeuMHOX924W5Xg" type="_pOCfsHXvEeuMHOX924W5Xg" association="_svyIIHXvEeuMHOX924W5Xg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_XiZH4HXwEeuMHOX924W5Xg" name="controller">
+    <packagedElement xmi:type="uml:Class" xmi:id="_c-iAcHXwEeuMHOX924W5Xg" name="Controller" visibility="public">
+      <ownedAttribute xmi:id="_GVTUUHXxEeuMHOX924W5Xg" name="service" visibility="private" type="_yIyXsHXwEeuMHOX924W5Xg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQuoEHXxEeuMHOX924W5Xg" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_BFiY8HXzEeuMHOX924W5Xg" name="getfilters"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_tAnkAHXwEeuMHOX924W5Xg" name="service">
+    <packagedElement xmi:type="uml:Class" xmi:id="_yIyXsHXwEeuMHOX924W5Xg" name="AppService" visibility="public">
+      <ownedAttribute xmi:id="_ik_dMHXxEeuMHOX924W5Xg" name="possiblefilters" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_CJ9f0HXyEeuMHOX924W5Xg" name="AppService"/>
+      <ownedOperation xmi:id="_GtvNAHXyEeuMHOX924W5Xg" name="GetPossibleFilters"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Qz9EgHXxEeuMHOX924W5Xg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_t4pYMHXwEeuMHOX924W5Xg" name="utilities">
+    <packagedElement xmi:type="uml:Package" xmi:id="_zeGk0HXwEeuMHOX924W5Xg" name="utilities"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2WJwAHXwEeuMHOX924W5Xg" name="FiltersCollection" visibility="public">
+      <ownedAttribute xmi:id="_lXN3wHXyEeuMHOX924W5Xg" name="filterscollection" visibility="private"/>
+      <ownedOperation xmi:id="_zGGCkHXyEeuMHOX924W5Xg" name="GetFiltersCollection"/>
+      <ownedOperation xmi:id="_15CEQHXyEeuMHOX924W5Xg" name="FiltersCollection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RgN3IHX9EeuMHOX924W5Xg" name="DatabaseCreator" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_i_tYYHXzEeuMHOX924W5Xg" name="singledataclasses">
+    <packagedElement xmi:type="uml:Class" xmi:id="_njmaUHXzEeuMHOX924W5Xg" name="SingleDomain" visibility="public">
+      <ownedAttribute xmi:id="_x-IfgHXzEeuMHOX924W5Xg" name="domain" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1F0pMHXzEeuMHOX924W5Xg" name="country" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KdBQQHX0EeuMHOX924W5Xg" name="Date" visibility="public">
+      <ownedAttribute xmi:id="_P9zYQHX0EeuMHOX924W5Xg" name="year" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_P_7fMHX0EeuMHOX924W5Xg" name="month" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QBx5UHX0EeuMHOX924W5Xg" name="day" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QDctQHX0EeuMHOX924W5Xg" name="hour" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m2-vcHX0EeuMHOX924W5Xg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QFIIQHX0EeuMHOX924W5Xg" name="minute" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_biHI8HX0EeuMHOX924W5Xg" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_v8DdkHX0EeuMHOX924W5Xg" name="getYear"/>
+      <ownedOperation xmi:id="_xhdVIHX0EeuMHOX924W5Xg" name="getMonth"/>
+      <ownedOperation xmi:id="_xvCeIHX0EeuMHOX924W5Xg" name="getDay"/>
+      <ownedOperation xmi:id="_x9VY0HX0EeuMHOX924W5Xg" name="getHour"/>
+      <ownedOperation xmi:id="_yJ7qYHX0EeuMHOX924W5Xg" name="getMinute"/>
+      <ownedOperation xmi:id="_AMoJEHX1EeuMHOX924W5Xg" name="Date">
+        <ownedParameter xmi:id="_CCEnwHX1EeuMHOX924W5Xg" name="year">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_LVZNQHX1EeuMHOX924W5Xg" name="month">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Lr96MHX1EeuMHOX924W5Xg" name="day">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_MtCVoHX1EeuMHOX924W5Xg" name="hour">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_M8NaEHX1EeuMHOX924W5Xg" name="minute">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_oorc8HX8EeuMHOX924W5Xg" name="errors">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ra5s8HX8EeuMHOX924W5Xg" name="ErrorResponse" visibility="private"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xraowHX8EeuMHOX924W5Xg" name="ConnectionProblem" visibility="private"/>
+  </packagedElement>
+</uml:Model>

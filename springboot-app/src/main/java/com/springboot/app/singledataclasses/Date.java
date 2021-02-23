@@ -1,5 +1,10 @@
 package com.springboot.app.singledataclasses;
-
+/**
+ * Rappresentation of a date type
+ * @author Elia Vaccarini
+ * @author Federico Di Tullio
+ *
+ */
 public class Date {
 	private int year;
 	private int month;
@@ -21,6 +26,10 @@ public class Date {
 		this.hour = hour;
 		this.minute = minute;
 	}
+	/**
+	 * Function that leads to get the date in a format string
+	 * @return the date by string
+	 */
 	@Override
 	public String toString() {
 		String dayc=""+day;

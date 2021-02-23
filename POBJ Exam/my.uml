@@ -25,4 +25,14 @@
     <ownedEnd xmi:id="_svyIIXXvEeuMHOX924W5Xg" type="_jQKzEHXvEeuMHOX924W5Xg" association="_svyIIHXvEeuMHOX924W5Xg"/>
     <ownedEnd xmi:id="_svyvMHXvEeuMHOX924W5Xg" type="_pOCfsHXvEeuMHOX924W5Xg" association="_svyIIHXvEeuMHOX924W5Xg"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_XiZH4HXwEeuMHOX924W5Xg" name="controller">
+    <packagedElement xmi:type="uml:Class" xmi:id="_c-iAcHXwEeuMHOX924W5Xg" name="Controller" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_tAnkAHXwEeuMHOX924W5Xg" name="service">
+    <packagedElement xmi:type="uml:Class" xmi:id="_yIyXsHXwEeuMHOX924W5Xg" name="Service" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_t4pYMHXwEeuMHOX924W5Xg" name="utilities">
+    <packagedElement xmi:type="uml:Package" xmi:id="_zeGk0HXwEeuMHOX924W5Xg" name="utilities"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2WJwAHXwEeuMHOX924W5Xg" name="utilities" visibility="public"/>
+  </packagedElement>
 </uml:Model>

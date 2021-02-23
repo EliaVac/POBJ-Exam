@@ -105,4 +105,8 @@
       </ownedOperation>
     </packagedElement>
   </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_oorc8HX8EeuMHOX924W5Xg" name="errors">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ra5s8HX8EeuMHOX924W5Xg" name="ErrorResponse" visibility="private"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xraowHX8EeuMHOX924W5Xg" name="ConnectionProblem" visibility="private"/>
+  </packagedElement>
 </uml:Model>

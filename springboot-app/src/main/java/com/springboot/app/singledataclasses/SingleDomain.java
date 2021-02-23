@@ -32,7 +32,7 @@ public class SingleDomain {
 	 */
 	public String getCountry() {
 		return country;
-	}
+	 }
 	/**
 	 * @return the createdate
 	 */

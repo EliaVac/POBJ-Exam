@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EkRGcHXvEeuMHOX924W5Xg" name="NewModel">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_jQKzEHXvEeuMHOX924W5Xg" name="Actor1">
+    <eAnnotations xmi:id="_jQKzEXXvEeuMHOX924W5Xg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_jQLaIHXvEeuMHOX924W5Xg" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_oHAmMHXvEeuMHOX924W5Xg" name="Key Words"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_oTN2MHXvEeuMHOX924W5Xg" name="Statistics"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_om_GwHXvEeuMHOX924W5Xg" name="Find Sites"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pOCfsHXvEeuMHOX924W5Xg" name="Database Filters"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qafrwHXvEeuMHOX924W5Xg" memberEnd="_qagS0HXvEeuMHOX924W5Xg _qagS0XXvEeuMHOX924W5Xg">
+    <ownedEnd xmi:id="_qagS0HXvEeuMHOX924W5Xg" type="_jQKzEHXvEeuMHOX924W5Xg" association="_qafrwHXvEeuMHOX924W5Xg"/>
+    <ownedEnd xmi:id="_qagS0XXvEeuMHOX924W5Xg" type="_oHAmMHXvEeuMHOX924W5Xg" association="_qafrwHXvEeuMHOX924W5Xg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_q8DgsHXvEeuMHOX924W5Xg" memberEnd="_q8EHwHXvEeuMHOX924W5Xg _q8EHwXXvEeuMHOX924W5Xg">
+    <ownedEnd xmi:id="_q8EHwHXvEeuMHOX924W5Xg" type="_jQKzEHXvEeuMHOX924W5Xg" association="_q8DgsHXvEeuMHOX924W5Xg"/>
+    <ownedEnd xmi:id="_q8EHwXXvEeuMHOX924W5Xg" type="_oTN2MHXvEeuMHOX924W5Xg" association="_q8DgsHXvEeuMHOX924W5Xg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rrsN4HXvEeuMHOX924W5Xg" memberEnd="_rrsN4XXvEeuMHOX924W5Xg _rrsN4nXvEeuMHOX924W5Xg">
+    <ownedEnd xmi:id="_rrsN4XXvEeuMHOX924W5Xg" type="_jQKzEHXvEeuMHOX924W5Xg" association="_rrsN4HXvEeuMHOX924W5Xg"/>
+    <ownedEnd xmi:id="_rrsN4nXvEeuMHOX924W5Xg" type="_om_GwHXvEeuMHOX924W5Xg" association="_rrsN4HXvEeuMHOX924W5Xg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_svyIIHXvEeuMHOX924W5Xg" memberEnd="_svyIIXXvEeuMHOX924W5Xg _svyvMHXvEeuMHOX924W5Xg">
+    <ownedEnd xmi:id="_svyIIXXvEeuMHOX924W5Xg" type="_jQKzEHXvEeuMHOX924W5Xg" association="_svyIIHXvEeuMHOX924W5Xg"/>
+    <ownedEnd xmi:id="_svyvMHXvEeuMHOX924W5Xg" type="_pOCfsHXvEeuMHOX924W5Xg" association="_svyIIHXvEeuMHOX924W5Xg"/>
+  </packagedElement>
+</uml:Model>

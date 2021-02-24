@@ -5,7 +5,7 @@ package com.springboot.app.singledataclasses;
  * @author Federico Di Tullio
  *
  */
-public class Date {
+public class DateTime {
 	private int year;
 	private int month;
     private int day;
@@ -18,7 +18,7 @@ public class Date {
 	 * @param hour
 	 * @param minute
 	 */
-	public Date(int year, int month, int day, int hour, int minute) {
+	public DateTime(int year, int month, int day, int hour, int minute) {
 		super();
 		this.year = year;
 		this.month = month;

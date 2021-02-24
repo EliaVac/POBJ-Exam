@@ -1,21 +1,18 @@
-/**
- * 
- */
 package Errors;
 
-/** Class invoked to handle connection error
+/** Class invoked to handle JSON error
  * @author Federico Di Tullio	
  * @author Elia Vaccarini
  */
-public class ConnectionProblem extends Exception {
+public class JSONProblem extends Exception{
 	/** 
 	 * The string that identify the message
 	 */
-	private String message;
-	/**The constructor of the ConnectionProblem class
+	String message;
+	/**The constructor of the JSONProblem class
 	 * @param message
 	 */
-	public ConnectionProblem(String message) {
+	public JSONProblem(String message) {
 		super(message);
 		this.message=message;
 	}

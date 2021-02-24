@@ -3,6 +3,7 @@ package com.springboot.app.service;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.json.JSONException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
 
@@ -15,7 +16,7 @@ import Errors.ConnectionProblem;
 public class AppService {
 private HashMap<String,String> possiblefilters;
 private ArrayList<SingleDomain> database;
-	public  AppService() throws ConnectionProblem {
+	public  AppService() throws ConnectionProblem, JSONException {
 		FiltersCollection filtercollector = new FiltersCollection();
 		possiblefilters = filtercollector.GetFiltersCollection();
 		DatabaseCreator datacreator = new DatabaseCreator();

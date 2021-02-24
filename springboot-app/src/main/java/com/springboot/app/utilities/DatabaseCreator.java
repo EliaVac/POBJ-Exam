@@ -11,26 +11,27 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.springboot.app.singledataclasses.Date;
+import com.springboot.app.singledataclasses.DateTime;
 import com.springboot.app.singledataclasses.SingleDomain;
 
 import Errors.ConnectionProblem;
 
 public class DatabaseCreator {
-	ArrayList<SingleDomain> database;
+	private ArrayList<SingleDomain> database;
 
 	/**
 	 * Constructor class, it provides to create an ArrayList of all the data
 	 * 
 	 * @throws ConnectionProblem
+	 * @throws JSONException 
 	 */
-	public DatabaseCreator() throws ConnectionProblem {
+	public DatabaseCreator() throws ConnectionProblem, JSONException {
 		super();
 		database = new ArrayList<>();
 		JSONObject databaseArray = null;
 		StringBuilder content = new StringBuilder();
 		try {
-			URL url = new URL("https://api.domainsdb.info/v1/domains/search");
+			URL url = new URL("https://api.domainsdb.info/v1/domains/search?limit=200");
 			URLConnection urlConnection = url.openConnection();
 			BufferedReader br = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
 			String line;
@@ -42,9 +43,9 @@ public class DatabaseCreator {
 			br.close();
 			databaseArray = new JSONObject(content.toString());
 		} catch (IOException e) {
-			throw new ConnectionProblem();
+			throw new ConnectionProblem("Error due to failure connection, necessary for the download");
 		} catch (JSONException e) {
-
+			throw new JSONException("Error due to failure conversion of the JSON downloaded");
 		}
 		try {
 			JSONArray domains = databaseArray.getJSONArray("domains");
@@ -52,7 +53,7 @@ public class DatabaseCreator {
 				String[] fordate = ((String) ((JSONObject) domains.get(i)).get("create_date")).split("T");
 				String[] firstpart = fordate[0].split("-");
 				String[] secondpart = fordate[1].split(":");
-				Date start = new Date(Integer.parseInt(firstpart[0]), Integer.parseInt(firstpart[1]),
+				DateTime start = new DateTime(Integer.parseInt(firstpart[0]), Integer.parseInt(firstpart[1]),
 						Integer.parseInt(firstpart[2]), Integer.parseInt(secondpart[0]),
 						Integer.parseInt(secondpart[1]));
 				fordate = ((String) ((JSONObject) domains.get(i)).get("update_date")).split("T");
@@ -65,7 +66,7 @@ public class DatabaseCreator {
 				} catch (Exception e) {
 					country = "undefined";
 				}
-				Date update = new Date(Integer.parseInt(firstpart[0]), Integer.parseInt(firstpart[1]),
+				DateTime update = new DateTime(Integer.parseInt(firstpart[0]), Integer.parseInt(firstpart[1]),
 						Integer.parseInt(firstpart[2]), Integer.parseInt(secondpart[0]),
 						Integer.parseInt(secondpart[1]));
 				boolean isdead = false;
@@ -75,8 +76,8 @@ public class DatabaseCreator {
 				database.add(toadd);
 			}
 		} catch (JSONException e) {
+			throw new JSONException("Error due to recognizing field of the JSON converted");
 		}
-
 	}
 
 	/**
@@ -84,6 +85,7 @@ public class DatabaseCreator {
 	 */
 	public ArrayList<SingleDomain> getDatabase() {
 		return database;
+
 	}
 
 }

@@ -3,8 +3,8 @@ package com.springboot.app.singledataclasses;
 public class SingleDomain {
 	private String domain;
 	private String country;
-	private Date createdate;
-	private Date updatedate;
+	private DateTime createdate;
+	private DateTime updatedate;
 	private boolean isdead;
 	/**
 	 * @param domain
@@ -13,7 +13,7 @@ public class SingleDomain {
 	 * @param updatedate
 	 * @param isdead
 	 */
-	public SingleDomain(String domain, String country, Date createdate, Date updatedate, boolean isdead) {
+	public SingleDomain(String domain, String country, DateTime createdate, DateTime updatedate, boolean isdead) {
 		super();
 		this.domain = domain;
 		this.country = country;

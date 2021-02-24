@@ -42,8 +42,12 @@
       <ownedAttribute xmi:id="_ik_dMHXxEeuMHOX924W5Xg" name="possiblefilters" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_oYF70HbDEeu-6q7Dgc4DEw" name="database" visibility="private" type="_njmaUHXzEeuMHOX924W5Xg" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pTWDIHbDEeu-6q7Dgc4DEw" value="*"/>
+      </ownedAttribute>
       <ownedOperation xmi:id="_CJ9f0HXyEeuMHOX924W5Xg" name="AppService"/>
       <ownedOperation xmi:id="_GtvNAHXyEeuMHOX924W5Xg" name="GetPossibleFilters"/>
+      <ownedOperation xmi:id="_CihBUHbEEeu-6q7Dgc4DEw" name="GetDatabase"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Qz9EgHXxEeuMHOX924W5Xg"/>
   </packagedElement>
@@ -54,7 +58,14 @@
       <ownedOperation xmi:id="_zGGCkHXyEeuMHOX924W5Xg" name="GetFiltersCollection"/>
       <ownedOperation xmi:id="_15CEQHXyEeuMHOX924W5Xg" name="FiltersCollection"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_RgN3IHX9EeuMHOX924W5Xg" name="DatabaseCreator" visibility="public"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RgN3IHX9EeuMHOX924W5Xg" name="DatabaseCreator" visibility="public">
+      <ownedAttribute xmi:id="_darI0Ha_Eeu-6q7Dgc4DEw" name="database" visibility="private" type="_njmaUHXzEeuMHOX924W5Xg" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6lzmQHa_Eeu-6q7Dgc4DEw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3qK7kHa_Eeu-6q7Dgc4DEw" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_JhcfIHbAEeu-6q7Dgc4DEw" name="DatabaseCreator"/>
+      <ownedOperation xmi:id="_RPZCQHbAEeu-6q7Dgc4DEw" name="getDatabase"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_i_tYYHXzEeuMHOX924W5Xg" name="singledataclasses">
     <packagedElement xmi:type="uml:Class" xmi:id="_njmaUHXzEeuMHOX924W5Xg" name="SingleDomain" visibility="public">
@@ -113,7 +124,26 @@
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_oorc8HX8EeuMHOX924W5Xg" name="errors">
-    <packagedElement xmi:type="uml:Class" xmi:id="_ra5s8HX8EeuMHOX924W5Xg" name="ErrorResponse" visibility="public"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ra5s8HX8EeuMHOX924W5Xg" name="ErrorResponse" visibility="public">
+      <ownedAttribute xmi:id="_o8z50HbAEeu-6q7Dgc4DEw" name="errorcode" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zLFEoHbAEeu-6q7Dgc4DEw" name="message" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_gqhooHbCEeu-6q7Dgc4DEw" name="date" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      <ownedOperation xmi:id="_GF3ToHbBEeu-6q7Dgc4DEw" name="ErrorResponse">
+        <ownedParameter xmi:id="_TlruwHbBEeu-6q7Dgc4DEw" name="errorcode" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_dyRekHbBEeu-6q7Dgc4DEw" name="message" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_uXlrAHbBEeu-6q7Dgc4DEw" name="getErrorcode"/>
+      <ownedOperation xmi:id="_3eiocHbBEeu-6q7Dgc4DEw" name="getMessage"/>
+      <ownedOperation xmi:id="_IjtK4HbIEeu-6q7Dgc4DEw" name="getDate"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_xraowHX8EeuMHOX924W5Xg" name="ConnectionProblem" visibility="public"/>
   </packagedElement>
 </uml:Model>

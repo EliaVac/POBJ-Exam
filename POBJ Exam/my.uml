@@ -34,6 +34,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQuoEHXxEeuMHOX924W5Xg" value="1"/>
       </ownedAttribute>
       <ownedOperation xmi:id="_BFiY8HXzEeuMHOX924W5Xg" name="getfilters"/>
+      <ownedOperation xmi:id="_Yqw2YHa6Eeu4HvPNKP5C4Q" name="getdatabase"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_tAnkAHXwEeuMHOX924W5Xg" name="service">
@@ -53,7 +54,7 @@
       <ownedOperation xmi:id="_zGGCkHXyEeuMHOX924W5Xg" name="GetFiltersCollection"/>
       <ownedOperation xmi:id="_15CEQHXyEeuMHOX924W5Xg" name="FiltersCollection"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_RgN3IHX9EeuMHOX924W5Xg" name="DatabaseCreator" visibility="private"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RgN3IHX9EeuMHOX924W5Xg" name="DatabaseCreator" visibility="public"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_i_tYYHXzEeuMHOX924W5Xg" name="singledataclasses">
     <packagedElement xmi:type="uml:Class" xmi:id="_njmaUHXzEeuMHOX924W5Xg" name="SingleDomain" visibility="public">
@@ -62,6 +63,11 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_1F0pMHXzEeuMHOX924W5Xg" name="country" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_y5_jYHa6Eeu4HvPNKP5C4Q" name="createdate" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      <ownedAttribute xmi:id="_y9dHEHa6Eeu4HvPNKP5C4Q" name="updatedate" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      <ownedAttribute xmi:id="_zB4UEHa6Eeu4HvPNKP5C4Q" name="isdead" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_KdBQQHX0EeuMHOX924W5Xg" name="Date" visibility="public">
@@ -107,7 +113,7 @@
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_oorc8HX8EeuMHOX924W5Xg" name="errors">
-    <packagedElement xmi:type="uml:Class" xmi:id="_ra5s8HX8EeuMHOX924W5Xg" name="ErrorResponse" visibility="private"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_xraowHX8EeuMHOX924W5Xg" name="ConnectionProblem" visibility="private"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ra5s8HX8EeuMHOX924W5Xg" name="ErrorResponse" visibility="public"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xraowHX8EeuMHOX924W5Xg" name="ConnectionProblem" visibility="public"/>
   </packagedElement>
 </uml:Model>

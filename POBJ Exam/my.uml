@@ -144,6 +144,16 @@
       <ownedOperation xmi:id="_3eiocHbBEeu-6q7Dgc4DEw" name="getMessage"/>
       <ownedOperation xmi:id="_IjtK4HbIEeu-6q7Dgc4DEw" name="getDate"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_xraowHX8EeuMHOX924W5Xg" name="ConnectionProblem" visibility="public"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xraowHX8EeuMHOX924W5Xg" name="ConnectionProblem" visibility="public">
+      <ownedAttribute xmi:id="_Jw3aMHbLEeu-rZvmqqIhvA" name="message" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_VrfZIHbLEeu-rZvmqqIhvA" name="ConnectionProblem">
+        <ownedParameter xmi:id="_saEp4HbLEeu-rZvmqqIhvA" name="message" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_63Q2wHbMEeu-rZvmqqIhvA" name="JSONProblem" visibility="public"/>
   </packagedElement>
 </uml:Model>

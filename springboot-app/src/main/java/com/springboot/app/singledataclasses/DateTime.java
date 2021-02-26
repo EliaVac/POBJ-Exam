@@ -3,7 +3,6 @@ package com.springboot.app.singledataclasses;
  * Rappresentation of a date type
  * @author Elia Vaccarini
  * @author Federico Di Tullio
- *
  */
 public class DateTime {
 	private int year;

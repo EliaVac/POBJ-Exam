@@ -1,4 +1,9 @@
 package com.springboot.app.singledataclasses;
+/**
+ * The class contains attributes in order to represent a domain and methods to manage them   
+ * @author Federico Di Tullio
+ * @author Elia Vaccarini
+ */
 
 public class SingleDomain {
 	private String domain;

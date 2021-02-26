@@ -15,7 +15,11 @@ import com.springboot.app.singledataclasses.DateTime;
 import com.springboot.app.singledataclasses.SingleDomain;
 
 import Errors.ConnectionProblem;
-
+/**
+ * The class sets up the database and allows the reading of this
+ * @author Federico Di Tullio
+ * @author Elia Vaccarini
+ */
 public class DatabaseCreator {
 	private ArrayList<SingleDomain> database;
 

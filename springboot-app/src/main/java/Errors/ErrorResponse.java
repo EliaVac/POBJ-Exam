@@ -50,7 +50,7 @@ public class ErrorResponse {
 	 * Getters of the datetime attribute
 	 * @return the string of the datetime
 	 */
-	public String getDate( ) {
+	public String getDatetime() {
 		return datetime.toString();
 	}
 }

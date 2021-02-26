@@ -8,7 +8,7 @@ public class JSONProblem extends Exception{
 	/** 
 	 * The string that identify the message
 	 */
-	String message;
+	private String message;
 	/**The constructor of the JSONProblem class
 	 * @param message
 	 */

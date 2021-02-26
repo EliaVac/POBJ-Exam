@@ -14,7 +14,11 @@ import Errors.ConnectionProblem;
 import Errors.ErrorResponse;
 import Errors.JSONProblem;
 import Errors.ResourceNotFoundException;
-
+/**
+ * The controller of the project; here you can see the different roots of the project
+ * @author Federico Di Tullio
+ * @author Elia Vaccarini
+ */
 @RestController
 public class Controller {
  @Autowired 

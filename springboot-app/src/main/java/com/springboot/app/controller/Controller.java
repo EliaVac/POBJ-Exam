@@ -3,9 +3,11 @@ package com.springboot.app.controller;
 import java.util.HashMap;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +21,7 @@ import com.springboot.app.service.AppService;
 import Errors.ConnectionProblem;
 import Errors.ErrorResponse;
 import Errors.JSONProblem;
+import Filtersmanagement.SingleFilter;
 /**
  * The controller of the project; here you can see the different roots of the project
  * @author Federico Di Tullio
@@ -57,7 +60,7 @@ public class Controller {
 	 return new ResponseEntity<Object>(service.GetDatabase(),HttpStatus.OK);
  }
  @PostMapping("/getdatabase")
- public ResponseEntity<Object> getdatabase(@RequestBody JSONArray filter){
+ public ResponseEntity<Object> getdatabase(@RequestBody String filter) throws JSONProblem, JSONException{
 	 return new ResponseEntity<Object>(service.GetDatabase(filter),HttpStatus.OK);
  }
  /**

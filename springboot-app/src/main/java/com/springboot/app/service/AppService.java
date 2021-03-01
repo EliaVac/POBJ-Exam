@@ -14,6 +14,8 @@ import com.springboot.app.utilities.DatabaseCreator;
 import com.springboot.app.utilities.FiltersCollection;
 
 import Errors.ConnectionProblem;
+import Errors.JSONProblem;
+import Filtersmanagement.FiltersApply;
 
 /**
  * The service class that implements all methods useful to the controller
@@ -71,7 +73,8 @@ public class AppService {
 		return null;
 	}
 
-	public ArrayList<SingleDomain> GetDatabase(JSONArray filter) {
+	public ArrayList<SingleDomain> GetDatabase(String filter) throws JSONProblem, JSONException {
+		FiltersApply filtering = new FiltersApply(filter,database);
 		return null;
 	}
 

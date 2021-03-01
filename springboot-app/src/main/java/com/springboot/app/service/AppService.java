@@ -3,7 +3,9 @@ package com.springboot.app.service;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
 
@@ -62,6 +64,14 @@ public class AppService {
 	}
 
 	public HashMap GetKeyWords() {
+		return null;
+	}
+
+	public ArrayList<SingleDomain> GetDatabase(JSONObject filter) {
+		return null;
+	}
+
+	public ArrayList<SingleDomain> GetDatabase(JSONArray filter) {
 		return null;
 	}
 

@@ -44,11 +44,17 @@ public class SingleDomain {
 	public String getCreatedate() {
 		return createdate.toString();
 	}
+	public DateTime getCreatedate(boolean check) {
+		return createdate;
+	}
 	/**
 	 * @return the updatedate
 	 */
 	public String getUpdatedate() {
 		return updatedate.toString();
+	}
+	public DateTime getUpdatedate(boolean check) {
+		return updatedate;
 	}
 	/**
 	 * @return the isdead

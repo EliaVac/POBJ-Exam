@@ -45,4 +45,31 @@ public class DateTime {
 			minutec="0"+minute;
 		return dayc+"/"+monthc+"/"+year+ " - " + hourc + ":" + minutec+ " ";
 	}
+
+	public boolean BiggerThan(DateTime filterdate) {
+		if(year>filterdate.year)
+			return true;
+		if(year==filterdate.year&&month>filterdate.month)
+			return true;
+		if(year==filterdate.year&& month==filterdate.month && day>filterdate.day)
+			return true;
+		if(year==filterdate.year&& month==filterdate.month && day==filterdate.day&&hour>filterdate.hour)
+			return true;
+		if(year==filterdate.year&& month==filterdate.month &&  day==filterdate.day&&hour==filterdate.hour&&minute>filterdate.minute)
+			return true;
+		return false;
+	}
+	public boolean LowerThan(DateTime filterdate) {
+		if(year<filterdate.year)
+			return true;
+		if(year==filterdate.year&&month<filterdate.month)
+			return true;
+		if(year==filterdate.year&& month==filterdate.month && day<filterdate.day)
+			return true;
+		if(year==filterdate.year&& month==filterdate.month && day==filterdate.day&&hour<filterdate.hour)
+			return true;
+		if(year==filterdate.year&& month==filterdate.month &&  day==filterdate.day&&hour==filterdate.hour&&minute<filterdate.minute)
+			return true;
+		return false;
+	}
 }

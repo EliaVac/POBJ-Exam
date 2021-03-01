@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.NoHandlerFoundException;
@@ -56,12 +57,8 @@ public class Controller {
 	 return new ResponseEntity<Object>(service.GetDatabase(),HttpStatus.OK);
  }
  @PostMapping("/getdatabase")
- public ResponseEntity<Object> getdatabase(@RequestParam("filter") JSONObject filter){
-	 return new ResponseEntity<Object>(service.GetDatabase(),HttpStatus.OK);
- }
- @PostMapping("/getdatabase")
- public ResponseEntity<Object> getdatabase(@RequestParam("filter") JSONArray filter){
-	 return new ResponseEntity<Object>(service.GetDatabase(),HttpStatus.OK);
+ public ResponseEntity<Object> getdatabase(@RequestBody JSONArray filter){
+	 return new ResponseEntity<Object>(service.GetDatabase(filter),HttpStatus.OK);
  }
  /**
   * Exception handler for connection problems

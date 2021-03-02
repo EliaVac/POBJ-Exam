@@ -75,7 +75,7 @@ public class FiltersApply {
 		}
 	}
 	public ArrayList<SingleDomain> getFilteredDatabase(){
-		ArrayList<SingleDomain> filteredDatabase;
+		ArrayList<SingleDomain> filteredDatabase = null;
 		return filteredDatabase;
 		
 	}

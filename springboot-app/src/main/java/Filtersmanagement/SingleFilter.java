@@ -8,7 +8,7 @@ public class SingleFilter {
 	private DateTime createtimeend;
 	private DateTime updatedatebeg;
 	private DateTime updatedateend;
-	private boolean isdead;
+	private int isdead;
 	/**
 	 * @return the country
 	 */
@@ -23,7 +23,7 @@ public class SingleFilter {
 	 * @param updatedateend
 	 * @param isdead
 	 */
-	public SingleFilter(String country, DateTime createtimebeg, DateTime createtimeend, DateTime updatedatebeg,	DateTime updatedateend, boolean isdead) {
+	public SingleFilter(String country, DateTime createtimebeg, DateTime createtimeend, DateTime updatedatebeg,	DateTime updatedateend, int isdead) {
 		super();
 		this.country = country;
 		this.createtimebeg = createtimebeg;
@@ -31,22 +31,6 @@ public class SingleFilter {
 		this.updatedatebeg = updatedatebeg;
 		this.updatedateend = updatedateend;
 		this.isdead = isdead;
-	}
-	/**
-	 * 
-	 * @param country2
-	 * @param dateTime
-	 * @param dateTime2
-	 * @param dateTime3
-	 * @param dateTime4
-	 */
-	public SingleFilter(String country2, DateTime dateTime, DateTime dateTime2, DateTime dateTime3, DateTime dateTime4) {
-		super();
-		this.country = country;
-		this.createtimebeg = createtimebeg;
-		this.createtimeend = createtimeend;
-		this.updatedatebeg = updatedatebeg;
-		this.updatedateend = updatedateend;
 	}
 	/**
 	 * @return the createtimebeg
@@ -75,7 +59,7 @@ public class SingleFilter {
 	/**
 	 * @return the isdead
 	 */
-	public boolean isIsdead() {
+	public int isIsdead() {
 		return isdead;
 	}
 }

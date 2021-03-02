@@ -49,10 +49,10 @@ public class AllOperations {
 		}
 		return filtered;
 	}
-	public ArrayList<SingleDomain> IsDeadFilter(ArrayList<SingleDomain> database, boolean isDead){
+	public ArrayList<SingleDomain> IsDeadFilter(ArrayList<SingleDomain> database, int isDead){
 		ArrayList<SingleDomain> filtered = new ArrayList<SingleDomain>();
 		for (int i=0; i<database.size(); i++) {
-			if (database.get(i).isIsdead()== isDead )
+			if (database.get(i).isIsdead()== (isDead==1?true:false))
 			filtered.add(database.get(i));
 		}
 		return filtered;

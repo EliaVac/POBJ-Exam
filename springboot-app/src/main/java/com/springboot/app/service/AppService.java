@@ -75,7 +75,7 @@ public class AppService {
 
 	public ArrayList<SingleDomain> GetDatabase(String filter) throws JSONProblem, JSONException {
 		FiltersApply filtering = new FiltersApply(filter,database);
-		return null;
+		return filtering.getFilteredDatabase();
 	}
 
 }

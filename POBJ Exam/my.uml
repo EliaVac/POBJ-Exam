@@ -33,8 +33,14 @@
       <ownedAttribute xmi:id="_GVTUUHXxEeuMHOX924W5Xg" name="service" visibility="private" type="_yIyXsHXwEeuMHOX924W5Xg">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQuoEHXxEeuMHOX924W5Xg" value="1"/>
       </ownedAttribute>
+      <ownedOperation xmi:id="_hbRVQHtFEeuxNYbOVKWwaw" name="getkeywords"/>
       <ownedOperation xmi:id="_BFiY8HXzEeuMHOX924W5Xg" name="getfilters"/>
       <ownedOperation xmi:id="_Yqw2YHa6Eeu4HvPNKP5C4Q" name="getdatabase"/>
+      <ownedOperation xmi:id="_s_JBEHtFEeuxNYbOVKWwaw" name="getdatabase">
+        <ownedParameter xmi:id="_vMYUsHtFEeuxNYbOVKWwaw" name="filter">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_tAnkAHXwEeuMHOX924W5Xg" name="service">
@@ -49,6 +55,18 @@
       <ownedOperation xmi:id="_CJ9f0HXyEeuMHOX924W5Xg" name="AppService"/>
       <ownedOperation xmi:id="_GtvNAHXyEeuMHOX924W5Xg" name="GetPossibleFilters"/>
       <ownedOperation xmi:id="_CihBUHbEEeu-6q7Dgc4DEw" name="GetDatabase"/>
+      <ownedOperation xmi:id="_L3U2MHtGEeuxNYbOVKWwaw" name="GetKeyWords"/>
+      <ownedOperation xmi:id="_X7t1IHtGEeuxNYbOVKWwaw" name="GetDatabase">
+        <ownedParameter xmi:id="_ZliSoHtGEeuxNYbOVKWwaw" name="filter">
+          <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ag35gHtGEeuxNYbOVKWwaw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_JBrpUHtHEeuxNYbOVKWwaw" name="GetDatabase">
+        <ownedParameter xmi:id="_L6Px4HtHEeuxNYbOVKWwaw" name="filter">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Qz9EgHXxEeuMHOX924W5Xg"/>
   </packagedElement>
@@ -120,11 +138,6 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_biHI8HX0EeuMHOX924W5Xg" value="1"/>
       </ownedAttribute>
-      <ownedOperation xmi:id="_v8DdkHX0EeuMHOX924W5Xg" name="getYear"/>
-      <ownedOperation xmi:id="_xhdVIHX0EeuMHOX924W5Xg" name="getMonth"/>
-      <ownedOperation xmi:id="_xvCeIHX0EeuMHOX924W5Xg" name="getDay"/>
-      <ownedOperation xmi:id="_x9VY0HX0EeuMHOX924W5Xg" name="getHour"/>
-      <ownedOperation xmi:id="_yJ7qYHX0EeuMHOX924W5Xg" name="getMinute"/>
       <ownedOperation xmi:id="_AMoJEHX1EeuMHOX924W5Xg" name="DateTime">
         <ownedParameter xmi:id="_CCEnwHX1EeuMHOX924W5Xg" name="year">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
@@ -143,6 +156,12 @@
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_XNJLQHhOEeuel5nIE-p5fg" name="toString"/>
+      <ownedOperation xmi:id="_yJ7qYHX0EeuMHOX924W5Xg" name="BiggerThan">
+        <ownedParameter xmi:id="_Iaw90HtIEeuxNYbOVKWwaw" name="filterdate" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_XMVUsHtIEeuxNYbOVKWwaw" name="LowerThan">
+        <ownedParameter xmi:id="_Z_vQcHtIEeuxNYbOVKWwaw" name="filterdate" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      </ownedOperation>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_oorc8HX8EeuMHOX924W5Xg" name="errors">
@@ -200,5 +219,90 @@
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:id="_dW8BwHhTEeuel5nIE-p5fg" name="getMessage"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NXSFsHtJEeuxNYbOVKWwaw" name="Filtersmanagement">
+    <packagedElement xmi:type="uml:Class" xmi:id="_YN8GMHtJEeuxNYbOVKWwaw" name="AllOperations" visibility="public">
+      <ownedOperation xmi:id="_lLgI0HtJEeuxNYbOVKWwaw" name="CountryFilter">
+        <ownedParameter xmi:id="_tREhwHtJEeuxNYbOVKWwaw" name="database" type="_njmaUHXzEeuMHOX924W5Xg" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7foSMHtJEeuxNYbOVKWwaw" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_uGZnQHtJEeuxNYbOVKWwaw" name="filtercountry">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OI9k0HtKEeuxNYbOVKWwaw" name="DateFilter">
+        <ownedParameter xmi:id="_SBsJ4HtKEeuxNYbOVKWwaw" name="database" type="_njmaUHXzEeuMHOX924W5Xg" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Umj6YHtKEeuxNYbOVKWwaw" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Sj77UHtKEeuxNYbOVKWwaw" name="filterdate" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="_S8u10HtKEeuxNYbOVKWwaw" name="field">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_q2GesHtKEeuxNYbOVKWwaw" name="IsDeadFilter">
+        <ownedParameter xmi:id="_tYuzgHtKEeuxNYbOVKWwaw" name="database" type="_njmaUHXzEeuMHOX924W5Xg" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vzT_kHtKEeuxNYbOVKWwaw" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_vCZgAHtKEeuxNYbOVKWwaw" name="isDead">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CGNIIHtLEeuxNYbOVKWwaw" name="FiltersApply" visibility="public">
+      <ownedAttribute xmi:id="_HNl4sHtLEeuxNYbOVKWwaw" name="filterslist" visibility="private" type="_XV6nIHtLEeuxNYbOVKWwaw" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fWxfMHtLEeuxNYbOVKWwaw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_mROI0HtLEeuxNYbOVKWwaw" name="database" visibility="private" type="_njmaUHXzEeuMHOX924W5Xg" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVCasHtLEeuxNYbOVKWwaw" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_t-Z28HtLEeuxNYbOVKWwaw" name="FiltersApply">
+        <ownedParameter xmi:id="_3r1lkHtLEeuxNYbOVKWwaw" name="stringfilter">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_5Kk0cHtLEeuxNYbOVKWwaw" name="database" type="_njmaUHXzEeuMHOX924W5Xg" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BWSRoHtMEeuxNYbOVKWwaw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MjOrMHtMEeuxNYbOVKWwaw" name="getFilteredDatabase"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XV6nIHtLEeuxNYbOVKWwaw" name="SingleFilter" visibility="public">
+      <ownedAttribute xmi:id="_ap8HMHtMEeuxNYbOVKWwaw" name="country" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_awzkMHtMEeuxNYbOVKWwaw" name="createtimebeg" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      <ownedAttribute xmi:id="_a1TCoHtMEeuxNYbOVKWwaw" name="createtimeend" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      <ownedAttribute xmi:id="_a5HLoHtMEeuxNYbOVKWwaw" name="updatedatebeg" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      <ownedAttribute xmi:id="_bAkegHtMEeuxNYbOVKWwaw" name="updatedateend" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      <ownedAttribute xmi:id="_bF6RgHtMEeuxNYbOVKWwaw" name="isdead" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_2SxrcHtMEeuxNYbOVKWwaw" name="getCountry"/>
+      <ownedOperation xmi:id="_6wvrkHtMEeuxNYbOVKWwaw" name="SingleFilter">
+        <ownedParameter xmi:id="_9nG0sHtMEeuxNYbOVKWwaw" name="country" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_-D10AHtMEeuxNYbOVKWwaw" name="createtimebeg" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="__07-MHtMEeuxNYbOVKWwaw" name="createtimeend" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="_AIOGkHtNEeuxNYbOVKWwaw" name="updatedatebeg" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="_AjaNwHtNEeuxNYbOVKWwaw" name="updatedateend" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="_A10zcHtNEeuxNYbOVKWwaw" name="isdead" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_mU9HYHtNEeuxNYbOVKWwaw" name="SingleFilter">
+        <ownedParameter xmi:id="_qMQwIHtNEeuxNYbOVKWwaw" name="country2" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_qi-nAHtNEeuxNYbOVKWwaw" name="dateTime" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="_q8TF8HtNEeuxNYbOVKWwaw" name="dateTime2" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="_rVozAHtNEeuxNYbOVKWwaw" name="dateTime3" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="_rtLJQHtNEeuxNYbOVKWwaw" name="dateTime4" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_B08RoHtOEeuxNYbOVKWwaw" name="getCreatetimebeg"/>
+      <ownedOperation xmi:id="_CMvGkHtOEeuxNYbOVKWwaw" name="getCreatetimeend"/>
+      <ownedOperation xmi:id="_Cf1owHtOEeuxNYbOVKWwaw" name="getUpdatedatebeg"/>
+      <ownedOperation xmi:id="_C0KS8HtOEeuxNYbOVKWwaw" name="getUpdatedateend"/>
+      <ownedOperation xmi:id="_DPIXsHtOEeuxNYbOVKWwaw" name="isIsdead"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>

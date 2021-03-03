@@ -3,15 +3,13 @@ package com.springboot.app.service;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
-import org.springframework.util.MultiValueMap;
 
 import com.springboot.app.singledataclasses.SingleDomain;
 import com.springboot.app.utilities.DatabaseCreator;
-import com.springboot.app.utilities.FiltersCollection;
+import com.springboot.app.utilities.FiltersCreator;
 
 import Errors.ConnectionProblem;
 import Errors.JSONProblem;
@@ -35,13 +33,18 @@ public class AppService {
 	private ArrayList<SingleDomain> database;
 
 	/**
+	 * the possible key words
+	 */
+	private HashMap<String, String> possiblekeywords;
+
+	/**
 	 * Initialize possible filters collection and database
 	 * 
 	 * @throws ConnectionProblem
 	 * @throws JSONException
 	 */
 	public AppService() throws ConnectionProblem, JSONException {
-		FiltersCollection filtercollector = new FiltersCollection();
+		FiltersCreator filtercollector = new FiltersCreator();
 		possiblefilters = filtercollector.GetFiltersCollection();
 		DatabaseCreator datacreator = new DatabaseCreator();
 		database = datacreator.getDatabase();
@@ -65,16 +68,27 @@ public class AppService {
 		return database;
 	}
 
+	/**
+	 * Getters of the key words hashmap attribute
+	 * 
+	 * @return the possible key words
+	 */
+
 	public HashMap GetKeyWords() {
-		return null;
+		return possiblekeywords;
 	}
 
-	public ArrayList<SingleDomain> GetDatabase(JSONObject filter) {
-		return null;
-	}
+	/**
+	 * Getters of the filtered database thanks to a string parameter "filter"
+	 * 
+	 * @param filter
+	 * @return the filtered database
+	 * @throws JSONProblem
+	 * @throws JSONException
+	 */
 
 	public ArrayList<SingleDomain> GetDatabase(String filter) throws JSONProblem, JSONException {
-		FiltersApply filtering = new FiltersApply(filter,database);
+		FiltersApply filtering = new FiltersApply(filter, database);
 		return filtering.getFilteredDatabase();
 	}
 

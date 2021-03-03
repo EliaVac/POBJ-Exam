@@ -2,20 +2,43 @@ package Filtersmanagement;
 
 import com.springboot.app.singledataclasses.DateTime;
 
+/**
+ * The class contains attributes in order to represent a single filter and
+ * methods to manage them
+ * 
+ * @author Elia Vaccarini
+ * @author Federico Di Tullio
+ */
 public class SingleFilter {
-	private String country;
-	private DateTime createtimebeg;
-	private DateTime createtimeend;
-	private DateTime updatedatebeg;
-	private DateTime updatedateend;
-	private int isdead;
 	/**
-	 * @return the country
+	 * the string that identify country
 	 */
-	public String getCountry() {
-		return country;
-	}
+	private String country;
 	/**
+	 * the lower end date range when the country is created
+	 */
+	private DateTime createtimebeg;
+	/**
+	 * the extreme upper date range when the country is created
+	 */
+	private DateTime createtimeend;
+	/**
+	 * the lower end date range when the country is updated
+	 */
+	private DateTime updatedatebeg;
+	/**
+	 * the extreme upper date range when the country is updated
+	 */
+	private DateTime updatedateend;
+	/**
+	 * the filter's condition of the domain's state, if true it's dead, else is
+	 * alive
+	 */
+	private int isdead;
+
+	/**
+	 * The constructor requires all the parameters to initialize them
+	 * 
 	 * @param country
 	 * @param createtimebeg
 	 * @param createtimeend
@@ -23,7 +46,8 @@ public class SingleFilter {
 	 * @param updatedateend
 	 * @param isdead
 	 */
-	public SingleFilter(String country, DateTime createtimebeg, DateTime createtimeend, DateTime updatedatebeg,	DateTime updatedateend, int isdead) {
+	public SingleFilter(String country, DateTime createtimebeg, DateTime createtimeend, DateTime updatedatebeg,
+			DateTime updatedateend, int isdead) {
 		super();
 		this.country = country;
 		this.createtimebeg = createtimebeg;
@@ -32,31 +56,55 @@ public class SingleFilter {
 		this.updatedateend = updatedateend;
 		this.isdead = isdead;
 	}
+
 	/**
+	 * Getters of the country string of the filter
+	 * 
+	 * @return the country
+	 */
+	public String getCountry() {
+		return country;
+	}
+
+	/**
+	 * Getters of the the lower end date range when the country is created
+	 * 
 	 * @return the createtimebeg
 	 */
 	public DateTime getCreatetimebeg() {
 		return createtimebeg;
 	}
+
 	/**
+	 * Getters of the extreme upper date range when the country is created
+	 * 
 	 * @return the createtimeend
 	 */
 	public DateTime getCreatetimeend() {
 		return createtimeend;
 	}
+
 	/**
+	 * Getters of the lower end date range when the country is updated
+	 * 
 	 * @return the updatedatebeg
 	 */
 	public DateTime getUpdatedatebeg() {
 		return updatedatebeg;
 	}
+
 	/**
+	 * Getters of the extreme upper date range when the country is updated
+	 * 
 	 * @return the updatedateend
 	 */
 	public DateTime getUpdatedateend() {
 		return updatedateend;
 	}
+
 	/**
+	 * Getters of the filter's condition of the domain's state
+	 * 
 	 * @return the isdead
 	 */
 	public int isIsdead() {

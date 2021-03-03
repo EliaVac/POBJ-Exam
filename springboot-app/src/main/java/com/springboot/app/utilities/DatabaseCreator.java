@@ -15,8 +15,10 @@ import com.springboot.app.singledataclasses.DateTime;
 import com.springboot.app.singledataclasses.SingleDomain;
 
 import Errors.ConnectionProblem;
+
 /**
  * The class sets up the database and allows the reading of this
+ * 
  * @author Federico Di Tullio
  * @author Elia Vaccarini
  */
@@ -27,7 +29,7 @@ public class DatabaseCreator {
 	 * Constructor class, it provides to create an ArrayList of all the data
 	 * 
 	 * @throws ConnectionProblem
-	 * @throws JSONException 
+	 * @throws JSONException
 	 */
 	public DatabaseCreator() throws ConnectionProblem, JSONException {
 		super();
@@ -85,6 +87,8 @@ public class DatabaseCreator {
 	}
 
 	/**
+	 * Getters of the database attribute
+	 * 
 	 * @return the database
 	 */
 	public ArrayList<SingleDomain> getDatabase() {

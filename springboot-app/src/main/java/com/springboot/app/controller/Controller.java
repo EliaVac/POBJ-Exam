@@ -59,6 +59,13 @@ public class Controller {
  public ResponseEntity<Object> getdatabase() throws ConnectionProblem{
 	 return new ResponseEntity<Object>(service.GetDatabase(),HttpStatus.OK);
  }
+ /**
+  * The root associated with "/getdatabase" that permits to get filtered database by the JSON parameter "filter" inserted
+  * @param filter
+  * @return the database
+  * @throws JSONProblem
+  * @throws JSONException
+  */
  @PostMapping("/getdatabase")
  public ResponseEntity<Object> getdatabase(@RequestBody String filter) throws JSONProblem, JSONException{
 	 return new ResponseEntity<Object>(service.GetDatabase(filter),HttpStatus.OK);

@@ -525,13 +525,13 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_cEoZBntLEeuxNYbOVKWwaw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_cEoZAXtLEeuxNYbOVKWwaw" fontName="Segoe UI" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cEoZAntLEeuxNYbOVKWwaw" x="16" y="306" width="459" height="417"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cEoZAntLEeuxNYbOVKWwaw" x="16" y="306" width="459" height="309"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_O9OIwXtJEeuxNYbOVKWwaw"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_O9OIwntJEeuxNYbOVKWwaw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_O9JQQXtJEeuxNYbOVKWwaw" fontName="Segoe UI" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O9JQQntJEeuxNYbOVKWwaw" x="15" y="2082" width="516" height="747"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O9JQQntJEeuxNYbOVKWwaw" x="15" y="2082" width="516" height="645"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_PaAg8nXvEeuMHOX924W5Xg"/>
       </data>

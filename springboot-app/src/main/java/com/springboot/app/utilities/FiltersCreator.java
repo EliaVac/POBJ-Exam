@@ -25,7 +25,7 @@ public class FiltersCreator {
 		filterscollection.put("Updating Time ", "Require a date of start and/or a date of end: dd/mm/yyyy");
 		filterscollection.put("Creating Time", "Require a date of start and/or a date of end: dd/mm/yyyy");
 		filterscollection.put("State", "Identify is the domain is still alive: Alive or Dead");
-}
+	}
 
 	/**
 	 * Getters of the hashmap filterscollection

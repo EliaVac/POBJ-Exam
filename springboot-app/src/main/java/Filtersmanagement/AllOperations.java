@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import com.springboot.app.singledataclasses.DateTime;
 import com.springboot.app.singledataclasses.SingleDomain;
 
+import Errors.FilterProblem;
+
 /**
  * Define all possible filtering operations
  * 
@@ -84,6 +86,24 @@ public class AllOperations {
 				filtered.add(database.get(i));
 		}
 		return filtered;
-
+	}
+	protected void check(String[] toverify ) throws FilterProblem {
+		String[] verified= {"country","minimum_createtime", "maximum_createtime", "minimum_updatetime",
+				"maximum_updatetime","isdead"};
+		Boolean[] isthere= {false,false,false,false,false,false};
+		for(int i=0;i<toverify.length; i++) {
+			boolean finish=true;
+			for(int j=0;j<6&&finish;i++) {
+				if(verified[j].compareTo(toverify[i])==0) {
+					finish=false;
+					if(isthere[j]==true)
+						throw new FilterProblem("The field "+verified[j]+" has been written more times");
+				}
+			}
+			if(finish==true) {
+				throw new FilterProblem("The field "+toverify[i]+" doesn't exist; check all the possible filters with the root: /getfilters");
+			}
+		}
+			
 	}
 }

@@ -17,7 +17,7 @@ public class FiltersCreator {
 	private HashMap<String, String> filterscollection;
 
 	/**
-	 * The initialize the list of the possible filters
+	 * Initialize the hashmap of the possible filters
 	 */
 	public FiltersCreator() {
 		filterscollection = new HashMap<String, String>();

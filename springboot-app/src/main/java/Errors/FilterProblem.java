@@ -1,33 +1,26 @@
 package Errors;
-
 /**
- * Class invoked to handle JSON error
  * 
  * @author Federico Di Tullio
  * @author Elia Vaccarini
  */
-public class JSONProblem extends Exception {
+public class FilterProblem extends Exception {
 	/**
 	 * The string that identify the message
 	 */
 	private String message;
-
 	/**
-	 * The constructor of the JSONProblem class
-	 * 
+	 * Initialize the message attribute
 	 * @param message
 	 */
-	public JSONProblem(String message) {
-		super(message);
-		this.message = message;
+	public FilterProblem(String message) {
+		this.message=message;
 	}
-
-	/**
-	 * Getter of the message attribute
-	 * 
+	/** Getter of the message
 	 * @return the message
 	 */
 	public String getMessage() {
 		return message;
 	}
+	
 }

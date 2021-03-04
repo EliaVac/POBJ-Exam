@@ -8,5 +8,17 @@ import java.util.HashMap;
  */
 
 public class KeyWordsCreator {
+	private HashMap<String, String> keywordscollection;
+	public KeyWordsCreator() {
+		
+		
+		
+	}
+	/**
+	 * @return the keywordscollection
+	 */
+	public HashMap<String, String> GetKeyWordsCollection() {
+		return keywordscollection;
+	}
 
 }

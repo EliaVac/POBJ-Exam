@@ -12,6 +12,7 @@ import com.springboot.app.utilities.DatabaseCreator;
 import com.springboot.app.utilities.FiltersCreator;
 
 import Errors.ConnectionProblem;
+import Errors.FilterProblem;
 import Errors.JSONProblem;
 import Filtersmanagement.FiltersApply;
 
@@ -85,9 +86,10 @@ public class AppService {
 	 * @return the filtered database
 	 * @throws JSONProblem
 	 * @throws JSONException
+	 * @throws FilterProblem 
 	 */
 
-	public ArrayList<SingleDomain> GetDatabase(String filter) throws JSONProblem, JSONException {
+	public ArrayList<SingleDomain> GetDatabase(String filter) throws JSONProblem, JSONException, FilterProblem {
 		FiltersApply filtering = new FiltersApply(filter, database);
 		return filtering.getFilteredDatabase();
 	}

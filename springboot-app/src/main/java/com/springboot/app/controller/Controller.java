@@ -20,6 +20,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 import com.springboot.app.service.AppService;
 import Errors.ConnectionProblem;
 import Errors.ErrorResponse;
+import Errors.FilterProblem;
 import Errors.JSONProblem;
 import Filtersmanagement.SingleFilter;
 /**
@@ -65,9 +66,10 @@ public class Controller {
   * @return the database
   * @throws JSONProblem
   * @throws JSONException
+ * @throws FilterProblem 
   */
  @PostMapping("/getdatabase")
- public ResponseEntity<Object> getdatabase(@RequestBody String filter) throws JSONProblem, JSONException{
+ public ResponseEntity<Object> getdatabase(@RequestBody String filter) throws JSONProblem, JSONException, FilterProblem{
 	 return new ResponseEntity<Object>(service.GetDatabase(filter),HttpStatus.OK);
  }
  /**
@@ -89,6 +91,11 @@ public class Controller {
  public final ResponseEntity<ErrorResponse> exceptionJSON(Exception e){
 	 ErrorResponse er = new ErrorResponse(409,e.getMessage());
 	 return new ResponseEntity<ErrorResponse>(er,HttpStatus.CONFLICT);
+ }
+ @ExceptionHandler(FilterProblem.class)
+ public final ResponseEntity<ErrorResponse> exceptionFilter(Exception e){
+	 ErrorResponse er = new ErrorResponse(409,e.getMessage());
+	 return new ResponseEntity<ErrorResponse>(er,HttpStatus.BAD_REQUEST);
  }
  
  }

@@ -9,6 +9,7 @@ import org.json.JSONObject;
 import com.springboot.app.singledataclasses.DateTime;
 import com.springboot.app.singledataclasses.SingleDomain;
 
+import Errors.FilterProblem;
 import Errors.JSONProblem;
 
 /**
@@ -35,8 +36,9 @@ public class FiltersApply extends AllOperations {
 	 * @param database
 	 * @throws JSONProblem
 	 * @throws JSONException
+	 * @throws FilterProblem 
 	 */
-	public FiltersApply(String stringfilter, ArrayList<SingleDomain> database) throws JSONProblem, JSONException {
+	public FiltersApply(String stringfilter, ArrayList<SingleDomain> database) throws JSONProblem, JSONException, FilterProblem {
 		this.database = database;
 		filterslist = new ArrayList<SingleFilter>();
 		JSONArray filter = new JSONArray(stringfilter);
@@ -52,6 +54,8 @@ public class FiltersApply extends AllOperations {
 			} catch (JSONException e) {
 				throw new JSONProblem("Wrong filter convertion");
 			}
+
+			check(onefilter.getNames(onefilter));
 			try {
 				country = onefilter.getString("country");
 			} catch (Exception e) {

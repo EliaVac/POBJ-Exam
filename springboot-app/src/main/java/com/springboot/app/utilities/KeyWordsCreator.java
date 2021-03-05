@@ -19,11 +19,12 @@ public class KeyWordsCreator {
 	 * Initialize the hashmap of the possible key words
 	 */
 	public KeyWordsCreator() {
-		keywordscollection.put("/getkeywords", null);
-		keywordscollection.put("/getfilters", null);
-		keywordscollection.put("/getdatabase", null);
-		keywordscollection.put("/getdatabase", null);
-		keywordscollection.put("/getstatistics", null);
+		keywordscollection.put("/getkeywords", "it's a get root; provides all the possible roots on tap");
+		keywordscollection.put("/getfilters", "it's a get root; describes the structure of all the possible filters");
+		keywordscollection.put("/getdatabase", "it's a get root; provides the database");
+		keywordscollection.put("/getdatabase", "it's a post root; it requires a JSONArray filter; provides the filtered database");
+		keywordscollection.put("/getstatistics", "it's a get root; provides all the statistics");
+		keywordscollection.put("/getstatistics", "it's a post root;it requires a JSONArray of fields; provides the statistics on the request fields");
 	}
 
 	/**

@@ -15,8 +15,15 @@ import com.springboot.app.singledataclasses.DateTime;
 import com.springboot.app.singledataclasses.SingleStatistic;
 
 import Errors.ConnectionProblem;
-
+/**
+ * 
+ * @author Federico
+ *
+ */
 public class StatisticsCreator {
+	/**
+	 * 
+	 */
 	private ArrayList<SingleStatistic> statistics ;
 
 	/**

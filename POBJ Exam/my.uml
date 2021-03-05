@@ -41,11 +41,20 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
       </ownedOperation>
+      <ownedOperation xmi:id="_Wypw8H3bEeuwtqwVFElasg" name="getstats"/>
+      <ownedOperation xmi:id="_XH3zAH3bEeuwtqwVFElasg" name="getstats">
+        <ownedParameter xmi:id="_k7RRcH3bEeuwtqwVFElasg" name="filter">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
       <ownedOperation xmi:id="_C89AoH0REeuiKeYIdSCaOQ" name="exceptionConnection">
         <ownedParameter xmi:id="_R8uLkH0REeuiKeYIdSCaOQ" name="NoHandlerFoundException e"/>
       </ownedOperation>
       <ownedOperation xmi:id="_DVjG0H0REeuiKeYIdSCaOQ" name="exceptionJSON">
         <ownedParameter xmi:id="_hF04sH0REeuiKeYIdSCaOQ" name="Exception e"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_WXAWwH3bEeuwtqwVFElasg" name="exceptionFilter">
+        <ownedParameter xmi:id="_aibOUH3bEeuwtqwVFElasg" name="Exception e"/>
       </ownedOperation>
     </packagedElement>
   </packagedElement>
@@ -62,12 +71,21 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EMap"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZtRBoH0PEeuiKeYIdSCaOQ" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_26WGIH3bEeuwtqwVFElasg" name="statistics" visibility="private" type="_HBw1oH3cEeuwtqwVFElasg" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5uu5UH3bEeuwtqwVFElasg" value="*"/>
+      </ownedAttribute>
       <ownedOperation xmi:id="_CJ9f0HXyEeuMHOX924W5Xg" name="AppService"/>
       <ownedOperation xmi:id="_GtvNAHXyEeuMHOX924W5Xg" name="GetPossibleFilters"/>
       <ownedOperation xmi:id="_CihBUHbEEeu-6q7Dgc4DEw" name="GetDatabase"/>
       <ownedOperation xmi:id="_L3U2MHtGEeuxNYbOVKWwaw" name="GetKeyWords"/>
       <ownedOperation xmi:id="_JBrpUHtHEeuxNYbOVKWwaw" name="GetDatabase">
         <ownedParameter xmi:id="_L6Px4HtHEeuxNYbOVKWwaw" name="filter">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_V8Op0H3cEeuwtqwVFElasg" name="GetStats"/>
+      <ownedOperation xmi:id="_ZPfxYH3cEeuwtqwVFElasg" name="GetStats">
+        <ownedParameter xmi:id="_czrp0H3cEeuwtqwVFElasg" name="Filter">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
       </ownedOperation>
@@ -184,6 +202,7 @@
         <ownedParameter xmi:id="_Z_vQcHtIEeuxNYbOVKWwaw" name="filterdate" type="_KdBQQHX0EeuMHOX924W5Xg"/>
       </ownedOperation>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HBw1oH3cEeuwtqwVFElasg" name="SingleStatistic" visibility="public"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_oorc8HX8EeuMHOX924W5Xg" name="errors">
     <packagedElement xmi:type="uml:Class" xmi:id="_ra5s8HX8EeuMHOX924W5Xg" name="ErrorResponse" visibility="public">

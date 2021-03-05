@@ -423,7 +423,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_KitM0n3cEeuwtqwVFElasg"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_KimfIX3cEeuwtqwVFElasg" fontName="Segoe UI" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KimfIn3cEeuwtqwVFElasg" x="3" y="594" width="514" height="273"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KimfIn3cEeuwtqwVFElasg" x="3" y="582" width="514" height="273"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_keGB8nXzEeuMHOX924W5Xg"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_keGB83XzEeuMHOX924W5Xg"/>

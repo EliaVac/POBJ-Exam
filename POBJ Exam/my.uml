@@ -116,6 +116,13 @@
       <ownedOperation xmi:id="_lqJGgH0TEeuiKeYIdSCaOQ" name="KeyWordsCreator"/>
       <ownedOperation xmi:id="_a6EZsH0UEeuiKeYIdSCaOQ" name="GetKeyWordsCollection"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UWa3sH3eEeuwtqwVFElasg" name="StatisticsCreator" visibility="public">
+      <ownedAttribute xmi:id="_bC-2UH3eEeuwtqwVFElasg" name="statistics" visibility="private" type="_HBw1oH3cEeuwtqwVFElasg" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dDkOAH3eEeuwtqwVFElasg" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_rr2GAH3eEeuwtqwVFElasg" name="StatisticsCreator"/>
+      <ownedOperation xmi:id="_vLutQH3eEeuwtqwVFElasg" name="getStats"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_i_tYYHXzEeuMHOX924W5Xg" name="singledataclasses">
     <packagedElement xmi:type="uml:Class" xmi:id="_njmaUHXzEeuMHOX924W5Xg" name="SingleDomain" visibility="public">
@@ -202,7 +209,46 @@
         <ownedParameter xmi:id="_Z_vQcHtIEeuxNYbOVKWwaw" name="filterdate" type="_KdBQQHX0EeuMHOX924W5Xg"/>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_HBw1oH3cEeuwtqwVFElasg" name="SingleStatistic" visibility="public"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HBw1oH3cEeuwtqwVFElasg" name="SingleStatistic" visibility="public">
+      <ownedAttribute xmi:id="_tpizsH3cEeuwtqwVFElasg" name="zone" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_t_f1kH3cEeuwtqwVFElasg" name="date" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      <ownedAttribute xmi:id="_uFCc4H3cEeuwtqwVFElasg" name="increment" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_uJh7UH3cEeuwtqwVFElasg" name="decrement" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vPUesH3cEeuwtqwVFElasg" name="total" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_B9DwMH3dEeuwtqwVFElasg" name="SIngleStatistic">
+        <ownedParameter xmi:id="_EPV74H3dEeuwtqwVFElasg" name="zone">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_EpZaoH3dEeuwtqwVFElasg" name="date" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="_E_LdYH3dEeuwtqwVFElasg" name="increment">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_FWAB8H3dEeuwtqwVFElasg" name="decrement">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Fv5IoH3dEeuwtqwVFElasg" name="total">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_giXsoH3dEeuwtqwVFElasg" name="getZone"/>
+      <ownedOperation xmi:id="_hGOAkH3dEeuwtqwVFElasg" name="getDate"/>
+      <ownedOperation xmi:id="_ikEeoH3dEeuwtqwVFElasg" name="getDate">
+        <ownedParameter xmi:id="_otyO4H3dEeuwtqwVFElasg" name="check">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_i5c4wH3dEeuwtqwVFElasg" name="getIncrement"/>
+      <ownedOperation xmi:id="_jKTYMH3dEeuwtqwVFElasg" name="getDecrement"/>
+      <ownedOperation xmi:id="_jbmjkH3dEeuwtqwVFElasg" name="getTotal"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_oorc8HX8EeuMHOX924W5Xg" name="errors">
     <packagedElement xmi:type="uml:Class" xmi:id="_ra5s8HX8EeuMHOX924W5Xg" name="ErrorResponse" visibility="public">
@@ -248,6 +294,17 @@
       <ownedOperation xmi:id="__iAugHhUEeuSmJ8gBHC7Hw" name="getMessage"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_uRzK8HhUEeuSmJ8gBHC7Hw" name="ResourceNotFoundException" visibility="public"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_llIJ8H3fEeuRorcQEqQ7ow" name="FilterProblem" visibility="private">
+      <ownedAttribute xmi:id="_scrQkH3fEeuRorcQEqQ7ow" name="message" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_xJYQQH3fEeuRorcQEqQ7ow" name="FilterProblem">
+        <ownedParameter xmi:id="_0bAZEH3fEeuRorcQEqQ7ow" name="message">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xpSfYH3fEeuRorcQEqQ7ow" name="getMessage"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_63Q2wHbMEeu-rZvmqqIhvA" name="JSONProblem" visibility="public">
     <ownedAttribute xmi:id="_taOUoHhSEeuel5nIE-p5fg" name="message" visibility="private">
@@ -286,6 +343,15 @@
         <ownedParameter xmi:id="_vCZgAHtKEeuxNYbOVKWwaw" name="isDead">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1wBOwH3gEeuRorcQEqQ7ow" name="check" visibility="protected">
+        <ownedParameter xmi:id="_hja9IH3hEeuRorcQEqQ7ow" name="toverify" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i58rMH3hEeuRorcQEqQ7ow" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_p0yWYH3hEeuRorcQEqQ7ow" name="CheckDate" visibility="protected">
+        <ownedParameter xmi:id="_ssx3MH3hEeuRorcQEqQ7ow" name="tocheck" type="_KdBQQHX0EeuMHOX924W5Xg"/>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_CGNIIHtLEeuxNYbOVKWwaw" name="FiltersApply" visibility="public">
@@ -336,4 +402,5 @@
       <ownedOperation xmi:id="_DPIXsHtOEeuxNYbOVKWwaw" name="isIsdead"/>
     </packagedElement>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ezCLEH3fEeuRorcQEqQ7ow" name="Filterproblem" visibility="public"/>
 </uml:Model>

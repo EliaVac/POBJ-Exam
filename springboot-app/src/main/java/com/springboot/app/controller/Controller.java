@@ -72,6 +72,14 @@ public class Controller {
  public ResponseEntity<Object> getdatabase(@RequestBody String filter) throws JSONProblem, JSONException, FilterProblem{
 	 return new ResponseEntity<Object>(service.GetDatabase(filter),HttpStatus.OK);
  }
+ @GetMapping("/getstats")
+ public ResponseEntity<Object> getstats() throws JSONProblem, JSONException, FilterProblem{
+	 return new ResponseEntity<Object>(service.GetStats(),HttpStatus.OK);
+ }
+ @PostMapping("/getstats")
+ public ResponseEntity<Object> getstats(@RequestBody String filter) throws JSONProblem, JSONException, FilterProblem{
+	 return new ResponseEntity<Object>(service.GetStats(filter),HttpStatus.OK);
+ }
  /**
   * Exception handler for connection problems
   * @param e
@@ -96,6 +104,7 @@ public class Controller {
  public final ResponseEntity<ErrorResponse> exceptionFilter(Exception e){
 	 ErrorResponse er = new ErrorResponse(409,e.getMessage());
 	 return new ResponseEntity<ErrorResponse>(er,HttpStatus.BAD_REQUEST);
+	 
  }
  
  }

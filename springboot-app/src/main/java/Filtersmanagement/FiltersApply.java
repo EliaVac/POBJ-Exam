@@ -70,32 +70,33 @@ public class FiltersApply extends AllOperations {
 					JSONObject date = (JSONObject) onefilter.get(timesstring[j]);
 					int year = 0, month = 0, day = 0, hour = 0, minute = 0;
 					try {
-						year = Integer.parseInt((String) date.getString("year"));
-					} catch (Exception e) {
+						year = date.getInt("year");
+					} catch (JSONException e) {
 						year=now.getYear();
 					}
 					try {
-						month = Integer.parseInt((String) date.getString("month"));
+						month = date.getInt("month");
 					} catch (Exception e) {
 						month=now.getMonthValue();
 					}
 					try {
-						day = Integer.parseInt((String) date.getString("day"));
+						day = date.getInt("day");
 					} catch (Exception e) {
 						day=now.getDayOfMonth();
 					}
 					try {
-						hour = Integer.parseInt((String) date.getString("hour"));
+						hour = date.getInt("hour");
 					} catch (Exception e) {
 					}
 					try {
-						minute = Integer.parseInt((String) date.getString("minute"));
+						minute = date.getInt("minute");
 					} catch (Exception e) {
 					}
 					times[j] = new DateTime(year, month, day, hour, minute);
-					CheckDate(times[j]);
 				} catch (Exception e) {
 				}
+				if(times[j]!=null)
+					CheckDate(times[j]);
 			}
 			try {
 				if (onefilter.getBoolean("isdead"))

@@ -119,18 +119,23 @@ public class AllOperations {
 		int month=Integer.parseInt(day_hour[0].split("/")[1]);
 		int day=Integer.parseInt(day_hour[0].split("/")[0]);
 		int hour=Integer.parseInt(day_hour[1].split(":")[0]);
-		int minute=Integer.parseInt(day_hour[1].split(":")[1]);
+		int minute=Integer.parseInt(day_hour[1].split(":")[1].trim());
 		LocalDateTime now = LocalDateTime.now();
 		int[] DayForMonth = {31,29,31,30,31,30,31,31,30,31,30,31};
-		if(year<1950||year>now.getYear())
+		if(year<1950||year>now.getYear()) {
 			throw new FilterProblem("Please set an year bigger than 1950 and smaller than this year");
-		if(month<1||month>12)
+		}
+		if(month<1||month>12) {
 			throw new FilterProblem("You have setted an unexisting month: "+month);
-		if(day<1||day>DayForMonth[month])
+		}
+		if(day<1||day>DayForMonth[month-1]) {
 			throw new FilterProblem("You have setted an unexisting day: "+day+" for the month: "+month);
-		if(hour<0||hour>23)
+		}
+		if(hour<0||hour>23) {
 			throw new FilterProblem("You have setted an unexisting hour: "+hour);
-		if(minute<0||minute>59)
+		}
+		if(minute<0||minute>59) {
 			throw new FilterProblem("You have setted an unexisting minute: "+minute);		
+		}
 	}
 }

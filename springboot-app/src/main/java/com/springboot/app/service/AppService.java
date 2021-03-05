@@ -8,8 +8,11 @@ import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
 import com.springboot.app.singledataclasses.SingleDomain;
+import com.springboot.app.singledataclasses.SingleStatistic;
 import com.springboot.app.utilities.DatabaseCreator;
 import com.springboot.app.utilities.FiltersCreator;
+import com.springboot.app.utilities.KeyWordsCreator;
+import com.springboot.app.utilities.StatisticsCreator;
 
 import Errors.ConnectionProblem;
 import Errors.FilterProblem;
@@ -37,6 +40,10 @@ public class AppService {
 	 * the possible key words
 	 */
 	private HashMap<String, String> possiblekeywords;
+	/**
+	 * 
+	 */
+	private ArrayList<SingleStatistic> statistics;
 
 	/**
 	 * Initialize possible filters collection and database
@@ -49,6 +56,10 @@ public class AppService {
 		possiblefilters = filtercollector.GetFiltersCollection();
 		DatabaseCreator datacreator = new DatabaseCreator();
 		database = datacreator.getDatabase();
+		KeyWordsCreator keywordscollector = new KeyWordsCreator();
+		possiblekeywords = keywordscollector.GetKeyWordsCollection();
+		StatisticsCreator statisticscollector = new StatisticsCreator();
+		statistics = statisticscollector.getStats();
 	}
 
 	/**
@@ -79,6 +90,7 @@ public class AppService {
 		return possiblekeywords;
 	}
 
+
 	/**
 	 * Getters of the filtered database thanks to a string parameter "filter"
 	 * 
@@ -92,6 +104,20 @@ public class AppService {
 	public ArrayList<SingleDomain> GetDatabase(String filter) throws JSONProblem, JSONException, FilterProblem {
 		FiltersApply filtering = new FiltersApply(filter, database);
 		return filtering.getFilteredDatabase();
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public ArrayList<SingleStatistic> GetStats() {
+		return statistics;
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public ArrayList<SingleStatistic> GetStats(String filter) {
+		return statistics ;
 	}
 
 }

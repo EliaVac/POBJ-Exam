@@ -1,7 +1,9 @@
 package Filtersmanagement;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
+import org.apache.tomcat.jni.Local;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -61,6 +63,7 @@ public class FiltersApply extends AllOperations {
 			} catch (Exception e) {
 			}
 
+			LocalDateTime now = LocalDateTime.now();
 			for (int j = 0; j < 4; j++) {
 				try {
 					times[j] = null;
@@ -69,14 +72,17 @@ public class FiltersApply extends AllOperations {
 					try {
 						year = Integer.parseInt((String) date.getString("year"));
 					} catch (Exception e) {
+						year=now.getYear();
 					}
 					try {
 						month = Integer.parseInt((String) date.getString("month"));
 					} catch (Exception e) {
+						month=now.getMonthValue();
 					}
 					try {
 						day = Integer.parseInt((String) date.getString("day"));
 					} catch (Exception e) {
+						day=now.getDayOfMonth();
 					}
 					try {
 						hour = Integer.parseInt((String) date.getString("hour"));
@@ -87,6 +93,7 @@ public class FiltersApply extends AllOperations {
 					} catch (Exception e) {
 					}
 					times[j] = new DateTime(year, month, day, hour, minute);
+					CheckDate(times[j]);
 				} catch (Exception e) {
 				}
 			}

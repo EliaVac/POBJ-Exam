@@ -1,5 +1,6 @@
 package Filtersmanagement;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 import com.springboot.app.singledataclasses.DateTime;
@@ -111,5 +112,25 @@ public class AllOperations {
 			}
 		}
 
+	}
+	protected void CheckDate(DateTime tocheck) throws FilterProblem {
+		String[] day_hour=tocheck.toString().split(" - ");
+		int year=Integer.parseInt(day_hour[0].split("/")[2]);
+		int month=Integer.parseInt(day_hour[0].split("/")[1]);
+		int day=Integer.parseInt(day_hour[0].split("/")[0]);
+		int hour=Integer.parseInt(day_hour[1].split(":")[0]);
+		int minute=Integer.parseInt(day_hour[1].split(":")[1]);
+		LocalDateTime now = LocalDateTime.now();
+		int[] DayForMonth = {31,29,31,30,31,30,31,31,30,31,30,31};
+		if(year<1950||year>now.getYear())
+			throw new FilterProblem("Please set an year bigger than 1950 and smaller than this year");
+		if(month<1||month>12)
+			throw new FilterProblem("You have setted an unexisting month: "+month);
+		if(day<1||day>DayForMonth[month])
+			throw new FilterProblem("You have setted an unexisting day: "+day+" for the month: "+month);
+		if(hour<0||hour>23)
+			throw new FilterProblem("You have setted an unexisting hour: "+hour);
+		if(minute<0||minute>59)
+			throw new FilterProblem("You have setted an unexisting minute: "+minute);		
 	}
 }

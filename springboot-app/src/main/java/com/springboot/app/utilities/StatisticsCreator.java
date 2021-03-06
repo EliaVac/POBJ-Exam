@@ -16,13 +16,13 @@ import com.springboot.app.singledataclasses.SingleStatistic;
 
 import Errors.ConnectionProblem;
 /**
- * 
- * @author Federico
- *
+ *  The class sets up a collection of statistics and allows the reading of this
+ * @author Federico Di Tullio
+ * @author Elia Vaccarini
  */
 public class StatisticsCreator {
 	/**
-	 * 
+	 * Collection of statistics
 	 */
 	private ArrayList<SingleStatistic> statistics ;
 
@@ -48,11 +48,11 @@ public class StatisticsCreator {
 			} while (line != null);
 			br.close();
 			statisticObj = new JSONObject(content.toString());
-		} catch (IOException e) {
+		}catch (IOException e) {
 			throw new ConnectionProblem("Error due to failure connection, necessary for the download");
-	/*	} catch (JSONException e) {
+		/*} catch (JSONException e) {
 			throw new JSONException("Error due to failure conversion of the JSON downloaded");
-	*/	}
+		}*/
 		try {
 			statistics= new ArrayList<SingleStatistic>();
 			JSONArray JSONstatistics = statisticObj.getJSONArray("statistics");
@@ -72,6 +72,7 @@ public class StatisticsCreator {
 		} catch (JSONException e) {
 			throw new JSONException("Error due to recognizing field of the JSON converted");
 		}
+		
 	}
 
 	/**

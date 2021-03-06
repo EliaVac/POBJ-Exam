@@ -48,7 +48,7 @@ public class DateTime {
 	}
 
 	/**
-	 * Function that leads to get the date in a format string
+	 * Function that leads to get the date in a string format
 	 * 
 	 * @return the date by string
 	 */

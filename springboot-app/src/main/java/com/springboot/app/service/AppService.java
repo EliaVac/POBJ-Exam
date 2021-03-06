@@ -41,7 +41,7 @@ public class AppService {
 	 */
 	private HashMap<String, String> possiblekeywords;
 	/**
-	 * 
+	 * the statistics
 	 */
 	private ArrayList<SingleStatistic> statistics;
 
@@ -106,15 +106,16 @@ public class AppService {
 		return filtering.getFilteredDatabase();
 	}
 	/**
-	 * 
-	 * @return
+	 * Getters of the statistic attribute
+	 * @return the statistics
 	 */
 	public ArrayList<SingleStatistic> GetStats() {
 		return statistics;
 	}
 	/**
-	 * 
-	 * @return
+	 * Getters of the filtered statistics thanks to a string parameter "filter"
+	 * @param filter
+	 * @return the filtered statistics
 	 */
 	public ArrayList<SingleStatistic> GetStats(String filter) {
 		return statistics ;

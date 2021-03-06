@@ -7,27 +7,29 @@ package com.springboot.app.singledataclasses;
  */
 public class SingleStatistic {
 	/**
-	 * 
+	 * The string that identify the zone
 	 */
 	private String zone;
 	/**
-	 * 
+	 * The Report Date
 	 */
 	private DateTime date;
 	/**
-	 * 
+	 * The increment
 	 */
 	private int increment;
 	/**
-	 * 
+	 * The decrement
 	 */
 	private int decrement;
 	/**
-	 * 
+	 * The total number of records
 	 */
 	private int total;
 
 	/**
+	 * The SingleStatistic's constructor that required all the parameters to initialize
+	 * them
 	 * @param zone
 	 * @param data
 	 * @param increment
@@ -44,6 +46,7 @@ public class SingleStatistic {
 	}
 
 	/**
+	 * Getters of the zone
 	 * @return the zone
 	 */
 	public String getZone() {
@@ -51,6 +54,7 @@ public class SingleStatistic {
 	}
 
 	/**
+	 * Getters of the date's string
 	 * @return the date string
 	 */
 	public String getDate() {
@@ -58,7 +62,7 @@ public class SingleStatistic {
 	}
 
 	/**
-	 * 
+	 * Getters of the date's object
 	 * @return the date
 	 */
 	public DateTime getDate(boolean check) {
@@ -66,6 +70,7 @@ public class SingleStatistic {
 	}
 
 	/**
+	 * Getters of the increment
 	 * @return the increment
 	 */
 	public int getIncrement() {
@@ -73,6 +78,7 @@ public class SingleStatistic {
 	}
 
 	/**
+	 * Getters of the decrement
 	 * @return the decrement
 	 */
 	public int getDecrement() {
@@ -80,6 +86,7 @@ public class SingleStatistic {
 	}
 
 	/**
+	 * Getters of the total of records
 	 * @return the total
 	 */
 	public int getTotal() {

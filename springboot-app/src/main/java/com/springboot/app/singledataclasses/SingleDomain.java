@@ -69,7 +69,7 @@ public class SingleDomain {
 	/**
 	 * Getters of the createdate's string
 	 * 
-	 * @return the createdate
+	 * @return the createdate string
 	 */
 	public String getCreatedate() {
 		return createdate.toString();

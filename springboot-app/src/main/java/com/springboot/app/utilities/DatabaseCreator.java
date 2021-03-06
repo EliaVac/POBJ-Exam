@@ -23,6 +23,9 @@ import Errors.ConnectionProblem;
  * @author Elia Vaccarini
  */
 public class DatabaseCreator {
+	/**
+	 * The database
+	 */
 	private ArrayList<SingleDomain> database;
 
 	/**

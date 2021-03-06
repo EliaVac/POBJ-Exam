@@ -72,10 +72,25 @@ public class Controller {
  public ResponseEntity<Object> getdatabase(@RequestBody String filter) throws JSONProblem, JSONException, FilterProblem{
 	 return new ResponseEntity<Object>(service.GetDatabase(filter),HttpStatus.OK);
  }
+ /**
+  * The root associated with "/getstats" that permits to get the statistics
+  * @return the statistics
+  * @throws JSONProblem
+  * @throws JSONException
+  * @throws FilterProblem
+  */
  @GetMapping("/getstats")
  public ResponseEntity<Object> getstats() throws JSONProblem, JSONException, FilterProblem{
 	 return new ResponseEntity<Object>(service.GetStats(),HttpStatus.OK);
  }
+ /**
+  * The root associated with "/getstats" that permits to get the filtered statistics by the JSON parameter "filter" inserted
+  * @param filter
+  * @return the statistics
+  * @throws JSONProblem
+  * @throws JSONException
+  * @throws FilterProblem
+  */
  @PostMapping("/getstats")
  public ResponseEntity<Object> getstats(@RequestBody String filter) throws JSONProblem, JSONException, FilterProblem{
 	 return new ResponseEntity<Object>(service.GetStats(filter),HttpStatus.OK);
@@ -100,6 +115,11 @@ public class Controller {
 	 ErrorResponse er = new ErrorResponse(409,e.getMessage());
 	 return new ResponseEntity<ErrorResponse>(er,HttpStatus.CONFLICT);
  }
+ /**
+  * Exception handler for filter problems
+  * @param e
+  * @return the filter problem message
+  */
  @ExceptionHandler(FilterProblem.class)
  public final ResponseEntity<ErrorResponse> exceptionFilter(Exception e){
 	 ErrorResponse er = new ErrorResponse(409,e.getMessage());

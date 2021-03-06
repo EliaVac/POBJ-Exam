@@ -90,7 +90,7 @@ public class AllOperations {
 	}
 
 	/**
-	 * 
+	 * It's a method that verifies the filters' correct input and manages possible errors
 	 * @param toverify
 	 * @throws FilterProblem
 	 */
@@ -120,7 +120,7 @@ public class AllOperations {
 	}
 
 	/**
-	 * 
+	 * It's a method that verifies the correct date format and manages possible errors
 	 * @param tocheck
 	 * @throws FilterProblem
 	 */

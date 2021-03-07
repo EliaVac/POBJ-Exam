@@ -38,9 +38,10 @@ public class FiltersApply extends AllOperations {
 	 * @param database
 	 * @throws JSONProblem
 	 * @throws JSONException
-	 * @throws FilterProblem 
+	 * @throws FilterProblem
 	 */
-	public FiltersApply(String stringfilter, ArrayList<SingleDomain> database) throws JSONProblem, JSONException, FilterProblem {
+	public FiltersApply(String stringfilter, ArrayList<SingleDomain> database)
+			throws JSONProblem, JSONException, FilterProblem {
 		this.database = database;
 		filterslist = new ArrayList<SingleFilter>();
 		JSONArray filter = new JSONArray(stringfilter);
@@ -57,7 +58,7 @@ public class FiltersApply extends AllOperations {
 				throw new JSONProblem("Wrong filter convertion");
 			}
 
-			check(onefilter.getNames(onefilter),true);
+			check(onefilter.getNames(onefilter), true);
 			try {
 				country = onefilter.getString("country");
 			} catch (Exception e) {
@@ -72,17 +73,17 @@ public class FiltersApply extends AllOperations {
 					try {
 						year = date.getInt("year");
 					} catch (JSONException e) {
-						year=now.getYear();
+						year = now.getYear();
 					}
 					try {
 						month = date.getInt("month");
 					} catch (Exception e) {
-						month=now.getMonthValue();
+						month = now.getMonthValue();
 					}
 					try {
 						day = date.getInt("day");
 					} catch (Exception e) {
-						day=now.getDayOfMonth();
+						day = now.getDayOfMonth();
 					}
 					try {
 						hour = date.getInt("hour");
@@ -95,7 +96,7 @@ public class FiltersApply extends AllOperations {
 					times[j] = new DateTime(year, month, day, hour, minute);
 				} catch (Exception e) {
 				}
-				if(times[j]!=null)
+				if (times[j] != null)
 					CheckDate(times[j]);
 			}
 			try {

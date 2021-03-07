@@ -90,7 +90,9 @@ public class AllOperations {
 	}
 
 	/**
-	 * It's a method that verifies the filters' correct input and manages possible errors
+	 * It's a method that verifies the filters' correct input and manages possible
+	 * errors
+	 * 
 	 * @param toverify
 	 * @throws FilterProblem
 	 */
@@ -100,9 +102,10 @@ public class AllOperations {
 					"There's a filter without any field; check all the possible filters with the root: /getfilters");
 		}
 		String[] verified = { "country", "minimum_createtime", "maximum_createtime", "minimum_updatetime",
-				"maximum_updatetime", "isdead","zone","minimum_date","maximum_date","increment","decrement","total" };
-		int min=(typefilter?0:6);
-		int max=(typefilter?6:verified.length);
+				"maximum_updatetime", "isdead", "zone", "minimum_date", "maximum_date", "increment", "decrement",
+				"total" };
+		int min = (typefilter ? 0 : 6);
+		int max = (typefilter ? 6 : verified.length);
 		Boolean[] isthere = { false, false, false, false, false, false };
 		for (int i = 0; i < toverify.length; i++) {
 			boolean finish = true;
@@ -122,7 +125,9 @@ public class AllOperations {
 	}
 
 	/**
-	 * It's a method that verifies the correct date format and manages possible errors
+	 * It's a method that verifies the correct date format and manages possible
+	 * errors
+	 * 
 	 * @param tocheck
 	 * @throws FilterProblem
 	 */

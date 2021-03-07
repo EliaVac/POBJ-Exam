@@ -3,30 +3,34 @@ package Filtersmanagement;
 import com.springboot.app.singledataclasses.DateTime;
 
 /**
+ * The class contains attributes in order to represent a single statistic filter
+ * and methods to manage them
  * 
- * @author Federico
- *
+ * @author Federico Di Tullio
+ * @author Elia Vaccarini
  */
 public class SingleFilterStats {
 	/**
-	 * 
+	 * the string that identify the zone
 	 */
 	private String zone;
 	/**
-	 * 
+	 * the minimum date of records
 	 */
 	private DateTime minimun_date;
 	/**
-	 * 
+	 * the maximum date of records
 	 */
 	private DateTime maximum_date;
 
 	/**
-	 * 
+	 * the increment, the decrement and the total of records
 	 */
 	private int[] inc, dec, tot;
 
 	/**
+	 * The constructor requires all the parameters to initialize them
+	 * 
 	 * @param zone
 	 * @param minimun_date
 	 * @param maximum_date
@@ -46,6 +50,8 @@ public class SingleFilterStats {
 	}
 
 	/**
+	 * Getters of the string zone
+	 * 
 	 * @return the zone
 	 */
 	public String getZone() {
@@ -53,6 +59,8 @@ public class SingleFilterStats {
 	}
 
 	/**
+	 * Getters of the minimum date
+	 * 
 	 * @return the minimun_date
 	 */
 	public DateTime getMinimun_date() {
@@ -60,6 +68,8 @@ public class SingleFilterStats {
 	}
 
 	/**
+	 * Getters of the maximum date
+	 * 
 	 * @return the maximum_date
 	 */
 	public DateTime getMaximum_date() {
@@ -67,6 +77,8 @@ public class SingleFilterStats {
 	}
 
 	/**
+	 * Getters of the increment
+	 * 
 	 * @return the inc
 	 */
 	public int[] getInc() {
@@ -74,6 +86,8 @@ public class SingleFilterStats {
 	}
 
 	/**
+	 * Getters of the decrement
+	 * 
 	 * @return the dec
 	 */
 	public int[] getDec() {
@@ -81,6 +95,8 @@ public class SingleFilterStats {
 	}
 
 	/**
+	 * Getters of the total
+	 * 
 	 * @return the tot
 	 */
 	public int[] getTot() {

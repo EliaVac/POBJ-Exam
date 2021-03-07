@@ -14,21 +14,24 @@ import Errors.FilterProblem;
 import Errors.JSONProblem;
 
 /**
+ * Class management of statistics
  * 
- * @author Federico
- *
+ * @author Federico Di Tullio
+ * @author Elia Vaccarini
  */
 public class StatisticsApply extends AllOperations {
 	/**
-	 * 
+	 * the collection of statistics
 	 */
 	private ArrayList<SingleStatistic> collection;
 	/**
-	 * 
+	 * the list of all the filtered statistics given
 	 */
 	private ArrayList<SingleFilterStats> filterslist;
 
 	/**
+	 * Initialize the collection and add the recognized filters to the ArrayList
+	 * "filterslist"
 	 * 
 	 * @param stringfilter
 	 * @param collection

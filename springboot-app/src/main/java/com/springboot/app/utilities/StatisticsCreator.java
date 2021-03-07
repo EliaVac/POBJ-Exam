@@ -50,9 +50,9 @@ public class StatisticsCreator {
 			statisticObj = new JSONObject(content.toString());
 		}catch (IOException e) {
 			throw new ConnectionProblem("Error due to failure connection, necessary for the download");
-		} /*catch (JSONException e) {
+		} catch (JSONException e) {
 			throw new JSONException("Error due to failure conversion of the JSON downloaded");
-		}*/
+		}
 		try {
 			statistics= new ArrayList<SingleStatistic>();
 			JSONArray JSONstatistics = statisticObj.getJSONArray("statistics");

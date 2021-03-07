@@ -31,8 +31,8 @@ public class FiltersApply extends AllOperations {
 	private ArrayList<SingleDomain> database;
 
 	/**
-	 * Initialize the database add the recognized filters to the ArrayList
-	 * "filterlist"
+	 * Initialize the database and add the recognized filters to the ArrayList
+	 * "filterslist"
 	 * 
 	 * @param stringfilter
 	 * @param database

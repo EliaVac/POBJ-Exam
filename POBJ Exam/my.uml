@@ -388,6 +388,63 @@
       <ownedOperation xmi:id="_C0KS8HtOEeuxNYbOVKWwaw" name="getUpdatedateend"/>
       <ownedOperation xmi:id="_DPIXsHtOEeuxNYbOVKWwaw" name="isIsdead"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Veyv4H-dEeua1Zo20T8DuA" name="SingleFilterStats" visibility="public">
+      <ownedAttribute xmi:id="_lq388H-dEeua1Zo20T8DuA" name="zone" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lvNqYH-dEeua1Zo20T8DuA" name="minimum_date" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      <ownedAttribute xmi:id="_l0P7YH-dEeua1Zo20T8DuA" name="maximum_date" visibility="private" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+      <ownedAttribute xmi:id="_l5XE4H-dEeua1Zo20T8DuA" name="inc" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-m2SUH-dEeua1Zo20T8DuA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_l-CJgH-dEeua1Zo20T8DuA" name="dec" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J9LRYH-eEeua1Zo20T8DuA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_mCXP4H-dEeua1Zo20T8DuA" name="tot" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PKnmoH-eEeua1Zo20T8DuA" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_UCfUgH-eEeua1Zo20T8DuA" name="SingleFilterStats">
+        <ownedParameter xmi:id="_ZzzL0H-eEeua1Zo20T8DuA" name="zone">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_fi41kH-eEeua1Zo20T8DuA" name="minimum_date" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="_fzbzAH-eEeua1Zo20T8DuA" name="maximum_date" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+        <ownedParameter xmi:id="_gDirkH-eEeua1Zo20T8DuA" name="inc">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_gTVbEH-eEeua1Zo20T8DuA" name="dec">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_gr1aoH-eEeua1Zo20T8DuA" name="tot">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Uj8bwH-eEeua1Zo20T8DuA" name="getZone"/>
+      <ownedOperation xmi:id="_VrxmgH-eEeua1Zo20T8DuA" name="getMinimum_date"/>
+      <ownedOperation xmi:id="_V6bGgH-eEeua1Zo20T8DuA" name="getMaximum_date"/>
+      <ownedOperation xmi:id="_WGGyEH-eEeua1Zo20T8DuA" name="getInc"/>
+      <ownedOperation xmi:id="_WR7nkH-eEeua1Zo20T8DuA" name="getDec"/>
+      <ownedOperation xmi:id="_W6SBAH-eEeua1Zo20T8DuA" name="getTot"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cBWd8H-dEeua1Zo20T8DuA" name="StatisticsApply" visibility="public">
+      <ownedAttribute xmi:id="_JjABYH-fEeua1Zo20T8DuA" name="collection" visibility="private" type="_HBw1oH3cEeuwtqwVFElasg" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mv40IH-fEeua1Zo20T8DuA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QefM0H-fEeua1Zo20T8DuA" name="filterslist" visibility="private" type="_Veyv4H-dEeua1Zo20T8DuA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TBeG8H-fEeua1Zo20T8DuA" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_YhmusH-fEeua1Zo20T8DuA" name="StatisticsApply">
+        <ownedParameter xmi:id="_ci5Z4H-fEeua1Zo20T8DuA" name="stringfilter">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_cxzYkH-fEeua1Zo20T8DuA" name="collection" type="_HBw1oH3cEeuwtqwVFElasg" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jMsYYH-fEeua1Zo20T8DuA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ezCLEH3fEeuRorcQEqQ7ow" name="Filterproblem" visibility="public"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_Bd2hEH6gEeuAZZpTAUCIlg" memberEnd="_Bd3IIH6gEeuAZZpTAUCIlg _Bd3IIX6gEeuAZZpTAUCIlg">

@@ -38,7 +38,7 @@ public class SingleFilterStats {
 	 * @param dec
 	 * @param tot
 	 */
-	public SingleFilterStats(String zone, DateTime minimun_date, DateTime maximum_date, int[] inc, int[] dec,
+	public SingleFilterStats(String zone, DateTime minimum_date, DateTime maximum_date, int[] inc, int[] dec,
 			int[] tot) {
 		super();
 		this.zone = zone;
@@ -63,7 +63,7 @@ public class SingleFilterStats {
 	 * 
 	 * @return the minimun_date
 	 */
-	public DateTime getMinimun_date() {
+	public DateTime getMinimum_date() {
 		return minimun_date;
 	}
 

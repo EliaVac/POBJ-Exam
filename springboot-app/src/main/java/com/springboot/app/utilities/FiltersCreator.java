@@ -74,7 +74,7 @@ public class FiltersCreator {
 		possiblefilter.filterscollection.put("isdead", "Identify is the domain is still alive: Alive or Dead");
 		possiblefilter.filterStatIntroduction="A simply filter for statistic can be described by:";
 		possiblefilter.filtersStatcollection = new HashMap<String, String>();
-		possiblefilter.filtersStatcollection.put("1", "a");
+		possiblefilter.filtersStatcollection.put("2", "a");
 		possiblefilter.filtersStatcollection.put("2", "b");
 		possiblefilter.filtersStatcollection.put("3", "c");
 		possiblefilter.filtersStatcollection.put("4", "d");

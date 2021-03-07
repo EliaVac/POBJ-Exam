@@ -11,6 +11,7 @@ import com.springboot.app.singledataclasses.SingleDomain;
 import com.springboot.app.singledataclasses.SingleStatistic;
 import com.springboot.app.utilities.DatabaseCreator;
 import com.springboot.app.utilities.FiltersCreator;
+import com.springboot.app.utilities.FiltersCreator.PossibleFilter;
 import com.springboot.app.utilities.KeyWordsCreator;
 import com.springboot.app.utilities.StatisticsCreator;
 
@@ -30,7 +31,7 @@ public class AppService {
 	/**
 	 * the possible filters collection
 	 */
-	private HashMap<String, String> possiblefilters;
+	private PossibleFilter possiblefilters;
 	/**
 	 * the database
 	 */
@@ -67,7 +68,7 @@ public class AppService {
 	 * 
 	 * @return the possible filters collection
 	 */
-	public HashMap<String, String> GetPossibleFilters() {
+	public PossibleFilter GetPossibleFilters() {
 		return possiblefilters;
 	}
 
@@ -118,6 +119,7 @@ public class AppService {
 	 * @return the filtered statistics
 	 */
 	public ArrayList<SingleStatistic> GetStats(String filter) {
+		
 		return statistics ;
 	}
 

@@ -48,8 +48,8 @@ public class Controller {
   * @return the class that contains the filters
   */
  @GetMapping("/getfilters")
- public ResponseEntity<HashMap> getfilters(){
-	return new ResponseEntity<HashMap>(service.GetPossibleFilters(),HttpStatus.OK);
+ public ResponseEntity<Object> getfilters(){
+	return new ResponseEntity<Object>(service.GetPossibleFilters(),HttpStatus.OK);
  }
  /**
   * The root associated with "/getdatabase" that permits to get database 

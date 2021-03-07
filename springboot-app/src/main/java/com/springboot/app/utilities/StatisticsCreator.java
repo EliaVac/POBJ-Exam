@@ -37,7 +37,7 @@ public class StatisticsCreator {
 		JSONObject statisticObj = null;
 		StringBuilder content = new StringBuilder();
 		try {
-			URL url = new URL("https://api.domainsdb.info/v1/info/stat");
+			URL url = new URL("https://api.domainsdb.info/v1/info/stat/?zone=bundle_all_zones</a");
 			URLConnection urlConnection = url.openConnection();
 			BufferedReader br = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
 			String line;
@@ -50,7 +50,7 @@ public class StatisticsCreator {
 			statisticObj = new JSONObject(content.toString());
 		}catch (IOException e) {
 			throw new ConnectionProblem("Error due to failure connection, necessary for the download");
-		/*} catch (JSONException e) {
+		} /*catch (JSONException e) {
 			throw new JSONException("Error due to failure conversion of the JSON downloaded");
 		}*/
 		try {
@@ -65,7 +65,7 @@ public class StatisticsCreator {
 				String zone = (String) ((JSONObject) JSONstatistics.get(i)).get("zone");
 				int dec=((JSONObject) JSONstatistics.get(i)).getInt("dec");
 				int inc=((JSONObject) JSONstatistics.get(i)).getInt("inc");
-				int tot=((JSONObject) JSONstatistics.get(i)).getInt("tot");
+				int tot=((JSONObject) JSONstatistics.get(i)).getInt("total");
 				SingleStatistic toadd = new SingleStatistic(zone,date,inc,dec,tot);
 				statistics.add(toadd);
 			}
@@ -76,9 +76,9 @@ public class StatisticsCreator {
 	}
 
 	/**
-	 * Getters of the database attribute
+	 * Getters of the statistics attribute
 	 * 
-	 * @return the database
+	 * @return the statistics
 	 */
 	public ArrayList<SingleStatistic> getStats() {
 		return statistics;

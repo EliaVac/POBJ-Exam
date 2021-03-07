@@ -57,7 +57,7 @@ public class FiltersApply extends AllOperations {
 				throw new JSONProblem("Wrong filter convertion");
 			}
 
-			check(onefilter.getNames(onefilter));
+			check(onefilter.getNames(onefilter),true);
 			try {
 				country = onefilter.getString("country");
 			} catch (Exception e) {

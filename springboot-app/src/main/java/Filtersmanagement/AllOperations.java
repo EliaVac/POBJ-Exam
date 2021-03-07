@@ -94,17 +94,19 @@ public class AllOperations {
 	 * @param toverify
 	 * @throws FilterProblem
 	 */
-	protected void check(String[] toverify) throws FilterProblem {
+	protected void check(String[] toverify, boolean typefilter) throws FilterProblem {
 		if (toverify == null) {
 			throw new FilterProblem(
 					"There's a filter without any field; check all the possible filters with the root: /getfilters");
 		}
 		String[] verified = { "country", "minimum_createtime", "maximum_createtime", "minimum_updatetime",
-				"maximum_updatetime", "isdead" };
+				"maximum_updatetime", "isdead","zone","minimum_date","maximum_date","increment","decrement","total" };
+		int min=(typefilter?0:6);
+		int max=(typefilter?6:verified.length);
 		Boolean[] isthere = { false, false, false, false, false, false };
 		for (int i = 0; i < toverify.length; i++) {
 			boolean finish = true;
-			for (int j = 0; j < 6 && finish; j++) {
+			for (int j = min; j < max && finish; j++) {
 				if (verified[j].compareTo(toverify[i]) == 0) {
 					finish = false;
 					if (isthere[j] == true)

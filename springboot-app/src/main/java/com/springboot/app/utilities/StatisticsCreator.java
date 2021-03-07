@@ -32,12 +32,12 @@ public class StatisticsCreator {
 	 * @throws ConnectionProblem
 	 * @throws JSONException
 	 */
-	public StatisticsCreator() throws ConnectionProblem, JSONException {
+	public StatisticsCreator(String paramzone) throws ConnectionProblem, JSONException {
 		super();
 		JSONObject statisticObj = null;
 		StringBuilder content = new StringBuilder();
 		try {
-			URL url = new URL("https://api.domainsdb.info/v1/info/stat/?zone=bundle_all_zones</a");
+			URL url = new URL("https://api.domainsdb.info/v1/info/stat/?zone="+paramzone+"</a");
 			URLConnection urlConnection = url.openConnection();
 			BufferedReader br = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
 			String line;

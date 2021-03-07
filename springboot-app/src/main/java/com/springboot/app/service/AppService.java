@@ -59,7 +59,7 @@ public class AppService {
 		database = datacreator.getDatabase();
 		KeyWordsCreator keywordscollector = new KeyWordsCreator();
 		possiblekeywords = keywordscollector.GetKeyWordsCollection();
-		StatisticsCreator statisticscollector = new StatisticsCreator();
+		StatisticsCreator statisticscollector = new StatisticsCreator("bundle_all_zones");
 		statistics = statisticscollector.getStats();
 	}
 

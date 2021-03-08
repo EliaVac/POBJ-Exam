@@ -801,7 +801,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_O9OIwntJEeuxNYbOVKWwaw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_O9JQQXtJEeuxNYbOVKWwaw" fontName="Segoe UI" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O9JQQntJEeuxNYbOVKWwaw" x="12" y="2940" width="516" height="1161"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O9JQQntJEeuxNYbOVKWwaw" x="12" y="2940" width="516" height="1155"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_h1sAgH6fEeuAZZpTAUCIlg" type="2001" element="_hre7oH6fEeuAZZpTAUCIlg">
           <children xmi:type="notation:Node" xmi:id="_h1snkH6fEeuAZZpTAUCIlg" type="5002">

@@ -108,7 +108,7 @@ public class Controller {
 	 * @throws JSONProblem
 	 * @throws JSONException
 	 * @throws FilterProblem
-	 * @throws ConnectionProblem 
+	 * @throws ConnectionProblem
 	 */
 	@PostMapping("/getstats")
 	public ResponseEntity<Object> getstats(@RequestBody String filter)

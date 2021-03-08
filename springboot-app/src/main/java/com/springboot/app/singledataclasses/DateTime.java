@@ -1,7 +1,7 @@
 package com.springboot.app.singledataclasses;
 
 /**
- * Rappresentation of a date type
+ * Representation of a date type
  * 
  * @author Elia Vaccarini
  * @author Federico Di Tullio
@@ -70,7 +70,7 @@ public class DateTime {
 	}
 
 	/**
-	 * This function compare two DateTime
+	 * This function compares two DateTime
 	 * 
 	 * @param filterdate
 	 * @return true if the object's date is bigger than the argument's date
@@ -92,7 +92,7 @@ public class DateTime {
 	}
 
 	/**
-	 * This function compare two DateTime
+	 * This function compares two DateTime
 	 * 
 	 * @param filterdate
 	 * @return true if the object's date is lower than the argument's date

@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import com.springboot.app.singledataclasses.DateTime;
 
 /**
- * Describe a generic error
+ * This class describes a generic error
  * 
  * @author Elia Vaccarini
  * @author Federico Di Tullio
@@ -25,7 +25,7 @@ public class ErrorResponse {
 	private DateTime datetime;
 
 	/**
-	 * Initialize the ErrorResponse class with the parameters
+	 * The constructor initializes the ErrorResponse class with the parameters
 	 * 
 	 * @param errorcode
 	 * @param message

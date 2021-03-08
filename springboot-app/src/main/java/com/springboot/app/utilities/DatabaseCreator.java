@@ -79,7 +79,7 @@ public class DatabaseCreator {
 						Integer.parseInt(firstpart[2]), Integer.parseInt(secondpart[0]),
 						Integer.parseInt(secondpart[1]));
 				boolean isdead = false;
-				if (((String) ((JSONObject) domains.get(i)).get("isDead")).compareTo("True") == 0)
+				if (((String) ((JSONObject) domains.get(i)).get("isDead")).compareToIgnoreCase("True") == 0)
 					isdead = true;
 				SingleDomain toadd = new SingleDomain(domain, country, start, update, isdead);
 				database.add(toadd);

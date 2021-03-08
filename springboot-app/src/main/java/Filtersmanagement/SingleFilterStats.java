@@ -17,7 +17,7 @@ public class SingleFilterStats{
 	/**
 	 * the minimum date of records
 	 */
-	private DateTime minimun_date;
+	private DateTime minimum_date;
 	/**
 	 * the maximum date of records
 	 */
@@ -42,7 +42,7 @@ public class SingleFilterStats{
 			int[] tot) {
 		super();
 		this.zone = zone;
-		this.minimun_date = minimun_date;
+		this.minimum_date = minimum_date;
 		this.maximum_date = maximum_date;
 		this.inc = inc;
 		this.dec = dec;
@@ -64,7 +64,7 @@ public class SingleFilterStats{
 	 * @return the minimun_date
 	 */
 	public DateTime getMinimum_date() {
-		return minimun_date;
+		return minimum_date;
 	}
 
 	/**

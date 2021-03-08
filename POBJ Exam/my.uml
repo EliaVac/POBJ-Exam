@@ -110,6 +110,24 @@
       <ownedOperation xmi:id="_rr2GAH3eEeuwtqwVFElasg" name="StatisticsCreator"/>
       <ownedOperation xmi:id="_vLutQH3eEeuwtqwVFElasg" name="getStats"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Aes6oIA0EeuaetIPuMfJIQ" name="PossibleFilter" visibility="private">
+      <ownedAttribute xmi:id="_PE3SwIA0EeuaetIPuMfJIQ" name="filterIntroduction" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QMfCIIA0EeuaetIPuMfJIQ" name="filterscollection" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EMap"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QSGh8IA0EeuaetIPuMfJIQ" name="filtersStatIntroduction" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QW3tMIA0EeuaetIPuMfJIQ" name="filterStatcollection" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EMap"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_yrhCIIA0EeuaetIPuMfJIQ" name="getFilterIntroduction"/>
+      <ownedOperation xmi:id="_zB46wIA0EeuaetIPuMfJIQ" name="getFilterscollection"/>
+      <ownedOperation xmi:id="__DiHsIA0EeuaetIPuMfJIQ" name="getFiltersStatcollection"/>
+      <ownedOperation xmi:id="__YrRQIA0EeuaetIPuMfJIQ" name="getFilterStatIntroduction"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_i_tYYHXzEeuMHOX924W5Xg" name="singledataclasses">
     <packagedElement xmi:type="uml:Class" xmi:id="_njmaUHXzEeuMHOX924W5Xg" name="SingleDomain" visibility="public">
@@ -513,7 +531,7 @@
     <ownedEnd xmi:id="_nIAGQH9xEeuk7Jyq0NgGJQ" type="_DmR6MH9xEeuk7Jyq0NgGJQ" association="_nH_fMH9xEeuk7Jyq0NgGJQ"/>
     <ownedEnd xmi:id="_nIAGQX9xEeuk7Jyq0NgGJQ" type="_c6_fsH9xEeuk7Jyq0NgGJQ" association="_nH_fMH9xEeuk7Jyq0NgGJQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_n4YaUH9xEeuk7Jyq0NgGJQ" memberEnd="_n4YaUX9xEeuk7Jyq0NgGJQ _n4YaUn9xEeuk7Jyq0NgGJQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_n4YaUH9xEeuk7Jyq0NgGJQ" name="A_dATABASE_/getdatabse(filtered)" memberEnd="_n4YaUX9xEeuk7Jyq0NgGJQ _n4YaUn9xEeuk7Jyq0NgGJQ">
     <ownedEnd xmi:id="_n4YaUX9xEeuk7Jyq0NgGJQ" type="_DmR6MH9xEeuk7Jyq0NgGJQ" association="_n4YaUH9xEeuk7Jyq0NgGJQ"/>
     <ownedEnd xmi:id="_n4YaUn9xEeuk7Jyq0NgGJQ" type="_d8-hIH9xEeuk7Jyq0NgGJQ" association="_n4YaUH9xEeuk7Jyq0NgGJQ"/>
   </packagedElement>

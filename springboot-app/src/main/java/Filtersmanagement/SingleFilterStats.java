@@ -24,7 +24,7 @@ public class SingleFilterStats {
 	private DateTime maximum_date;
 
 	/**
-	 * the increment, the decrement and the total of records
+	 * the increment, the decrement and the total range of records
 	 */
 	private int[] inc, dec, tot;
 
@@ -77,7 +77,7 @@ public class SingleFilterStats {
 	}
 
 	/**
-	 * Getters of the increment
+	 * Getters of the increment range
 	 * 
 	 * @return the inc
 	 */
@@ -86,7 +86,7 @@ public class SingleFilterStats {
 	}
 
 	/**
-	 * Getters of the decrement
+	 * Getters of the decrement range
 	 * 
 	 * @return the dec
 	 */
@@ -95,7 +95,7 @@ public class SingleFilterStats {
 	}
 
 	/**
-	 * Getters of the total
+	 * Getters of the total range
 	 * 
 	 * @return the tot
 	 */

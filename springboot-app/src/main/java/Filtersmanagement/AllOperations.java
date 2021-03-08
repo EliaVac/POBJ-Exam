@@ -27,7 +27,7 @@ public class AllOperations {
 	protected ArrayList<SingleDomain> CountryFilter(ArrayList<SingleDomain> database, String filtercountry) {
 			ArrayList<SingleDomain> filtered= new ArrayList<SingleDomain>();
 			for (int i = 0; i < database.size(); i++) {
-				if (database.get(i).getCountry().compareTo(filtercountry) == 0)
+				if (database.get(i).getCountry().compareToIgnoreCase(filtercountry) == 0)
 					filtered.add(database.get(i));
 			}
 			return filtered;
@@ -35,7 +35,7 @@ public class AllOperations {
 	protected ArrayList<SingleStatistic> ZoneFilter(ArrayList<SingleStatistic> collection, String filtercountry) {
 		ArrayList<SingleStatistic> filtered= new ArrayList<SingleStatistic>();
 		for (int i = 0; i < collection.size(); i++) {
-			if (collection.get(i).getZone().compareTo(filtercountry) == 0)
+			if (collection.get(i).getZone().compareToIgnoreCase(filtercountry) == 0)
 				filtered.add(collection.get(i));
 		}
 		return filtered;
@@ -184,8 +184,19 @@ public class AllOperations {
 			throw new FilterProblem("You have setted an unexisting minute: " + minute);
 		}
 	}
-	protected ArrayList<SingleStatistic> IntFilter(ArrayList<SingleStatistic> temp, int i, int j) {
-		// TODO Auto-generated method stub
-		return null;
+	protected ArrayList<SingleStatistic> IntFilter(ArrayList<SingleStatistic> collection, int min, int max, int field) {
+		ArrayList<SingleStatistic> filtered = new ArrayList<SingleStatistic>();
+		for (int i = 0; i < collection.size(); i++) {
+			int num=0;
+			if(field==1)
+				num=collection.get(i).getIncrement();
+			else if(field==2)
+				num=collection.get(i).getDecrement();
+			else if(field==3)
+				num=collection.get(i).getTotal();
+			if (num>=min&&num<=max)
+				filtered.add(collection.get(i));
+		}
+		return filtered;
 	}
 }

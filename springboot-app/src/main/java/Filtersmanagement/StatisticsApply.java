@@ -115,6 +115,8 @@ public class StatisticsApply extends AllOperations {
 						val[k][1] = Integer.MAX_VALUE;
 					}
 				} catch (JSONException e) {
+					val[k][0]=0;
+					val[k][1]=Integer.MAX_VALUE;
 				}
 			}
 			SingleFilterStats toadd = new SingleFilterStats(zone, times[0], times[1], val[0], val[1], val[2]);
@@ -125,7 +127,7 @@ public class StatisticsApply extends AllOperations {
 
 	public ArrayList<SingleStatistic> getFilteredStatistic() throws ConnectionProblem, JSONException {
 		ArrayList<SingleStatistic> filteredstatistic = new ArrayList<SingleStatistic>();
-		ArrayList<SingleStatistic> temp = collection; // arraylist appoggio
+		ArrayList<SingleStatistic> temp; // arraylist appoggio
 		ArrayList<String> imported = new ArrayList<String>();
 		for (int i = 0; i < filterslist.size(); i++) {
 			if (filterslist.get(i).getZone() != null && filterslist.get(i).getZone().compareTo("bundle_all_zones") != 0) {
@@ -138,7 +140,7 @@ public class StatisticsApply extends AllOperations {
 					try {
 						imported.add(filterslist.get(i).getZone());
 						StatisticsCreator downloadstats = new StatisticsCreator(filterslist.get(i).getZone());
-						temp.addAll(downloadstats.getStats());
+						collection.addAll(downloadstats.getStats());
 					} catch (ConnectionProblem e) {
 						throw new ConnectionProblem("The requested zone " + filterslist.get(i).getZone()
 								+ " can not be managed by the service.");
@@ -146,6 +148,7 @@ public class StatisticsApply extends AllOperations {
 			}
 		}
 		for (int i = 0; i < filterslist.size(); i++) {
+			temp=collection;
 			if (filterslist.get(i).getZone() != null)
 				temp = ZoneFilter(temp, filterslist.get(i).getZone());
 			if (filterslist.get(i).getMinimum_date() != null)
@@ -153,11 +156,11 @@ public class StatisticsApply extends AllOperations {
 			if (filterslist.get(i).getMaximum_date() != null)
 				temp = DateFilter(temp, filterslist.get(i).getMaximum_date(), false);
 			if (filterslist.get(i).getTot() != null)
-				temp = IntFilter(temp, filterslist.get(i).getTot()[0], filterslist.get(i).getTot()[1]);
+				temp = IntFilter(temp, filterslist.get(i).getTot()[0], filterslist.get(i).getTot()[1],1);
 			if (filterslist.get(i).getInc() != null)
-				temp = IntFilter(temp, filterslist.get(i).getInc()[0], filterslist.get(i).getInc()[1]);
+				temp = IntFilter(temp, filterslist.get(i).getInc()[0], filterslist.get(i).getInc()[1],2);
 			if (filterslist.get(i).getDec() != null)
-				temp = IntFilter(temp, filterslist.get(i).getDec()[0], filterslist.get(i).getDec()[1]);
+				temp = IntFilter(temp, filterslist.get(i).getDec()[0], filterslist.get(i).getDec()[1],3);
 			if(temp!=null)
 				for (int j = 0; j < temp.size(); j++) {
 					filteredstatistic.add(temp.get(j));

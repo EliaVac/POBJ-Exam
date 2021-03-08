@@ -37,7 +37,7 @@ public class StatisticsCreator {
 		JSONObject statisticObj = null;
 		StringBuilder content = new StringBuilder();
 		try {
-			URL url = new URL("https://api.domainsdb.info/v1/info/stat/?zone="+paramzone+"</a");
+			URL url = new URL("https://api.domainsdb.info/v1/info/stat/"+paramzone+"?limit=200");
 			URLConnection urlConnection = url.openConnection();
 			BufferedReader br = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
 			String line;

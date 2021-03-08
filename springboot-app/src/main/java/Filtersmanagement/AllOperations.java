@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import com.springboot.app.singledataclasses.DateTime;
 import com.springboot.app.singledataclasses.SingleDomain;
+import com.springboot.app.singledataclasses.SingleStatistic;
 
 import Errors.FilterProblem;
 
@@ -68,6 +69,23 @@ public class AllOperations {
 				}
 			}
 		}
+		return filtered;
+	}
+
+	/**
+	 * 
+	 */
+	protected ArrayList<SingleStatistic> DateFilter(ArrayList<SingleStatistic> collection, DateTime filterdate,
+			boolean operation) {
+		ArrayList<SingleStatistic> filtered = new ArrayList<SingleStatistic>();
+		if (operation) {
+			for (int i = 0; i < collection.size(); i++)
+				if (collection.get(i).getDate(true).BiggerThan(filterdate))
+					filtered.add(collection.get(i));
+		} else
+			for (int i = 0; i < collection.size(); i++)
+				if (collection.get(i).getDate(true).LowerThan(filterdate))
+					filtered.add(collection.get(i));
 		return filtered;
 	}
 

@@ -16,7 +16,7 @@ import com.springboot.app.singledataclasses.SingleStatistic;
 
 import Errors.ConnectionProblem;
 /**
- *  The class sets up a collection of statistics and allows the reading of this
+ * The class sets up a collection of statistics and allows the reading of this
  * @author Federico Di Tullio
  * @author Elia Vaccarini
  */
@@ -76,7 +76,7 @@ public class StatisticsCreator {
 	}
 
 	/**
-	 * Getters of the statistics attribute
+	 * Getters of the statistic attribute
 	 * 
 	 * @return the statistics
 	 */

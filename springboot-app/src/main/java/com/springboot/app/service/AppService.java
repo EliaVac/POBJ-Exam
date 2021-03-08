@@ -92,7 +92,6 @@ public class AppService {
 		return possiblekeywords;
 	}
 
-
 	/**
 	 * Getters of the filtered database thanks to a string parameter "filter"
 	 * 
@@ -100,33 +99,38 @@ public class AppService {
 	 * @return the filtered database
 	 * @throws JSONProblem
 	 * @throws JSONException
-	 * @throws FilterProblem 
+	 * @throws FilterProblem
 	 */
 
 	public ArrayList<SingleDomain> GetDatabase(String filter) throws JSONProblem, JSONException, FilterProblem {
 		FiltersApply filtering = new FiltersApply(filter, database);
 		return filtering.getFilteredDatabase();
 	}
+
 	/**
 	 * Getters of the statistic attribute
+	 * 
 	 * @return the statistics
 	 */
 	public ArrayList<SingleStatistic> GetStats() {
 		return statistics;
 	}
+
 	/**
 	 * Getters of the filtered statistics thanks to a string parameter "filter"
+	 * 
 	 * @param filter
 	 * @return the filtered statistics
-	 * @throws JSONProblem 
-	 * @throws FilterProblem 
-	 * @throws JSONException 
-	 * @throws ConnectionProblem 
+	 * @throws JSONProblem
+	 * @throws FilterProblem
+	 * @throws JSONException
+	 * @throws ConnectionProblem
 	 */
-	public ArrayList<SingleStatistic> GetStats(String filter) throws JSONException, FilterProblem, JSONProblem, ConnectionProblem {
+	public ArrayList<SingleStatistic> GetStats(String filter)
+			throws JSONException, FilterProblem, JSONProblem, ConnectionProblem {
 		StatisticsApply filtering = new StatisticsApply(filter, statistics);
-		
-		return filtering.getFilteredStatistic() ;
+
+		return filtering.getFilteredStatistic();
 	}
 
 }

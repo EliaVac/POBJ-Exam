@@ -10,7 +10,7 @@ package com.springboot.app.singledataclasses;
 
 public class SingleDomain {
 	/**
-	 * the string that identify the domain
+	 * the string that identifies the domain
 	 */
 	private String domain;
 	/**

@@ -8,12 +8,12 @@ package Errors;
  */
 public class FilterProblem extends Exception {
 	/**
-	 * The string that identify the message
+	 * The string that identifies the message
 	 */
 	private String message;
 
 	/**
-	 * Initialize the message attribute
+	 * The constructor initializes the message attribute
 	 * 
 	 * @param message
 	 */
@@ -22,7 +22,7 @@ public class FilterProblem extends Exception {
 	}
 
 	/**
-	 * Getter of the message
+	 * Getters of the message
 	 * 
 	 * @return the message
 	 */

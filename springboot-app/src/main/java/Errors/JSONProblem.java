@@ -8,7 +8,7 @@ package Errors;
  */
 public class JSONProblem extends Exception {
 	/**
-	 * The string that identify the message
+	 * The string that identifies the message
 	 */
 	private String message;
 

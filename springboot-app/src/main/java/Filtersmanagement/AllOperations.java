@@ -10,7 +10,7 @@ import com.springboot.app.singledataclasses.SingleStatistic;
 import Errors.FilterProblem;
 
 /**
- * Define all possible filtering operations
+ * This class defines all possible filtering operations
  * 
  * @author Elia Vaccarini
  * @author Federico Di Tullio
@@ -25,21 +25,31 @@ public class AllOperations {
 	 * @return the filtered ArrayList
 	 */
 	protected ArrayList<SingleDomain> CountryFilter(ArrayList<SingleDomain> database, String filtercountry) {
-			ArrayList<SingleDomain> filtered= new ArrayList<SingleDomain>();
-			for (int i = 0; i < database.size(); i++) {
-				if (database.get(i).getCountry().compareToIgnoreCase(filtercountry) == 0)
-					filtered.add(database.get(i));
-			}
-			return filtered;
+		ArrayList<SingleDomain> filtered = new ArrayList<SingleDomain>();
+		for (int i = 0; i < database.size(); i++) {
+			if (database.get(i).getCountry().compareToIgnoreCase(filtercountry) == 0)
+				filtered.add(database.get(i));
+		}
+		return filtered;
 	}
+
+	/**
+	 * Returns an ArrayList built by all elements of the statistic collection that
+	 * have an attribute zone equals to parameters filtercountry
+	 * 
+	 * @param collection
+	 * @param filtercountry
+	 * @return the filtered ArrayList
+	 */
 	protected ArrayList<SingleStatistic> ZoneFilter(ArrayList<SingleStatistic> collection, String filtercountry) {
-		ArrayList<SingleStatistic> filtered= new ArrayList<SingleStatistic>();
+		ArrayList<SingleStatistic> filtered = new ArrayList<SingleStatistic>();
 		for (int i = 0; i < collection.size(); i++) {
 			if (collection.get(i).getZone().compareToIgnoreCase(filtercountry) == 0)
 				filtered.add(collection.get(i));
 		}
 		return filtered;
-}
+	}
+
 	/**
 	 * Returns an ArrayList built by all elements of the database that satisfy the
 	 * date comparison condition specified by the parameters
@@ -79,14 +89,17 @@ public class AllOperations {
 		return filtered;
 	}
 
-/**
- * 
- * @param collection
- * @param filterdate
- * @param operation
- * @return
- */
-	protected ArrayList<SingleStatistic> DateFilter(ArrayList<SingleStatistic> collection, DateTime filterdate, boolean operation) {
+	/**
+	 * Returns an ArrayList built by all elements of the statistic collection that
+	 * satisfy the date comparison condition specified by the parameters
+	 * 
+	 * @param collection
+	 * @param filterdate
+	 * @param operation
+	 * @return
+	 */
+	protected ArrayList<SingleStatistic> DateFilter(ArrayList<SingleStatistic> collection, DateTime filterdate,
+			boolean operation) {
 		ArrayList<SingleStatistic> filtered = new ArrayList<SingleStatistic>();
 		if (operation) {
 			for (int i = 0; i < collection.size(); i++)
@@ -134,11 +147,11 @@ public class AllOperations {
 				"total" };
 		int min = (typefilter ? 0 : 6);
 		int max = (typefilter ? 6 : verified.length);
-		Boolean[] isthere = { false, false, false, false, false, false,false,false,false,false,false,false };
+		Boolean[] isthere = { false, false, false, false, false, false, false, false, false, false, false, false };
 		for (int i = 0; i < toverify.length; i++) {
 			boolean finish = true;
 			for (int j = min; j < max && finish; j++) {
-				if (verified[j].compareTo(toverify[i]) == 0) {
+				if (verified[j].compareToIgnoreCase(toverify[i]) == 0) {
 					finish = false;
 					if (isthere[j] == true)
 						throw new FilterProblem("The field " + verified[j] + " has been written more times");
@@ -184,17 +197,18 @@ public class AllOperations {
 			throw new FilterProblem("You have setted an unexisting minute: " + minute);
 		}
 	}
+
 	protected ArrayList<SingleStatistic> IntFilter(ArrayList<SingleStatistic> collection, int min, int max, int field) {
 		ArrayList<SingleStatistic> filtered = new ArrayList<SingleStatistic>();
 		for (int i = 0; i < collection.size(); i++) {
-			int num=0;
-			if(field==1)
-				num=collection.get(i).getIncrement();
-			else if(field==2)
-				num=collection.get(i).getDecrement();
-			else if(field==3)
-				num=collection.get(i).getTotal();
-			if (num>=min&&num<=max)
+			int num = 0;
+			if (field == 1)
+				num = collection.get(i).getIncrement();
+			else if (field == 2)
+				num = collection.get(i).getDecrement();
+			else if (field == 3)
+				num = collection.get(i).getTotal();
+			if (num >= min && num <= max)
 				filtered.add(collection.get(i));
 		}
 		return filtered;

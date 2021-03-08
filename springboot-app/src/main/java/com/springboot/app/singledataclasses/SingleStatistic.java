@@ -9,7 +9,7 @@ package com.springboot.app.singledataclasses;
  */
 public class SingleStatistic {
 	/**
-	 * The string that identify the zone
+	 * The string that identifies the zone
 	 */
 	private String zone;
 	/**
@@ -30,7 +30,7 @@ public class SingleStatistic {
 	private int total;
 
 	/**
-	 * The SingleStatistic's constructor that required all the parameters to
+	 * The SingleStatistic's constructor that requires all the parameters to
 	 * initialize them
 	 * 
 	 * @param zone
@@ -76,7 +76,7 @@ public class SingleStatistic {
 	}
 
 	/**
-	 * Getters of the increment
+	 * Getters of the increment range
 	 * 
 	 * @return the increment
 	 */
@@ -85,7 +85,7 @@ public class SingleStatistic {
 	}
 
 	/**
-	 * Getters of the decrement
+	 * Getters of the decrement range
 	 * 
 	 * @return the decrement
 	 */
@@ -94,7 +94,7 @@ public class SingleStatistic {
 	}
 
 	/**
-	 * Getters of the total of records
+	 * Getters of the total range
 	 * 
 	 * @return the total
 	 */

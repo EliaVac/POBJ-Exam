@@ -11,7 +11,7 @@ import com.springboot.app.singledataclasses.DateTime;
  */
 public class SingleFilter {
 	/**
-	 * the string that identify country
+	 * the string that identifies country
 	 */
 	private String country;
 	/**
@@ -31,7 +31,7 @@ public class SingleFilter {
 	 */
 	private DateTime updatedateend;
 	/**
-	 * the filter's condition of the domain's state, if true it's dead, else is
+	 * the filter's condition of the domain's state, if true it's dead, else it is
 	 * alive
 	 */
 	private int isdead;

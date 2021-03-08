@@ -25,14 +25,21 @@ public class AllOperations {
 	 * @return the filtered ArrayList
 	 */
 	protected ArrayList<SingleDomain> CountryFilter(ArrayList<SingleDomain> database, String filtercountry) {
-		ArrayList<SingleDomain> filtered = new ArrayList<SingleDomain>();
-		for (int i = 0; i < database.size(); i++) {
-			if (database.get(i).getCountry().compareTo(filtercountry) == 0)
-				filtered.add(database.get(i));
+			ArrayList<SingleDomain> filtered= new ArrayList<SingleDomain>();
+			for (int i = 0; i < database.size(); i++) {
+				if (database.get(i).getCountry().compareTo(filtercountry) == 0)
+					filtered.add(database.get(i));
+			}
+			return filtered;
+	}
+	protected ArrayList<SingleStatistic> ZoneFilter(ArrayList<SingleStatistic> collection, String filtercountry) {
+		ArrayList<SingleStatistic> filtered= new ArrayList<SingleStatistic>();
+		for (int i = 0; i < collection.size(); i++) {
+			if (collection.get(i).getZone().compareTo(filtercountry) == 0)
+				filtered.add(collection.get(i));
 		}
 		return filtered;
-	}
-
+}
 	/**
 	 * Returns an ArrayList built by all elements of the database that satisfy the
 	 * date comparison condition specified by the parameters
@@ -72,11 +79,14 @@ public class AllOperations {
 		return filtered;
 	}
 
-	/**
-	 * 
-	 */
-	protected ArrayList<SingleStatistic> DateFilter(ArrayList<SingleStatistic> collection, DateTime filterdate,
-			boolean operation) {
+/**
+ * 
+ * @param collection
+ * @param filterdate
+ * @param operation
+ * @return
+ */
+	protected ArrayList<SingleStatistic> DateFilter(ArrayList<SingleStatistic> collection, DateTime filterdate, boolean operation) {
 		ArrayList<SingleStatistic> filtered = new ArrayList<SingleStatistic>();
 		if (operation) {
 			for (int i = 0; i < collection.size(); i++)
@@ -124,7 +134,7 @@ public class AllOperations {
 				"total" };
 		int min = (typefilter ? 0 : 6);
 		int max = (typefilter ? 6 : verified.length);
-		Boolean[] isthere = { false, false, false, false, false, false };
+		Boolean[] isthere = { false, false, false, false, false, false,false,false,false,false,false,false };
 		for (int i = 0; i < toverify.length; i++) {
 			boolean finish = true;
 			for (int j = min; j < max && finish; j++) {
@@ -173,5 +183,9 @@ public class AllOperations {
 		if (minute < 0 || minute > 59) {
 			throw new FilterProblem("You have setted an unexisting minute: " + minute);
 		}
+	}
+	protected ArrayList<SingleStatistic> IntFilter(ArrayList<SingleStatistic> temp, int i, int j) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

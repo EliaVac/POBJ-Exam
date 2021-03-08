@@ -135,10 +135,11 @@ public class FiltersApply extends AllOperations {
 				temp = DateFilter(temp, filterslist.get(i).getUpdatedateend(), false, false);
 			if (filterslist.get(i).isIsdead() != -1)
 				temp = IsDeadFilter(temp, filterslist.get(i).isIsdead());
-			for (int j = 0; j < temp.size(); j++) {
-				filteredDatabase.add(temp.get(j));
-				database.remove(database.indexOf(temp.get(j)));
-			}
+			if(temp!=null)
+				for (int j = 0; j < temp.size(); j++) {
+					filteredDatabase.add(temp.get(j));
+					database.remove(database.indexOf(temp.get(j)));
+				}
 		}
 		return filteredDatabase;
 	}

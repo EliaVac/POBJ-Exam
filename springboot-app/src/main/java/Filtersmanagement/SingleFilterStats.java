@@ -9,7 +9,7 @@ import com.springboot.app.singledataclasses.DateTime;
  * @author Federico Di Tullio
  * @author Elia Vaccarini
  */
-public class SingleFilterStats {
+public class SingleFilterStats{
 	/**
 	 * the string that identify the zone
 	 */

@@ -108,10 +108,11 @@ public class Controller {
 	 * @throws JSONProblem
 	 * @throws JSONException
 	 * @throws FilterProblem
+	 * @throws ConnectionProblem 
 	 */
 	@PostMapping("/getstats")
 	public ResponseEntity<Object> getstats(@RequestBody String filter)
-			throws JSONProblem, JSONException, FilterProblem {
+			throws JSONProblem, JSONException, FilterProblem, ConnectionProblem {
 		return new ResponseEntity<Object>(service.GetStats(filter), HttpStatus.OK);
 	}
 

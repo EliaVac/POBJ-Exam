@@ -122,31 +122,49 @@ public class StatisticsApply extends AllOperations {
 		}
 
 	}
-	public ArrayList<SingleStatistic> getFilteredStatistic() {
+
+	public ArrayList<SingleStatistic> getFilteredStatistic() throws ConnectionProblem, JSONException {
 		ArrayList<SingleStatistic> filteredstatistic = new ArrayList<SingleStatistic>();
-		ArrayList<SingleStatistic> temp; // arraylist appoggio
+		ArrayList<SingleStatistic> temp = collection; // arraylist appoggio
+		ArrayList<String> imported = new ArrayList<String>();
 		for (int i = 0; i < filterslist.size(); i++) {
-			if(filterslist.get(i).getZone()== null || filterslist.get(i).getZone().compareTo("undefined")==0)
-				temp = collection;
-			else {
-				try {
-				StatisticsCreator downloadstats= new StatisticsCreator(filterslist.get(i).getZone());
-				temp= downloadstats.getStats();
-				} catch (ConnectionProblem e) {
-	                 throw new ConnectionProblem("The requested zone "+ filterslist.get(i).getZone() +" can not be managed by the service.");
+			if (filterslist.get(i).getZone() != null && filterslist.get(i).getZone().compareTo("bundle_all_zones") != 0) {
+				boolean ok = true;
+				for (int j = 0; j < imported.size() && ok; j++) {
+					if (filterslist.get(i).getZone().compareTo(imported.get(j)) == 0)
+						ok = false;
 				}
+				if (ok)
+					try {
+						imported.add(filterslist.get(i).getZone());
+						StatisticsCreator downloadstats = new StatisticsCreator(filterslist.get(i).getZone());
+						temp.addAll(downloadstats.getStats());
+					} catch (ConnectionProblem e) {
+						throw new ConnectionProblem("The requested zone " + filterslist.get(i).getZone()
+								+ " can not be managed by the service.");
+					}
 			}
+		}
+		for (int i = 0; i < filterslist.size(); i++) {
+			if (filterslist.get(i).getZone() != null)
+				temp = ZoneFilter(temp, filterslist.get(i).getZone());
 			if (filterslist.get(i).getMinimum_date() != null)
 				temp = DateFilter(temp, filterslist.get(i).getMinimum_date(), true);
 			if (filterslist.get(i).getMaximum_date() != null)
-				temp = DateFilter(temp, filterslist.get(i).getMaximum_date(),false);
-			if (filterslist.get(i).isIsdead() != -1)
-				temp = IsDeadFilter(temp, filterslist.get(i).isIsdead());
-			for (int j = 0; j < temp.size(); j++) {
-				filteredDatabase.add(temp.get(j));
-				database.remove(database.indexOf(temp.get(j)));
-			}
+				temp = DateFilter(temp, filterslist.get(i).getMaximum_date(), false);
+			if (filterslist.get(i).getTot() != null)
+				temp = IntFilter(temp, filterslist.get(i).getTot()[0], filterslist.get(i).getTot()[1]);
+			if (filterslist.get(i).getInc() != null)
+				temp = IntFilter(temp, filterslist.get(i).getInc()[0], filterslist.get(i).getInc()[1]);
+			if (filterslist.get(i).getDec() != null)
+				temp = IntFilter(temp, filterslist.get(i).getDec()[0], filterslist.get(i).getDec()[1]);
+			if(temp!=null)
+				for (int j = 0; j < temp.size(); j++) {
+					filteredstatistic.add(temp.get(j));
+					collection.remove(collection.indexOf(temp.get(j)));
+				}
 		}
-		return filteredDatabase;
+		return filteredstatistic;
 	}
+
 }

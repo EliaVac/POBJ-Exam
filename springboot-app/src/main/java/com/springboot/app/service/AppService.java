@@ -19,6 +19,7 @@ import Errors.ConnectionProblem;
 import Errors.FilterProblem;
 import Errors.JSONProblem;
 import Filtersmanagement.FiltersApply;
+import Filtersmanagement.StatisticsApply;
 
 /**
  * The service class that implements all methods useful to the controller
@@ -117,10 +118,15 @@ public class AppService {
 	 * Getters of the filtered statistics thanks to a string parameter "filter"
 	 * @param filter
 	 * @return the filtered statistics
+	 * @throws JSONProblem 
+	 * @throws FilterProblem 
+	 * @throws JSONException 
+	 * @throws ConnectionProblem 
 	 */
-	public ArrayList<SingleStatistic> GetStats(String filter) {
+	public ArrayList<SingleStatistic> GetStats(String filter) throws JSONException, FilterProblem, JSONProblem, ConnectionProblem {
+		StatisticsApply filtering = new StatisticsApply(filter, statistics);
 		
-		return statistics ;
+		return filtering.getFilteredStatistic() ;
 	}
 
 }

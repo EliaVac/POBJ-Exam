@@ -8,8 +8,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.springboot.app.singledataclasses.DateTime;
+import com.springboot.app.singledataclasses.SingleDomain;
 import com.springboot.app.singledataclasses.SingleStatistic;
+import com.springboot.app.utilities.StatisticsCreator;
 
+import Errors.ConnectionProblem;
 import Errors.FilterProblem;
 import Errors.JSONProblem;
 
@@ -119,5 +122,31 @@ public class StatisticsApply extends AllOperations {
 		}
 
 	}
-
+	public ArrayList<SingleStatistic> getFilteredStatistic() {
+		ArrayList<SingleStatistic> filteredstatistic = new ArrayList<SingleStatistic>();
+		ArrayList<SingleStatistic> temp; // arraylist appoggio
+		for (int i = 0; i < filterslist.size(); i++) {
+			if(filterslist.get(i).getZone()== null || filterslist.get(i).getZone().compareTo("undefined")==0)
+				temp = collection;
+			else {
+				try {
+				StatisticsCreator downloadstats= new StatisticsCreator(filterslist.get(i).getZone());
+				temp= downloadstats.getStats();
+				} catch (ConnectionProblem e) {
+	                 throw new ConnectionProblem("The requested zone "+ filterslist.get(i).getZone() +" can not be managed by the service.");
+				}
+			}
+			if (filterslist.get(i).getMinimum_date() != null)
+				temp = DateFilter(temp, filterslist.get(i).getMinimum_date(), true);
+			if (filterslist.get(i).getMaximum_date() != null)
+				temp = DateFilter(temp, filterslist.get(i).getMaximum_date(),false);
+			if (filterslist.get(i).isIsdead() != -1)
+				temp = IsDeadFilter(temp, filterslist.get(i).isIsdead());
+			for (int j = 0; j < temp.size(); j++) {
+				filteredDatabase.add(temp.get(j));
+				database.remove(database.indexOf(temp.get(j)));
+			}
+		}
+		return filteredDatabase;
+	}
 }

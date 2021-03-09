@@ -4,9 +4,9 @@ Exam project for the object programming course.
 
 ## Table of contents
 
-- Introduction
+* [Introduction](#Introduction)
 
-- How it works
+* [How it works](#How-it-works)
 
 - Packages and classes
 

@@ -25,3 +25,7 @@ The user use case diagram shows the three possible work zones and the possible o
 
 The system case diagram shows the different operations to do first and during the execution for all work zones:
 ![SystemUseCaseDiagram](./UmlDiagram/NewModelSystemCaseDiagram.jpg)
+
+![SequenceDiagram](./UmlDiagram/NewModelSequenceDiagram.jpg)
+
+![SequenceDiagram2](./UmlDiagram/NewModelSequenceDiagram2.jpg)

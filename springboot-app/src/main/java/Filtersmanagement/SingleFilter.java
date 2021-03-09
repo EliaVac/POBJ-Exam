@@ -1,5 +1,7 @@
 package Filtersmanagement;
 
+import java.util.Objects;
+
 import com.springboot.app.singledataclasses.DateTime;
 
 /**
@@ -110,4 +112,22 @@ public class SingleFilter {
 	public int isIsdead() {
 		return isdead;
 	}
+/**
+ * 
+ */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		SingleFilter other = (SingleFilter) obj;
+		return Objects.equals(country, other.country) && Objects.equals(createtimebeg, other.createtimebeg)
+				&& Objects.equals(createtimeend, other.createtimeend) && isdead == other.isdead
+				&& Objects.equals(updatedatebeg, other.updatedatebeg)
+				&& Objects.equals(updatedateend, other.updatedateend);
+	}
+	
 }

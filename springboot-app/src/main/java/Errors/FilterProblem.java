@@ -8,6 +8,10 @@ package Errors;
  */
 public class FilterProblem extends Exception {
 	/**
+	 * The serial version
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
 	 * The string that identifies the message
 	 */
 	private String message;

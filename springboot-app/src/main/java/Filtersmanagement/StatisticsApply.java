@@ -8,7 +8,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.springboot.app.singledataclasses.DateTime;
-import com.springboot.app.singledataclasses.SingleDomain;
 import com.springboot.app.singledataclasses.SingleStatistic;
 import com.springboot.app.utilities.StatisticsCreator;
 
@@ -59,7 +58,7 @@ public class StatisticsApply extends AllOperations {
 				throw new JSONProblem("Wrong filter convertion");
 			}
 
-			check(onefilter.getNames(onefilter), false);
+			check(JSONObject.getNames(onefilter), false);
 			try {
 				zone = onefilter.getString("zone");
 			} catch (Exception e) {
@@ -178,6 +177,15 @@ public class StatisticsApply extends AllOperations {
 				}
 		}
 		return filteredstatistic;
+	}
+
+	/**
+	 * Getters of the list of filter
+	 * 
+	 * @return
+	 */
+	public ArrayList<SingleFilterStats> getFilterList() {
+		return filterslist;
 	}
 
 }

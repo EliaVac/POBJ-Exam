@@ -111,4 +111,16 @@ public class DateTime {
 			return true;
 		return false;
 	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		DateTime other = (DateTime) obj;
+		return day == other.day && hour == other.hour && minute == other.minute && month == other.month
+				&& year == other.year;
+	}
 }

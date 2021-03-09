@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
 import com.springboot.app.singledataclasses.SingleDomain;
@@ -88,7 +87,7 @@ public class AppService {
 	 * @return the possible key words
 	 */
 
-	public HashMap GetKeyWords() {
+	public HashMap<String, String> GetKeyWords() {
 		return possiblekeywords;
 	}
 

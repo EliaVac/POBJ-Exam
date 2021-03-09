@@ -155,6 +155,7 @@ public class AllOperations {
 					finish = false;
 					if (isthere[j] == true)
 						throw new FilterProblem("The field " + verified[j] + " has been written more times");
+					isthere[j]=true;
 				}
 			}
 			if (finish == true) {

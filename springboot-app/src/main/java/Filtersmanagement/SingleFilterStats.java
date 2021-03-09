@@ -1,5 +1,8 @@
 package Filtersmanagement;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 import com.springboot.app.singledataclasses.DateTime;
 
 /**
@@ -101,6 +104,22 @@ public class SingleFilterStats{
 	 */
 	public int[] getTot() {
 		return tot;
+	}
+/**
+ * 
+ */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		SingleFilterStats other = (SingleFilterStats) obj;
+		return Arrays.equals(dec, other.dec) && Arrays.equals(inc, other.inc)
+				&& Objects.equals(maximum_date, other.maximum_date) && Objects.equals(minimum_date, other.minimum_date)
+				&& Arrays.equals(tot, other.tot) && Objects.equals(zone, other.zone);
 	}
 
 }

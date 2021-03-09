@@ -3,7 +3,6 @@ package Filtersmanagement;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-import org.apache.tomcat.jni.Local;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -44,7 +43,12 @@ public class FiltersApply extends AllOperations {
 			throws JSONProblem, JSONException, FilterProblem {
 		this.database = database;
 		filterslist = new ArrayList<SingleFilter>();
-		JSONArray filter = new JSONArray(stringfilter);
+		JSONArray filter =null;
+		try {
+			filter = new JSONArray(stringfilter);
+		}catch(JSONException e) {
+			throw new JSONProblem("Wrong filter convertion");
+		}
 		for (int i = 0; i < filter.length(); i++) {
 			JSONObject onefilter;
 			String country = null;
@@ -58,7 +62,7 @@ public class FiltersApply extends AllOperations {
 				throw new JSONProblem("Wrong filter convertion");
 			}
 
-			check(onefilter.getNames(onefilter), true);
+			check(JSONObject.getNames(onefilter), true);
 			try {
 				country = onefilter.getString("country");
 			} catch (Exception e) {
@@ -72,7 +76,7 @@ public class FiltersApply extends AllOperations {
 					int year = 0, month = 0, day = 0, hour = 0, minute = 0;
 					try {
 						year = date.getInt("year");
-					} catch (JSONException e) {
+					} catch (Exception e) {
 						year = now.getYear();
 					}
 					try {
@@ -142,5 +146,8 @@ public class FiltersApply extends AllOperations {
 				}
 		}
 		return filteredDatabase;
+	}
+	public ArrayList<SingleFilter> getFilterList(){
+		return filterslist;
 	}
 }

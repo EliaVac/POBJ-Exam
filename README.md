@@ -27,3 +27,5 @@ The system case diagram shows the different operations to do first and during th
 ![SystemUseCaseDiagram](./UmlDiagram/NewModelSystemCaseDiagram.jpg)
 
 ![SequenceDiagram](./UmlDiagram/NewModelSequenceDiagram.jpg)
+
+![SequenceDiagram2](./UmlDiagram/NewModelSequenceDiagram2.jpg)

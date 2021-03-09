@@ -113,6 +113,7 @@ public class StatisticsApply extends AllOperations {
 					} catch (JSONException e) {
 						val[k][1] = Integer.MAX_VALUE;
 					}
+					CheckInt(val[k],valstring[k]);
 				} catch (JSONException e) {
 					val[k][0] = 0;
 					val[k][1] = Integer.MAX_VALUE;

@@ -5040,7 +5040,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nI7v54EdEeuZZ60jMaTCtw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_nI7v4YEdEeuZZ60jMaTCtw" fontName="Segoe UI" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nI7v4oEdEeuZZ60jMaTCtw" x="-43" y="45" width="20" height="285"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nI7v4oEdEeuZZ60jMaTCtw" x="-43" y="45" width="20" height="276"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_FBGu9oEdEeuZZ60jMaTCtw" fontName="Segoe UI" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FBGu94EdEeuZZ60jMaTCtw" y="32" width="10" height="528"/>
@@ -5241,8 +5241,8 @@
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_nI8W8YEdEeuZZ60jMaTCtw"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_nI8W8oEdEeuZZ60jMaTCtw" fontName="Segoe UI" fontHeight="8"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nI8W84EdEeuZZ60jMaTCtw" points="[0, 5, -158, 0]$[156, 5, -2, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7q7F4IEgEeuZZ60jMaTCtw" id="(0.5, 0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7q7F4YEgEeuZZ60jMaTCtw" id="(0.5, 0.0)"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rgFcsIElEeuZZ60jMaTCtw" id="(0.5, 0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rgFcsYElEeuZZ60jMaTCtw" id="(0.5, 0.0)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_nI8W_IEdEeuZZ60jMaTCtw" type="4001" element="_nDOwjYEdEeuZZ60jMaTCtw" source="_nI7v4IEdEeuZZ60jMaTCtw" target="_caR00IEdEeuZZ60jMaTCtw">
           <children xmi:type="notation:Node" xmi:id="_nI8XAIEdEeuZZ60jMaTCtw" type="6001">
@@ -5256,9 +5256,9 @@
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_nI8W_YEdEeuZZ60jMaTCtw"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_nI8W_oEdEeuZZ60jMaTCtw" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nI8W_4EdEeuZZ60jMaTCtw" points="[410, 285, 410, 290]$[242, 285, 242, 290]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7q7F4oEgEeuZZ60jMaTCtw" id="(0.5, 0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7q7F44EgEeuZZ60jMaTCtw" id="(0.5, 0.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nI8W_4EdEeuZZ60jMaTCtw" points="[410, 276, 410, 281]$[242, 276, 242, 281]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rgFcsoElEeuZZ60jMaTCtw" id="(0.5, 0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rgFcs4ElEeuZZ60jMaTCtw" id="(0.5, 0.0)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_MYG8SIEeEeuZZ60jMaTCtw" type="4001" element="_MSxwY4EeEeuZZ60jMaTCtw" source="_nI7v4IEdEeuZZ60jMaTCtw" target="_MYG8QIEeEeuZZ60jMaTCtw">
           <children xmi:type="notation:Node" xmi:id="_MYG8TIEeEeuZZ60jMaTCtw" type="6001">
@@ -5288,7 +5288,7 @@
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_c1hw8YEeEeuZZ60jMaTCtw"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_c1hw8oEeEeuZZ60jMaTCtw" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c1hw84EeEeuZZ60jMaTCtw" points="[0, 37, -177, -9]$[176, 37, -1, -9]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c1hw84EeEeuZZ60jMaTCtw" points="[0, 43, -177, -9]$[176, 43, -1, -9]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c1hw-oEeEeuZZ60jMaTCtw" id="(0.5,0.6370967741935484) custom"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c1hw-4EeEeuZZ60jMaTCtw" id="(0.5,0.3024390243902439) custom"/>
         </edges>
@@ -5445,7 +5445,7 @@
           <target xmi:type="uml:BehaviorExecutionSpecification" href="my.uml#_nDM7VoEdEeuZZ60jMaTCtw"/>
           <semanticElements xmi:type="uml:MessageOccurrenceSpecification" href="my.uml#_nDM7VIEdEeuZZ60jMaTCtw"/>
           <semanticElements xmi:type="uml:MessageOccurrenceSpecification" href="my.uml#_nDM7VYEdEeuZZ60jMaTCtw"/>
-          <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_nJDEoIEdEeuZZ60jMaTCtw" x="483" y="135" height="285" width="20"/>
+          <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_nJDEoIEdEeuZZ60jMaTCtw" x="483" y="135" height="276" width="20"/>
           <ownedStyle xmi:type="diagram:Square" uid="_nDOJgYEdEeuZZ60jMaTCtw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="136,136,136" width="2" height="3" color="209,209,209">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Sequence%20Diagram']/@defaultLayer/@nodeMappings[name='SD_Lifeline%20Instance%20Role']/@borderedNodeMappings[name='SD_Lifeline%20Execution']/@borderedNodeMappings[name='SD_Execution']/@style"/>
           </ownedStyle>
@@ -5625,7 +5625,7 @@
       <semanticElements xmi:type="uml:Message" href="my.uml#_nDM7UoEdEeuZZ60jMaTCtw"/>
       <semanticElements xmi:type="uml:MessageOccurrenceSpecification" href="my.uml#_nDM7V4EdEeuZZ60jMaTCtw"/>
       <semanticElements xmi:type="uml:MessageOccurrenceSpecification" href="my.uml#_nDM7VYEdEeuZZ60jMaTCtw"/>
-      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_nJDEooEdEeuZZ60jMaTCtw" y="420" height="0"/>
+      <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_nJDEooEdEeuZZ60jMaTCtw" y="411" height="0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_nDOwjoEdEeuZZ60jMaTCtw" lineStyle="dash" size="2" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Sequence%20Diagram']/@defaultLayer/@edgeMappings[name='SD_Message']/@conditionnalStyles.1/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_nDOwj4EdEeuZZ60jMaTCtw"/>

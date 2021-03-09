@@ -618,4 +618,322 @@
     <ownedEnd xmi:id="_wjQYYX90Eeuk7Jyq0NgGJQ" type="_YFyO0H9yEeuk7Jyq0NgGJQ" association="_wjQYYH90Eeuk7Jyq0NgGJQ"/>
     <ownedEnd xmi:id="_wjQ_cH90Eeuk7Jyq0NgGJQ" type="_q8-FUH90Eeuk7Jyq0NgGJQ" association="_wjQYYH90Eeuk7Jyq0NgGJQ"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_c0TQoIEYEeuZZ60jMaTCtw" name="NewModel">
+    <ownedAttribute xmi:id="_kTC6IIEYEeuZZ60jMaTCtw" name="AppService" type="_yIyXsHXwEeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_vQSq0IEYEeuZZ60jMaTCtw" name="FiltersCreator" type="_2WJwAHXwEeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_4Umj8IEYEeuZZ60jMaTCtw" name="Controller" type="_c-iAcHXwEeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_5gaPwIEYEeuZZ60jMaTCtw" name="USER" type="_x0X-0H9wEeuk7Jyq0NgGJQ"/>
+    <ownedAttribute xmi:id="_DtXL8IEZEeuZZ60jMaTCtw" name="DatabaseCreator" type="_RgN3IHX9EeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_GYrisIEZEeuZZ60jMaTCtw" name="KeyWordsCreator" type="_KbPFMH0TEeuiKeYIdSCaOQ"/>
+    <ownedAttribute xmi:id="_IePhAIEZEeuZZ60jMaTCtw" name="StatisticsCreator" type="_UWa3sH3eEeuwtqwVFElasg"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Q0KqIIEZEeuZZ60jMaTCtw" name="AppService"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZllccYEZEeuZZ60jMaTCtw" name="FiltersCreator"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_a3lP0YEZEeuZZ60jMaTCtw" name="GetFiltersCollection"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ffZvgYEZEeuZZ60jMaTCtw" name="DatabaseCreator"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gytxgYEZEeuZZ60jMaTCtw" name="getDatabase"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ogIwMYEZEeuZZ60jMaTCtw" name="KeyWordsCreator"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_psMToYEZEeuZZ60jMaTCtw" name="GetKeyWordsCollection"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1TML8YEZEeuZZ60jMaTCtw" name="StatisticsCreator"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7tbrgYEZEeuZZ60jMaTCtw" name="getStats"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ex_m0IEbEeuZZ60jMaTCtw" name="getkeywords"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_IEbA4YEbEeuZZ60jMaTCtw" name="GetKeyWords"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MugKYYEbEeuZZ60jMaTCtw" name="getfilters"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SZJZAIEbEeuZZ60jMaTCtw" name="GetPossibleFilters"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ud9JYYEbEeuZZ60jMaTCtw" name="getdatabase"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_b6WCcIEbEeuZZ60jMaTCtw" name="GetDatabase"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_lvzEoYEbEeuZZ60jMaTCtw" name="getstats"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_njFnMYEbEeuZZ60jMaTCtw" name="GetStats"/>
+    <lifeline xmi:id="_5gaPwYEYEeuZZ60jMaTCtw" name="USER" represents="_5gaPwIEYEeuZZ60jMaTCtw" coveredBy="_Ex_m0oEbEeuZZ60jMaTCtw _Ex_m1oEbEeuZZ60jMaTCtw _MugKY4EbEeuZZ60jMaTCtw _MugKZ4EbEeuZZ60jMaTCtw _Ud9wcYEbEeuZZ60jMaTCtw _Ud9wdYEbEeuZZ60jMaTCtw _lvzEo4EbEeuZZ60jMaTCtw _lvzEp4EbEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_4UnLAIEYEeuZZ60jMaTCtw" name="Controller" represents="_4Umj8IEYEeuZZ60jMaTCtw" coveredBy="_Q0L4QIEZEeuZZ60jMaTCtw _Ex_m04EbEeuZZ60jMaTCtw _Ex_m1YEbEeuZZ60jMaTCtw _Ex_m1IEbEeuZZ60jMaTCtw _IEbn8IEbEeuZZ60jMaTCtw _IEbn9IEbEeuZZ60jMaTCtw _MugKZIEbEeuZZ60jMaTCtw _MugKZoEbEeuZZ60jMaTCtw _MugKZYEbEeuZZ60jMaTCtw _SZJZAoEbEeuZZ60jMaTCtw _SZJZBoEbEeuZZ60jMaTCtw _Ud9wcoEbEeuZZ60jMaTCtw _Ud9wdIEbEeuZZ60jMaTCtw _Ud9wc4EbEeuZZ60jMaTCtw _b6WCcoEbEeuZZ60jMaTCtw _b6WCdoEbEeuZZ60jMaTCtw _lvzEpIEbEeuZZ60jMaTCtw _lvzEpoEbEeuZZ60jMaTCtw _lvzEpYEbEeuZZ60jMaTCtw _njFnM4EbEeuZZ60jMaTCtw _njFnN4EbEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_kTDhMIEYEeuZZ60jMaTCtw" name="AppService" represents="_kTC6IIEYEeuZZ60jMaTCtw" coveredBy="_Q0L4QYEZEeuZZ60jMaTCtw _Q0L4QoEZEeuZZ60jMaTCtw _Q0L4Q4EZEeuZZ60jMaTCtw _ZllccoEZEeuZZ60jMaTCtw _a3lP04EZEeuZZ60jMaTCtw _a3l24oEZEeuZZ60jMaTCtw _ffZvgoEZEeuZZ60jMaTCtw _gytxg4EZEeuZZ60jMaTCtw _gytxh4EZEeuZZ60jMaTCtw _ogIwMoEZEeuZZ60jMaTCtw _psMTo4EZEeuZZ60jMaTCtw _psM6soEZEeuZZ60jMaTCtw _1TML8oEZEeuZZ60jMaTCtw _7tbrg4EZEeuZZ60jMaTCtw _7tbrh4EZEeuZZ60jMaTCtw _IEbn8YEbEeuZZ60jMaTCtw _IEbn84EbEeuZZ60jMaTCtw _IEbn8oEbEeuZZ60jMaTCtw _SZJZA4EbEeuZZ60jMaTCtw _SZJZBYEbEeuZZ60jMaTCtw _SZJZBIEbEeuZZ60jMaTCtw _b6WCc4EbEeuZZ60jMaTCtw _b6WCdYEbEeuZZ60jMaTCtw _b6WCdIEbEeuZZ60jMaTCtw _njFnNIEbEeuZZ60jMaTCtw _njFnNoEbEeuZZ60jMaTCtw _njFnNYEbEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_vQSq0YEYEeuZZ60jMaTCtw" name="FiltersCreator" represents="_vQSq0IEYEeuZZ60jMaTCtw" coveredBy="_Zllcc4EZEeuZZ60jMaTCtw _ZllcdIEZEeuZZ60jMaTCtw _ZllcdYEZEeuZZ60jMaTCtw _a3lP1IEZEeuZZ60jMaTCtw _a3l24YEZEeuZZ60jMaTCtw _a3l24IEZEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_DtXzAIEZEeuZZ60jMaTCtw" name="DatabaseCreator" represents="_DtXL8IEZEeuZZ60jMaTCtw" coveredBy="_ffZvg4EZEeuZZ60jMaTCtw _ffZvhIEZEeuZZ60jMaTCtw _ffZvhYEZEeuZZ60jMaTCtw _gytxhIEZEeuZZ60jMaTCtw _gytxhoEZEeuZZ60jMaTCtw _gytxhYEZEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_GYrisYEZEeuZZ60jMaTCtw" name="KeyWordsCreator" represents="_GYrisIEZEeuZZ60jMaTCtw" coveredBy="_ogIwM4EZEeuZZ60jMaTCtw _ogIwNIEZEeuZZ60jMaTCtw _ogIwNYEZEeuZZ60jMaTCtw _psMTpIEZEeuZZ60jMaTCtw _psM6sYEZEeuZZ60jMaTCtw _psM6sIEZEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_IeQIEIEZEeuZZ60jMaTCtw" name="StatisticsCreator" represents="_IePhAIEZEeuZZ60jMaTCtw" coveredBy="_1TML84EZEeuZZ60jMaTCtw _1TML9IEZEeuZZ60jMaTCtw _1TMzAIEZEeuZZ60jMaTCtw _7tbrhIEZEeuZZ60jMaTCtw _7tbrhoEZEeuZZ60jMaTCtw _7tbrhYEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Q0L4QIEZEeuZZ60jMaTCtw" name="AppService_sender" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_Q0G_wIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Q0L4QYEZEeuZZ60jMaTCtw" name="AppService_receiver" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_Q0G_wIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Q0L4QoEZEeuZZ60jMaTCtw" name="AppService" covered="_kTDhMIEYEeuZZ60jMaTCtw" finish="_Q0L4Q4EZEeuZZ60jMaTCtw" start="_Q0L4QYEZEeuZZ60jMaTCtw" behavior="_Q0KqIIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZllccoEZEeuZZ60jMaTCtw" name="FiltersCreator_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_ZllccIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zllcc4EZEeuZZ60jMaTCtw" name="FiltersCreator_receiver" covered="_vQSq0YEYEeuZZ60jMaTCtw" message="_ZllccIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ZllcdIEZEeuZZ60jMaTCtw" name="FiltersCreator" covered="_vQSq0YEYEeuZZ60jMaTCtw" finish="_ZllcdYEZEeuZZ60jMaTCtw" start="_Zllcc4EZEeuZZ60jMaTCtw" behavior="_ZllccYEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a3lP04EZEeuZZ60jMaTCtw" name="GetFiltersCollection_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_a3lP0IEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a3lP1IEZEeuZZ60jMaTCtw" name="GetFiltersCollection_receiver" covered="_vQSq0YEYEeuZZ60jMaTCtw" message="_a3lP0IEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_a3l24YEZEeuZZ60jMaTCtw" name="GetFiltersCollection" covered="_vQSq0YEYEeuZZ60jMaTCtw" finish="_a3l24IEZEeuZZ60jMaTCtw" start="_a3lP1IEZEeuZZ60jMaTCtw" behavior="_a3lP0YEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a3l24IEZEeuZZ60jMaTCtw" name="GetFiltersCollection_reply_sender" covered="_vQSq0YEYEeuZZ60jMaTCtw" message="_a3lP0oEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a3l24oEZEeuZZ60jMaTCtw" name="GetFiltersCollection_reply_receiver" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_a3lP0oEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ZllcdYEZEeuZZ60jMaTCtw" name="FiltersCreator_finish" covered="_vQSq0YEYEeuZZ60jMaTCtw" execution="_ZllcdIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ffZvgoEZEeuZZ60jMaTCtw" name="DatabaseCreator_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_ffZvgIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ffZvg4EZEeuZZ60jMaTCtw" name="DatabaseCreator_receiver" covered="_DtXzAIEZEeuZZ60jMaTCtw" message="_ffZvgIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ffZvhIEZEeuZZ60jMaTCtw" name="DatabaseCreator" covered="_DtXzAIEZEeuZZ60jMaTCtw" finish="_ffZvhYEZEeuZZ60jMaTCtw" start="_ffZvg4EZEeuZZ60jMaTCtw" behavior="_ffZvgYEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gytxg4EZEeuZZ60jMaTCtw" name="getDatabase_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_gytxgIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gytxhIEZEeuZZ60jMaTCtw" name="getDatabase_receiver" covered="_DtXzAIEZEeuZZ60jMaTCtw" message="_gytxgIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_gytxhoEZEeuZZ60jMaTCtw" name="getDatabase" covered="_DtXzAIEZEeuZZ60jMaTCtw" finish="_gytxhYEZEeuZZ60jMaTCtw" start="_gytxhIEZEeuZZ60jMaTCtw" behavior="_gytxgYEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gytxhYEZEeuZZ60jMaTCtw" name="getDatabase_reply_sender" covered="_DtXzAIEZEeuZZ60jMaTCtw" message="_gytxgoEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gytxh4EZEeuZZ60jMaTCtw" name="getDatabase_reply_receiver" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_gytxgoEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ffZvhYEZEeuZZ60jMaTCtw" name="DatabaseCreator_finish" covered="_DtXzAIEZEeuZZ60jMaTCtw" execution="_ffZvhIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ogIwMoEZEeuZZ60jMaTCtw" name="KeyWordsCreator_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_ogIwMIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ogIwM4EZEeuZZ60jMaTCtw" name="KeyWordsCreator_receiver" covered="_GYrisYEZEeuZZ60jMaTCtw" message="_ogIwMIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ogIwNIEZEeuZZ60jMaTCtw" name="KeyWordsCreator" covered="_GYrisYEZEeuZZ60jMaTCtw" finish="_ogIwNYEZEeuZZ60jMaTCtw" start="_ogIwM4EZEeuZZ60jMaTCtw" behavior="_ogIwMYEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_psMTo4EZEeuZZ60jMaTCtw" name="GetKeyWordsCollection_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_psMToIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_psMTpIEZEeuZZ60jMaTCtw" name="GetKeyWordsCollection_receiver" covered="_GYrisYEZEeuZZ60jMaTCtw" message="_psMToIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_psM6sYEZEeuZZ60jMaTCtw" name="GetKeyWordsCollection" covered="_GYrisYEZEeuZZ60jMaTCtw" finish="_psM6sIEZEeuZZ60jMaTCtw" start="_psMTpIEZEeuZZ60jMaTCtw" behavior="_psMToYEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_psM6sIEZEeuZZ60jMaTCtw" name="GetKeyWordsCollection_reply_sender" covered="_GYrisYEZEeuZZ60jMaTCtw" message="_psMTooEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_psM6soEZEeuZZ60jMaTCtw" name="GetKeyWordsCollection_reply_receiver" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_psMTooEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ogIwNYEZEeuZZ60jMaTCtw" name="KeyWordsCreator_finish" covered="_GYrisYEZEeuZZ60jMaTCtw" execution="_ogIwNIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1TML8oEZEeuZZ60jMaTCtw" name="StatisticsCreator_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_1TML8IEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1TML84EZEeuZZ60jMaTCtw" name="StatisticsCreator_receiver" covered="_IeQIEIEZEeuZZ60jMaTCtw" message="_1TML8IEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_1TML9IEZEeuZZ60jMaTCtw" name="StatisticsCreator" covered="_IeQIEIEZEeuZZ60jMaTCtw" finish="_1TMzAIEZEeuZZ60jMaTCtw" start="_1TML84EZEeuZZ60jMaTCtw" behavior="_1TML8YEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7tbrg4EZEeuZZ60jMaTCtw" name="getStats_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_7tbrgIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7tbrhIEZEeuZZ60jMaTCtw" name="getStats_receiver" covered="_IeQIEIEZEeuZZ60jMaTCtw" message="_7tbrgIEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_7tbrhoEZEeuZZ60jMaTCtw" name="getStats" covered="_IeQIEIEZEeuZZ60jMaTCtw" finish="_7tbrhYEZEeuZZ60jMaTCtw" start="_7tbrhIEZEeuZZ60jMaTCtw" behavior="_7tbrgYEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7tbrhYEZEeuZZ60jMaTCtw" name="getStats_reply_sender" covered="_IeQIEIEZEeuZZ60jMaTCtw" message="_7tbrgoEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7tbrh4EZEeuZZ60jMaTCtw" name="getStats_reply_receiver" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_7tbrgoEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_1TMzAIEZEeuZZ60jMaTCtw" name="StatisticsCreator_finish" covered="_IeQIEIEZEeuZZ60jMaTCtw" execution="_1TML9IEZEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ex_m0oEbEeuZZ60jMaTCtw" name="getkeywords_sender" covered="_5gaPwYEYEeuZZ60jMaTCtw" message="_Ex-_wIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ex_m04EbEeuZZ60jMaTCtw" name="getkeywords_receiver" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_Ex-_wIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ex_m1YEbEeuZZ60jMaTCtw" name="getkeywords" covered="_4UnLAIEYEeuZZ60jMaTCtw" finish="_Ex_m1IEbEeuZZ60jMaTCtw" start="_Ex_m04EbEeuZZ60jMaTCtw" behavior="_Ex_m0IEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_IEbn8IEbEeuZZ60jMaTCtw" name="GetKeyWords_sender" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_IEbA4IEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_IEbn8YEbEeuZZ60jMaTCtw" name="GetKeyWords_receiver" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_IEbA4IEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_IEbn84EbEeuZZ60jMaTCtw" name="GetKeyWords" covered="_kTDhMIEYEeuZZ60jMaTCtw" finish="_IEbn8oEbEeuZZ60jMaTCtw" start="_IEbn8YEbEeuZZ60jMaTCtw" behavior="_IEbA4YEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_IEbn8oEbEeuZZ60jMaTCtw" name="GetKeyWords_reply_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_IEbA4oEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_IEbn9IEbEeuZZ60jMaTCtw" name="GetKeyWords_reply_receiver" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_IEbA4oEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ex_m1IEbEeuZZ60jMaTCtw" name="getkeywords_reply_sender" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_Ex_m0YEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ex_m1oEbEeuZZ60jMaTCtw" name="getkeywords_reply_receiver" covered="_5gaPwYEYEeuZZ60jMaTCtw" message="_Ex_m0YEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MugKY4EbEeuZZ60jMaTCtw" name="getfilters_sender" covered="_5gaPwYEYEeuZZ60jMaTCtw" message="_MugKYIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MugKZIEbEeuZZ60jMaTCtw" name="getfilters_receiver" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_MugKYIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_MugKZoEbEeuZZ60jMaTCtw" name="getfilters" covered="_4UnLAIEYEeuZZ60jMaTCtw" finish="_MugKZYEbEeuZZ60jMaTCtw" start="_MugKZIEbEeuZZ60jMaTCtw" behavior="_MugKYYEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SZJZAoEbEeuZZ60jMaTCtw" name="GetPossibleFilters_sender" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_SZIx8IEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SZJZA4EbEeuZZ60jMaTCtw" name="GetPossibleFilters_receiver" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_SZIx8IEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_SZJZBYEbEeuZZ60jMaTCtw" name="GetPossibleFilters" covered="_kTDhMIEYEeuZZ60jMaTCtw" finish="_SZJZBIEbEeuZZ60jMaTCtw" start="_SZJZA4EbEeuZZ60jMaTCtw" behavior="_SZJZAIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SZJZBIEbEeuZZ60jMaTCtw" name="GetPossibleFilters_reply_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_SZJZAYEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SZJZBoEbEeuZZ60jMaTCtw" name="GetPossibleFilters_reply_receiver" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_SZJZAYEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MugKZYEbEeuZZ60jMaTCtw" name="getfilters_reply_sender" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_MugKYoEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MugKZ4EbEeuZZ60jMaTCtw" name="getfilters_reply_receiver" covered="_5gaPwYEYEeuZZ60jMaTCtw" message="_MugKYoEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ud9wcYEbEeuZZ60jMaTCtw" name="getdatabase_sender" covered="_5gaPwYEYEeuZZ60jMaTCtw" message="_Ud9JYIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ud9wcoEbEeuZZ60jMaTCtw" name="getdatabase_receiver" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_Ud9JYIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Ud9wdIEbEeuZZ60jMaTCtw" name="getdatabase" covered="_4UnLAIEYEeuZZ60jMaTCtw" finish="_Ud9wc4EbEeuZZ60jMaTCtw" start="_Ud9wcoEbEeuZZ60jMaTCtw" behavior="_Ud9JYYEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_b6WCcoEbEeuZZ60jMaTCtw" name="GetDatabase_sender" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_b6VbYIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_b6WCc4EbEeuZZ60jMaTCtw" name="GetDatabase_receiver" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_b6VbYIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_b6WCdYEbEeuZZ60jMaTCtw" name="GetDatabase" covered="_kTDhMIEYEeuZZ60jMaTCtw" finish="_b6WCdIEbEeuZZ60jMaTCtw" start="_b6WCc4EbEeuZZ60jMaTCtw" behavior="_b6WCcIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_b6WCdIEbEeuZZ60jMaTCtw" name="GetDatabase_reply_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_b6WCcYEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_b6WCdoEbEeuZZ60jMaTCtw" name="GetDatabase_reply_receiver" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_b6WCcYEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ud9wc4EbEeuZZ60jMaTCtw" name="getdatabase_reply_sender" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_Ud9wcIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ud9wdYEbEeuZZ60jMaTCtw" name="getdatabase_reply_receiver" covered="_5gaPwYEYEeuZZ60jMaTCtw" message="_Ud9wcIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lvzEo4EbEeuZZ60jMaTCtw" name="getstats_sender" covered="_5gaPwYEYEeuZZ60jMaTCtw" message="_lvzEoIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lvzEpIEbEeuZZ60jMaTCtw" name="getstats_receiver" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_lvzEoIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_lvzEpoEbEeuZZ60jMaTCtw" name="getstats" covered="_4UnLAIEYEeuZZ60jMaTCtw" finish="_lvzEpYEbEeuZZ60jMaTCtw" start="_lvzEpIEbEeuZZ60jMaTCtw" behavior="_lvzEoYEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_njFnM4EbEeuZZ60jMaTCtw" name="GetStats_sender" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_njFnMIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_njFnNIEbEeuZZ60jMaTCtw" name="GetStats_receiver" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_njFnMIEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_njFnNoEbEeuZZ60jMaTCtw" name="GetStats" covered="_kTDhMIEYEeuZZ60jMaTCtw" finish="_njFnNYEbEeuZZ60jMaTCtw" start="_njFnNIEbEeuZZ60jMaTCtw" behavior="_njFnMYEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_njFnNYEbEeuZZ60jMaTCtw" name="GetStats_reply_sender" covered="_kTDhMIEYEeuZZ60jMaTCtw" message="_njFnMoEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_njFnN4EbEeuZZ60jMaTCtw" name="GetStats_reply_receiver" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_njFnMoEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lvzEpYEbEeuZZ60jMaTCtw" name="getstats_reply_sender" covered="_4UnLAIEYEeuZZ60jMaTCtw" message="_lvzEooEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lvzEp4EbEeuZZ60jMaTCtw" name="getstats_reply_receiver" covered="_5gaPwYEYEeuZZ60jMaTCtw" message="_lvzEooEbEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Q0L4Q4EZEeuZZ60jMaTCtw" name="AppService_finish" covered="_kTDhMIEYEeuZZ60jMaTCtw" execution="_Q0L4QoEZEeuZZ60jMaTCtw"/>
+    <message xmi:id="_Q0G_wIEZEeuZZ60jMaTCtw" name="AppService" messageSort="asynchCall" receiveEvent="_Q0L4QYEZEeuZZ60jMaTCtw" sendEvent="_Q0L4QIEZEeuZZ60jMaTCtw" signature="_CJ9f0HXyEeuMHOX924W5Xg"/>
+    <message xmi:id="_ZllccIEZEeuZZ60jMaTCtw" name="FiltersCreator" messageSort="asynchCall" receiveEvent="_Zllcc4EZEeuZZ60jMaTCtw" sendEvent="_ZllccoEZEeuZZ60jMaTCtw" signature="_15CEQHXyEeuMHOX924W5Xg"/>
+    <message xmi:id="_a3lP0IEZEeuZZ60jMaTCtw" name="GetFiltersCollection" receiveEvent="_a3lP1IEZEeuZZ60jMaTCtw" sendEvent="_a3lP04EZEeuZZ60jMaTCtw" signature="_zGGCkHXyEeuMHOX924W5Xg"/>
+    <message xmi:id="_a3lP0oEZEeuZZ60jMaTCtw" name="GetFiltersCollection_reply" messageSort="reply" receiveEvent="_a3l24oEZEeuZZ60jMaTCtw" sendEvent="_a3l24IEZEeuZZ60jMaTCtw"/>
+    <message xmi:id="_ffZvgIEZEeuZZ60jMaTCtw" name="DatabaseCreator" messageSort="asynchCall" receiveEvent="_ffZvg4EZEeuZZ60jMaTCtw" sendEvent="_ffZvgoEZEeuZZ60jMaTCtw" signature="_JhcfIHbAEeu-6q7Dgc4DEw"/>
+    <message xmi:id="_gytxgIEZEeuZZ60jMaTCtw" name="getDatabase" receiveEvent="_gytxhIEZEeuZZ60jMaTCtw" sendEvent="_gytxg4EZEeuZZ60jMaTCtw" signature="_RPZCQHbAEeu-6q7Dgc4DEw"/>
+    <message xmi:id="_gytxgoEZEeuZZ60jMaTCtw" name="getDatabase_reply" messageSort="reply" receiveEvent="_gytxh4EZEeuZZ60jMaTCtw" sendEvent="_gytxhYEZEeuZZ60jMaTCtw"/>
+    <message xmi:id="_ogIwMIEZEeuZZ60jMaTCtw" name="KeyWordsCreator" messageSort="asynchCall" receiveEvent="_ogIwM4EZEeuZZ60jMaTCtw" sendEvent="_ogIwMoEZEeuZZ60jMaTCtw" signature="_lqJGgH0TEeuiKeYIdSCaOQ"/>
+    <message xmi:id="_psMToIEZEeuZZ60jMaTCtw" name="GetKeyWordsCollection" receiveEvent="_psMTpIEZEeuZZ60jMaTCtw" sendEvent="_psMTo4EZEeuZZ60jMaTCtw" signature="_a6EZsH0UEeuiKeYIdSCaOQ"/>
+    <message xmi:id="_psMTooEZEeuZZ60jMaTCtw" name="GetKeyWordsCollection_reply" messageSort="reply" receiveEvent="_psM6soEZEeuZZ60jMaTCtw" sendEvent="_psM6sIEZEeuZZ60jMaTCtw"/>
+    <message xmi:id="_1TML8IEZEeuZZ60jMaTCtw" name="StatisticsCreator" messageSort="asynchCall" receiveEvent="_1TML84EZEeuZZ60jMaTCtw" sendEvent="_1TML8oEZEeuZZ60jMaTCtw" signature="_rr2GAH3eEeuwtqwVFElasg"/>
+    <message xmi:id="_7tbrgIEZEeuZZ60jMaTCtw" name="getStats" receiveEvent="_7tbrhIEZEeuZZ60jMaTCtw" sendEvent="_7tbrg4EZEeuZZ60jMaTCtw" signature="_vLutQH3eEeuwtqwVFElasg"/>
+    <message xmi:id="_7tbrgoEZEeuZZ60jMaTCtw" name="getStats_reply" messageSort="reply" receiveEvent="_7tbrh4EZEeuZZ60jMaTCtw" sendEvent="_7tbrhYEZEeuZZ60jMaTCtw"/>
+    <message xmi:id="_Ex-_wIEbEeuZZ60jMaTCtw" name="getkeywords" receiveEvent="_Ex_m04EbEeuZZ60jMaTCtw" sendEvent="_Ex_m0oEbEeuZZ60jMaTCtw" signature="_hbRVQHtFEeuxNYbOVKWwaw"/>
+    <message xmi:id="_Ex_m0YEbEeuZZ60jMaTCtw" name="getkeywords_reply" messageSort="reply" receiveEvent="_Ex_m1oEbEeuZZ60jMaTCtw" sendEvent="_Ex_m1IEbEeuZZ60jMaTCtw"/>
+    <message xmi:id="_IEbA4IEbEeuZZ60jMaTCtw" name="GetKeyWords" receiveEvent="_IEbn8YEbEeuZZ60jMaTCtw" sendEvent="_IEbn8IEbEeuZZ60jMaTCtw" signature="_L3U2MHtGEeuxNYbOVKWwaw"/>
+    <message xmi:id="_IEbA4oEbEeuZZ60jMaTCtw" name="GetKeyWords_reply" messageSort="reply" receiveEvent="_IEbn9IEbEeuZZ60jMaTCtw" sendEvent="_IEbn8oEbEeuZZ60jMaTCtw"/>
+    <message xmi:id="_MugKYIEbEeuZZ60jMaTCtw" name="getfilters" receiveEvent="_MugKZIEbEeuZZ60jMaTCtw" sendEvent="_MugKY4EbEeuZZ60jMaTCtw" signature="_BFiY8HXzEeuMHOX924W5Xg"/>
+    <message xmi:id="_MugKYoEbEeuZZ60jMaTCtw" name="getfilters_reply" messageSort="reply" receiveEvent="_MugKZ4EbEeuZZ60jMaTCtw" sendEvent="_MugKZYEbEeuZZ60jMaTCtw"/>
+    <message xmi:id="_SZIx8IEbEeuZZ60jMaTCtw" name="GetPossibleFilters" receiveEvent="_SZJZA4EbEeuZZ60jMaTCtw" sendEvent="_SZJZAoEbEeuZZ60jMaTCtw" signature="_GtvNAHXyEeuMHOX924W5Xg"/>
+    <message xmi:id="_SZJZAYEbEeuZZ60jMaTCtw" name="GetPossibleFilters_reply" messageSort="reply" receiveEvent="_SZJZBoEbEeuZZ60jMaTCtw" sendEvent="_SZJZBIEbEeuZZ60jMaTCtw"/>
+    <message xmi:id="_Ud9JYIEbEeuZZ60jMaTCtw" name="getdatabase" receiveEvent="_Ud9wcoEbEeuZZ60jMaTCtw" sendEvent="_Ud9wcYEbEeuZZ60jMaTCtw" signature="_Yqw2YHa6Eeu4HvPNKP5C4Q"/>
+    <message xmi:id="_Ud9wcIEbEeuZZ60jMaTCtw" name="getdatabase_reply" messageSort="reply" receiveEvent="_Ud9wdYEbEeuZZ60jMaTCtw" sendEvent="_Ud9wc4EbEeuZZ60jMaTCtw"/>
+    <message xmi:id="_b6VbYIEbEeuZZ60jMaTCtw" name="GetDatabase" receiveEvent="_b6WCc4EbEeuZZ60jMaTCtw" sendEvent="_b6WCcoEbEeuZZ60jMaTCtw" signature="_CihBUHbEEeu-6q7Dgc4DEw"/>
+    <message xmi:id="_b6WCcYEbEeuZZ60jMaTCtw" name="GetDatabase_reply" messageSort="reply" receiveEvent="_b6WCdoEbEeuZZ60jMaTCtw" sendEvent="_b6WCdIEbEeuZZ60jMaTCtw"/>
+    <message xmi:id="_lvzEoIEbEeuZZ60jMaTCtw" name="getstats" receiveEvent="_lvzEpIEbEeuZZ60jMaTCtw" sendEvent="_lvzEo4EbEeuZZ60jMaTCtw" signature="_Wypw8H3bEeuwtqwVFElasg"/>
+    <message xmi:id="_lvzEooEbEeuZZ60jMaTCtw" name="getstats_reply" messageSort="reply" receiveEvent="_lvzEp4EbEeuZZ60jMaTCtw" sendEvent="_lvzEpYEbEeuZZ60jMaTCtw"/>
+    <message xmi:id="_njFnMIEbEeuZZ60jMaTCtw" name="GetStats" receiveEvent="_njFnNIEbEeuZZ60jMaTCtw" sendEvent="_njFnM4EbEeuZZ60jMaTCtw" signature="_V8Op0H3cEeuwtqwVFElasg"/>
+    <message xmi:id="_njFnMoEbEeuZZ60jMaTCtw" name="GetStats_reply" messageSort="reply" receiveEvent="_njFnN4EbEeuZZ60jMaTCtw" sendEvent="_njFnNYEbEeuZZ60jMaTCtw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_uBQIAIEcEeuZZ60jMaTCtw" name="NewModel">
+    <ownedAttribute xmi:id="_1Aw30IEcEeuZZ60jMaTCtw" name="USER" type="_x0X-0H9wEeuk7Jyq0NgGJQ"/>
+    <ownedAttribute xmi:id="_-5IEEIEcEeuZZ60jMaTCtw" name="Controller" type="_c-iAcHXwEeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_E75e0IEdEeuZZ60jMaTCtw" name="AppService" type="_yIyXsHXwEeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_PbJE4IEdEeuZZ60jMaTCtw" name="FiltersApply" type="_CGNIIHtLEeuxNYbOVKWwaw"/>
+    <ownedAttribute xmi:id="_0GxC0IEeEeuZZ60jMaTCtw" name="DateTime" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_WTZrQIEfEeuZZ60jMaTCtw" name="SingleFilter" type="_XV6nIHtLEeuxNYbOVKWwaw"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cUlcgYEdEeuZZ60jMaTCtw" name="getdatabase"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_nDM7UYEdEeuZZ60jMaTCtw" name="GetDatabase"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MSv7IYEeEeuZZ60jMaTCtw" name="FiltersApply"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cv_wsYEeEeuZZ60jMaTCtw" name="getFilteredDatabase"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_BsnNcYEfEeuZZ60jMaTCtw" name="DateTime"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HecCIYEfEeuZZ60jMaTCtw" name="DateTime"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_JXxiUYEfEeuZZ60jMaTCtw" name="DateTime"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KrAr0YEfEeuZZ60jMaTCtw" name="DateTime"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_55n80YEfEeuZZ60jMaTCtw" name="SingleFilter"/>
+    <lifeline xmi:id="_1Aw30YEcEeuZZ60jMaTCtw" name="USER" represents="_1Aw30IEcEeuZZ60jMaTCtw" coveredBy="_cUlcg4EdEeuZZ60jMaTCtw _cUlch4EdEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_-5IEEYEcEeuZZ60jMaTCtw" name="Controller" represents="_-5IEEIEcEeuZZ60jMaTCtw" coveredBy="_cUlchIEdEeuZZ60jMaTCtw _cUlchoEdEeuZZ60jMaTCtw _cUlchYEdEeuZZ60jMaTCtw _nDM7U4EdEeuZZ60jMaTCtw _nDM7V4EdEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_E75e0YEdEeuZZ60jMaTCtw" name="AppService" represents="_E75e0IEdEeuZZ60jMaTCtw" coveredBy="_nDM7VIEdEeuZZ60jMaTCtw _nDM7VoEdEeuZZ60jMaTCtw _nDM7VYEdEeuZZ60jMaTCtw _MSv7IoEeEeuZZ60jMaTCtw _cv_ws4EeEeuZZ60jMaTCtw _cv_wt4EeEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_PbJE4YEdEeuZZ60jMaTCtw" name="FiltersApply" represents="_PbJE4IEdEeuZZ60jMaTCtw" coveredBy="_MSv7I4EeEeuZZ60jMaTCtw _MSv7JIEeEeuZZ60jMaTCtw _MSv7JYEeEeuZZ60jMaTCtw _cv_wtIEeEeuZZ60jMaTCtw _cv_wtoEeEeuZZ60jMaTCtw _cv_wtYEeEeuZZ60jMaTCtw _BsnNcoEfEeuZZ60jMaTCtw _HecCIoEfEeuZZ60jMaTCtw _JXxiUoEfEeuZZ60jMaTCtw _KrAr0oEfEeuZZ60jMaTCtw _55n80oEfEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_0GxC0YEeEeuZZ60jMaTCtw" name="DateTime" represents="_0GxC0IEeEeuZZ60jMaTCtw" coveredBy="_BsnNc4EfEeuZZ60jMaTCtw _BsnNdIEfEeuZZ60jMaTCtw _BsnNdYEfEeuZZ60jMaTCtw _HecCI4EfEeuZZ60jMaTCtw _HecCJIEfEeuZZ60jMaTCtw _HecCJYEfEeuZZ60jMaTCtw _JXxiU4EfEeuZZ60jMaTCtw _JXxiVIEfEeuZZ60jMaTCtw _JXxiVYEfEeuZZ60jMaTCtw _KrAr04EfEeuZZ60jMaTCtw _KrAr1IEfEeuZZ60jMaTCtw _KrAr1YEfEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_WTZrQYEfEeuZZ60jMaTCtw" name="SingleFilter" represents="_WTZrQIEfEeuZZ60jMaTCtw" coveredBy="_55n804EfEeuZZ60jMaTCtw _55n81IEfEeuZZ60jMaTCtw _55n81YEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cUlcg4EdEeuZZ60jMaTCtw" name="getdatabase_sender" covered="_1Aw30YEcEeuZZ60jMaTCtw" message="_cUlcgIEdEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cUlchIEdEeuZZ60jMaTCtw" name="getdatabase_receiver" covered="_-5IEEYEcEeuZZ60jMaTCtw" message="_cUlcgIEdEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_cUlchoEdEeuZZ60jMaTCtw" name="getdatabase" covered="_-5IEEYEcEeuZZ60jMaTCtw" finish="_cUlchYEdEeuZZ60jMaTCtw" start="_cUlchIEdEeuZZ60jMaTCtw" behavior="_cUlcgYEdEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_nDM7U4EdEeuZZ60jMaTCtw" name="GetDatabase_sender" covered="_-5IEEYEcEeuZZ60jMaTCtw" message="_nDM7UIEdEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_nDM7VIEdEeuZZ60jMaTCtw" name="GetDatabase_receiver" covered="_E75e0YEdEeuZZ60jMaTCtw" message="_nDM7UIEdEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_nDM7VoEdEeuZZ60jMaTCtw" name="GetDatabase" covered="_E75e0YEdEeuZZ60jMaTCtw" finish="_nDM7VYEdEeuZZ60jMaTCtw" start="_nDM7VIEdEeuZZ60jMaTCtw" behavior="_nDM7UYEdEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MSv7IoEeEeuZZ60jMaTCtw" name="FiltersApply_sender" covered="_E75e0YEdEeuZZ60jMaTCtw" message="_MSv7IIEeEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MSv7I4EeEeuZZ60jMaTCtw" name="FiltersApply_receiver" covered="_PbJE4YEdEeuZZ60jMaTCtw" message="_MSv7IIEeEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_MSv7JIEeEeuZZ60jMaTCtw" name="FiltersApply" covered="_PbJE4YEdEeuZZ60jMaTCtw" finish="_MSv7JYEeEeuZZ60jMaTCtw" start="_MSv7I4EeEeuZZ60jMaTCtw" behavior="_MSv7IYEeEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BsnNcoEfEeuZZ60jMaTCtw" name="DateTime_sender" covered="_PbJE4YEdEeuZZ60jMaTCtw" message="_BsnNcIEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BsnNc4EfEeuZZ60jMaTCtw" name="DateTime_receiver" covered="_0GxC0YEeEeuZZ60jMaTCtw" message="_BsnNcIEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_BsnNdIEfEeuZZ60jMaTCtw" name="DateTime" covered="_0GxC0YEeEeuZZ60jMaTCtw" finish="_BsnNdYEfEeuZZ60jMaTCtw" start="_BsnNc4EfEeuZZ60jMaTCtw" behavior="_BsnNcYEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_BsnNdYEfEeuZZ60jMaTCtw" name="DateTime_finish" covered="_0GxC0YEeEeuZZ60jMaTCtw" execution="_BsnNdIEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HecCIoEfEeuZZ60jMaTCtw" name="DateTime_sender" covered="_PbJE4YEdEeuZZ60jMaTCtw" message="_HecCIIEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HecCI4EfEeuZZ60jMaTCtw" name="DateTime_receiver" covered="_0GxC0YEeEeuZZ60jMaTCtw" message="_HecCIIEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_HecCJIEfEeuZZ60jMaTCtw" name="DateTime" covered="_0GxC0YEeEeuZZ60jMaTCtw" finish="_HecCJYEfEeuZZ60jMaTCtw" start="_HecCI4EfEeuZZ60jMaTCtw" behavior="_HecCIYEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_HecCJYEfEeuZZ60jMaTCtw" name="DateTime_finish" covered="_0GxC0YEeEeuZZ60jMaTCtw" execution="_HecCJIEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JXxiUoEfEeuZZ60jMaTCtw" name="DateTime_sender" covered="_PbJE4YEdEeuZZ60jMaTCtw" message="_JXxiUIEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JXxiU4EfEeuZZ60jMaTCtw" name="DateTime_receiver" covered="_0GxC0YEeEeuZZ60jMaTCtw" message="_JXxiUIEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_JXxiVIEfEeuZZ60jMaTCtw" name="DateTime" covered="_0GxC0YEeEeuZZ60jMaTCtw" finish="_JXxiVYEfEeuZZ60jMaTCtw" start="_JXxiU4EfEeuZZ60jMaTCtw" behavior="_JXxiUYEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_JXxiVYEfEeuZZ60jMaTCtw" name="DateTime_finish" covered="_0GxC0YEeEeuZZ60jMaTCtw" execution="_JXxiVIEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KrAr0oEfEeuZZ60jMaTCtw" name="DateTime_sender" covered="_PbJE4YEdEeuZZ60jMaTCtw" message="_KrAr0IEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KrAr04EfEeuZZ60jMaTCtw" name="DateTime_receiver" covered="_0GxC0YEeEeuZZ60jMaTCtw" message="_KrAr0IEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_KrAr1IEfEeuZZ60jMaTCtw" name="DateTime" covered="_0GxC0YEeEeuZZ60jMaTCtw" finish="_KrAr1YEfEeuZZ60jMaTCtw" start="_KrAr04EfEeuZZ60jMaTCtw" behavior="_KrAr0YEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_KrAr1YEfEeuZZ60jMaTCtw" name="DateTime_finish" covered="_0GxC0YEeEeuZZ60jMaTCtw" execution="_KrAr1IEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_55n80oEfEeuZZ60jMaTCtw" name="SingleFilter_sender" covered="_PbJE4YEdEeuZZ60jMaTCtw" message="_55n80IEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_55n804EfEeuZZ60jMaTCtw" name="SingleFilter_receiver" covered="_WTZrQYEfEeuZZ60jMaTCtw" message="_55n80IEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_55n81IEfEeuZZ60jMaTCtw" name="SingleFilter" covered="_WTZrQYEfEeuZZ60jMaTCtw" finish="_55n81YEfEeuZZ60jMaTCtw" start="_55n804EfEeuZZ60jMaTCtw" behavior="_55n80YEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_55n81YEfEeuZZ60jMaTCtw" name="SingleFilter_finish" covered="_WTZrQYEfEeuZZ60jMaTCtw" execution="_55n81IEfEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cv_ws4EeEeuZZ60jMaTCtw" name="getFilteredDatabase_sender" covered="_E75e0YEdEeuZZ60jMaTCtw" message="_cv_wsIEeEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cv_wtIEeEeuZZ60jMaTCtw" name="getFilteredDatabase_receiver" covered="_PbJE4YEdEeuZZ60jMaTCtw" message="_cv_wsIEeEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_cv_wtoEeEeuZZ60jMaTCtw" name="getFilteredDatabase" covered="_PbJE4YEdEeuZZ60jMaTCtw" finish="_cv_wtYEeEeuZZ60jMaTCtw" start="_cv_wtIEeEeuZZ60jMaTCtw" behavior="_cv_wsYEeEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cv_wtYEeEeuZZ60jMaTCtw" name="getFilteredDatabase_reply_sender" covered="_PbJE4YEdEeuZZ60jMaTCtw" message="_cv_wsoEeEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cv_wt4EeEeuZZ60jMaTCtw" name="getFilteredDatabase_reply_receiver" covered="_E75e0YEdEeuZZ60jMaTCtw" message="_cv_wsoEeEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_MSv7JYEeEeuZZ60jMaTCtw" name="FiltersApply_finish" covered="_PbJE4YEdEeuZZ60jMaTCtw" execution="_MSv7JIEeEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_nDM7VYEdEeuZZ60jMaTCtw" name="GetDatabase_reply_sender" covered="_E75e0YEdEeuZZ60jMaTCtw" message="_nDM7UoEdEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_nDM7V4EdEeuZZ60jMaTCtw" name="GetDatabase_reply_receiver" covered="_-5IEEYEcEeuZZ60jMaTCtw" message="_nDM7UoEdEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cUlchYEdEeuZZ60jMaTCtw" name="getdatabase_reply_sender" covered="_-5IEEYEcEeuZZ60jMaTCtw" message="_cUlcgoEdEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_cUlch4EdEeuZZ60jMaTCtw" name="getdatabase_reply_receiver" covered="_1Aw30YEcEeuZZ60jMaTCtw" message="_cUlcgoEdEeuZZ60jMaTCtw"/>
+    <message xmi:id="_cUlcgIEdEeuZZ60jMaTCtw" name="getdatabase" receiveEvent="_cUlchIEdEeuZZ60jMaTCtw" sendEvent="_cUlcg4EdEeuZZ60jMaTCtw" signature="_s_JBEHtFEeuxNYbOVKWwaw"/>
+    <message xmi:id="_cUlcgoEdEeuZZ60jMaTCtw" name="getdatabase_reply" messageSort="reply" receiveEvent="_cUlch4EdEeuZZ60jMaTCtw" sendEvent="_cUlchYEdEeuZZ60jMaTCtw"/>
+    <message xmi:id="_nDM7UIEdEeuZZ60jMaTCtw" name="GetDatabase" receiveEvent="_nDM7VIEdEeuZZ60jMaTCtw" sendEvent="_nDM7U4EdEeuZZ60jMaTCtw" signature="_JBrpUHtHEeuxNYbOVKWwaw"/>
+    <message xmi:id="_nDM7UoEdEeuZZ60jMaTCtw" name="GetDatabase_reply" messageSort="reply" receiveEvent="_nDM7V4EdEeuZZ60jMaTCtw" sendEvent="_nDM7VYEdEeuZZ60jMaTCtw"/>
+    <message xmi:id="_MSv7IIEeEeuZZ60jMaTCtw" name="FiltersApply" messageSort="asynchCall" receiveEvent="_MSv7I4EeEeuZZ60jMaTCtw" sendEvent="_MSv7IoEeEeuZZ60jMaTCtw" signature="_t-Z28HtLEeuxNYbOVKWwaw"/>
+    <message xmi:id="_cv_wsIEeEeuZZ60jMaTCtw" name="getFilteredDatabase" receiveEvent="_cv_wtIEeEeuZZ60jMaTCtw" sendEvent="_cv_ws4EeEeuZZ60jMaTCtw" signature="_MjOrMHtMEeuxNYbOVKWwaw"/>
+    <message xmi:id="_cv_wsoEeEeuZZ60jMaTCtw" name="getFilteredDatabase_reply" messageSort="reply" receiveEvent="_cv_wt4EeEeuZZ60jMaTCtw" sendEvent="_cv_wtYEeEeuZZ60jMaTCtw"/>
+    <message xmi:id="_BsnNcIEfEeuZZ60jMaTCtw" name="DateTime" messageSort="asynchCall" receiveEvent="_BsnNc4EfEeuZZ60jMaTCtw" sendEvent="_BsnNcoEfEeuZZ60jMaTCtw" signature="_AMoJEHX1EeuMHOX924W5Xg"/>
+    <message xmi:id="_HecCIIEfEeuZZ60jMaTCtw" name="DateTime" messageSort="asynchCall" receiveEvent="_HecCI4EfEeuZZ60jMaTCtw" sendEvent="_HecCIoEfEeuZZ60jMaTCtw" signature="_AMoJEHX1EeuMHOX924W5Xg"/>
+    <message xmi:id="_JXxiUIEfEeuZZ60jMaTCtw" name="DateTime" messageSort="asynchCall" receiveEvent="_JXxiU4EfEeuZZ60jMaTCtw" sendEvent="_JXxiUoEfEeuZZ60jMaTCtw" signature="_AMoJEHX1EeuMHOX924W5Xg"/>
+    <message xmi:id="_KrAr0IEfEeuZZ60jMaTCtw" name="DateTime" messageSort="asynchCall" receiveEvent="_KrAr04EfEeuZZ60jMaTCtw" sendEvent="_KrAr0oEfEeuZZ60jMaTCtw" signature="_AMoJEHX1EeuMHOX924W5Xg"/>
+    <message xmi:id="_55n80IEfEeuZZ60jMaTCtw" name="SingleFilter" messageSort="asynchCall" receiveEvent="_55n804EfEeuZZ60jMaTCtw" sendEvent="_55n80oEfEeuZZ60jMaTCtw" signature="_6wvrkHtMEeuxNYbOVKWwaw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_XSs6MIEhEeuZZ60jMaTCtw" name="NewModel">
+    <ownedAttribute xmi:id="_lgvGMIEhEeuZZ60jMaTCtw" name="USER" type="_x0X-0H9wEeuk7Jyq0NgGJQ"/>
+    <ownedAttribute xmi:id="_tZYdcIEhEeuZZ60jMaTCtw" name="Controller" type="_c-iAcHXwEeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_36LisIEhEeuZZ60jMaTCtw" name="StatisticsApply" type="_cBWd8H-dEeua1Zo20T8DuA"/>
+    <ownedAttribute xmi:id="_AarusIEjEeuZZ60jMaTCtw" name="DateTime" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_P6JGUIEjEeuZZ60jMaTCtw" name="SingleFilterStats" type="_Veyv4H-dEeua1Zo20T8DuA"/>
+    <ownedAttribute xmi:id="_5rBjUIEjEeuZZ60jMaTCtw" name="AppService" type="_yIyXsHXwEeuMHOX924W5Xg"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_YYXFQYEiEeuZZ60jMaTCtw" name="getstats"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ETlS4YEjEeuZZ60jMaTCtw" name="DateTime"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_GTU9EYEjEeuZZ60jMaTCtw" name="DateTime"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X4kVcYEjEeuZZ60jMaTCtw" name="SingleFilterStats"/>
+    <lifeline xmi:id="_lgvtQIEhEeuZZ60jMaTCtw" name="USER" represents="_lgvGMIEhEeuZZ60jMaTCtw" coveredBy="_YYXsUIEiEeuZZ60jMaTCtw _YYXsVIEiEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_tZYdcYEhEeuZZ60jMaTCtw" name="Controller" represents="_tZYdcIEhEeuZZ60jMaTCtw" coveredBy="_YYXsUYEiEeuZZ60jMaTCtw _YYXsU4EiEeuZZ60jMaTCtw _YYXsUoEiEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_5rBjUYEjEeuZZ60jMaTCtw" name="AppService" represents="_5rBjUIEjEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_36MJwIEhEeuZZ60jMaTCtw" name="StatisticsApply" represents="_36LisIEhEeuZZ60jMaTCtw" coveredBy="_ETlS4oEjEeuZZ60jMaTCtw _GTU9EoEjEeuZZ60jMaTCtw _X4kVcoEjEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_AarusYEjEeuZZ60jMaTCtw" name="DateTime" represents="_AarusIEjEeuZZ60jMaTCtw" coveredBy="_ETlS44EjEeuZZ60jMaTCtw _ETlS5IEjEeuZZ60jMaTCtw _ETlS5YEjEeuZZ60jMaTCtw _GTU9E4EjEeuZZ60jMaTCtw _GTVkIIEjEeuZZ60jMaTCtw _GTVkIYEjEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_P6JGUYEjEeuZZ60jMaTCtw" name="SingleFilterStats" represents="_P6JGUIEjEeuZZ60jMaTCtw" coveredBy="_X4kVc4EjEeuZZ60jMaTCtw _X4kVdIEjEeuZZ60jMaTCtw _X4k8gIEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YYXsUIEiEeuZZ60jMaTCtw" name="getstats_sender" covered="_lgvtQIEhEeuZZ60jMaTCtw" message="_YYXFQIEiEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YYXsUYEiEeuZZ60jMaTCtw" name="getstats_receiver" covered="_tZYdcYEhEeuZZ60jMaTCtw" message="_YYXFQIEiEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_YYXsU4EiEeuZZ60jMaTCtw" name="getstats" covered="_tZYdcYEhEeuZZ60jMaTCtw" finish="_YYXsUoEiEeuZZ60jMaTCtw" start="_YYXsUYEiEeuZZ60jMaTCtw" behavior="_YYXFQYEiEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ETlS4oEjEeuZZ60jMaTCtw" name="DateTime_sender" covered="_36MJwIEhEeuZZ60jMaTCtw" message="_ETlS4IEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ETlS44EjEeuZZ60jMaTCtw" name="DateTime_receiver" covered="_AarusYEjEeuZZ60jMaTCtw" message="_ETlS4IEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ETlS5IEjEeuZZ60jMaTCtw" name="DateTime" covered="_AarusYEjEeuZZ60jMaTCtw" finish="_ETlS5YEjEeuZZ60jMaTCtw" start="_ETlS44EjEeuZZ60jMaTCtw" behavior="_ETlS4YEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ETlS5YEjEeuZZ60jMaTCtw" name="DateTime_finish" covered="_AarusYEjEeuZZ60jMaTCtw" execution="_ETlS5IEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GTU9EoEjEeuZZ60jMaTCtw" name="DateTime_sender" covered="_36MJwIEhEeuZZ60jMaTCtw" message="_GTU9EIEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GTU9E4EjEeuZZ60jMaTCtw" name="DateTime_receiver" covered="_AarusYEjEeuZZ60jMaTCtw" message="_GTU9EIEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_GTVkIIEjEeuZZ60jMaTCtw" name="DateTime" covered="_AarusYEjEeuZZ60jMaTCtw" finish="_GTVkIYEjEeuZZ60jMaTCtw" start="_GTU9E4EjEeuZZ60jMaTCtw" behavior="_GTU9EYEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_GTVkIYEjEeuZZ60jMaTCtw" name="DateTime_finish" covered="_AarusYEjEeuZZ60jMaTCtw" execution="_GTVkIIEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_X4kVcoEjEeuZZ60jMaTCtw" name="SingleFilterStats_sender" covered="_36MJwIEhEeuZZ60jMaTCtw" message="_X4kVcIEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_X4kVc4EjEeuZZ60jMaTCtw" name="SingleFilterStats_receiver" covered="_P6JGUYEjEeuZZ60jMaTCtw" message="_X4kVcIEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_X4kVdIEjEeuZZ60jMaTCtw" name="SingleFilterStats" covered="_P6JGUYEjEeuZZ60jMaTCtw" finish="_X4k8gIEjEeuZZ60jMaTCtw" start="_X4kVc4EjEeuZZ60jMaTCtw" behavior="_X4kVcYEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_X4k8gIEjEeuZZ60jMaTCtw" name="SingleFilterStats_finish" covered="_P6JGUYEjEeuZZ60jMaTCtw" execution="_X4kVdIEjEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YYXsUoEiEeuZZ60jMaTCtw" name="getstats_reply_sender" covered="_tZYdcYEhEeuZZ60jMaTCtw" message="_YYXFQoEiEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YYXsVIEiEeuZZ60jMaTCtw" name="getstats_reply_receiver" covered="_lgvtQIEhEeuZZ60jMaTCtw" message="_YYXFQoEiEeuZZ60jMaTCtw"/>
+    <message xmi:id="_YYXFQIEiEeuZZ60jMaTCtw" name="getstats" receiveEvent="_YYXsUYEiEeuZZ60jMaTCtw" sendEvent="_YYXsUIEiEeuZZ60jMaTCtw" signature="_XH3zAH3bEeuwtqwVFElasg"/>
+    <message xmi:id="_YYXFQoEiEeuZZ60jMaTCtw" name="getstats_reply" messageSort="reply" receiveEvent="_YYXsVIEiEeuZZ60jMaTCtw" sendEvent="_YYXsUoEiEeuZZ60jMaTCtw"/>
+    <message xmi:id="_ETlS4IEjEeuZZ60jMaTCtw" name="DateTime" messageSort="asynchCall" receiveEvent="_ETlS44EjEeuZZ60jMaTCtw" sendEvent="_ETlS4oEjEeuZZ60jMaTCtw" signature="_AMoJEHX1EeuMHOX924W5Xg"/>
+    <message xmi:id="_GTU9EIEjEeuZZ60jMaTCtw" name="DateTime" messageSort="asynchCall" receiveEvent="_GTU9E4EjEeuZZ60jMaTCtw" sendEvent="_GTU9EoEjEeuZZ60jMaTCtw" signature="_AMoJEHX1EeuMHOX924W5Xg"/>
+    <message xmi:id="_X4kVcIEjEeuZZ60jMaTCtw" name="SingleFilterStats" messageSort="asynchCall" receiveEvent="_X4kVc4EjEeuZZ60jMaTCtw" sendEvent="_X4kVcoEjEeuZZ60jMaTCtw" signature="_UCfUgH-eEeua1Zo20T8DuA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_HBAtAIEkEeuZZ60jMaTCtw" name="NewModel">
+    <ownedAttribute xmi:id="_JwXPMIEkEeuZZ60jMaTCtw" name="USER" type="_x0X-0H9wEeuk7Jyq0NgGJQ"/>
+    <ownedAttribute xmi:id="_Ly2rYIEkEeuZZ60jMaTCtw" name="Controller" type="_c-iAcHXwEeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_QjvngIEkEeuZZ60jMaTCtw" name="AppService" type="_yIyXsHXwEeuMHOX924W5Xg"/>
+    <ownedAttribute xmi:id="_TFt1AIEkEeuZZ60jMaTCtw" name="SingleFilterStats" type="_Veyv4H-dEeua1Zo20T8DuA"/>
+    <ownedAttribute xmi:id="_WkV4AIEkEeuZZ60jMaTCtw" name="StatisticsApply" type="_cBWd8H-dEeua1Zo20T8DuA"/>
+    <ownedAttribute xmi:id="_eYgX4IEkEeuZZ60jMaTCtw" name="DateTime" type="_KdBQQHX0EeuMHOX924W5Xg"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kSBwAYEkEeuZZ60jMaTCtw" name="getstats"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_n6frgYEkEeuZZ60jMaTCtw" name="GetStats"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLmYwYEkEeuZZ60jMaTCtw" name="StatisticsApply"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0jjdwYEkEeuZZ60jMaTCtw" name="DateTime"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1WoggYEkEeuZZ60jMaTCtw" name="DateTime"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_A6rygYElEeuZZ60jMaTCtw" name="SingleFilterStats"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_K5Bq8YElEeuZZ60jMaTCtw" name="getFilteredStatistic"/>
+    <lifeline xmi:id="_JwX2QIEkEeuZZ60jMaTCtw" name="USER" represents="_JwXPMIEkEeuZZ60jMaTCtw" coveredBy="_kSBwA4EkEeuZZ60jMaTCtw _kSBwB4EkEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_Ly2rYYEkEeuZZ60jMaTCtw" name="Controller" represents="_Ly2rYIEkEeuZZ60jMaTCtw" coveredBy="_kSBwBIEkEeuZZ60jMaTCtw _kSBwBoEkEeuZZ60jMaTCtw _kSBwBYEkEeuZZ60jMaTCtw _n6frg4EkEeuZZ60jMaTCtw _n6frh4EkEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_QjvngYEkEeuZZ60jMaTCtw" name="AppService" represents="_QjvngIEkEeuZZ60jMaTCtw" coveredBy="_n6frhIEkEeuZZ60jMaTCtw _n6frhoEkEeuZZ60jMaTCtw _n6frhYEkEeuZZ60jMaTCtw _tLmYwoEkEeuZZ60jMaTCtw _K5Bq84ElEeuZZ60jMaTCtw _K5Bq94ElEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_WkV4AYEkEeuZZ60jMaTCtw" name="StatisticsApply" represents="_WkV4AIEkEeuZZ60jMaTCtw" coveredBy="_tLmYw4EkEeuZZ60jMaTCtw _tLmYxIEkEeuZZ60jMaTCtw _tLm_0IEkEeuZZ60jMaTCtw _0jjdwoEkEeuZZ60jMaTCtw _1WoggoEkEeuZZ60jMaTCtw _A6rygoElEeuZZ60jMaTCtw _K5Bq9IElEeuZZ60jMaTCtw _K5Bq9oElEeuZZ60jMaTCtw _K5Bq9YElEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_eYgX4YEkEeuZZ60jMaTCtw" name="DateTime" represents="_eYgX4IEkEeuZZ60jMaTCtw" coveredBy="_0jjdw4EkEeuZZ60jMaTCtw _0jjdxIEkEeuZZ60jMaTCtw _0jjdxYEkEeuZZ60jMaTCtw _1Wogg4EkEeuZZ60jMaTCtw _1WoghIEkEeuZZ60jMaTCtw _1WoghYEkEeuZZ60jMaTCtw"/>
+    <lifeline xmi:id="_TFt1AYEkEeuZZ60jMaTCtw" name="SingleFilterStats" represents="_TFt1AIEkEeuZZ60jMaTCtw" coveredBy="_A6ryg4ElEeuZZ60jMaTCtw _A6ryhIElEeuZZ60jMaTCtw _A6ryhYElEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kSBwA4EkEeuZZ60jMaTCtw" name="getstats_sender" covered="_JwX2QIEkEeuZZ60jMaTCtw" message="_kSBwAIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kSBwBIEkEeuZZ60jMaTCtw" name="getstats_receiver" covered="_Ly2rYYEkEeuZZ60jMaTCtw" message="_kSBwAIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_kSBwBoEkEeuZZ60jMaTCtw" name="getstats" covered="_Ly2rYYEkEeuZZ60jMaTCtw" finish="_kSBwBYEkEeuZZ60jMaTCtw" start="_kSBwBIEkEeuZZ60jMaTCtw" behavior="_kSBwAYEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n6frg4EkEeuZZ60jMaTCtw" name="GetStats_sender" covered="_Ly2rYYEkEeuZZ60jMaTCtw" message="_n6frgIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n6frhIEkEeuZZ60jMaTCtw" name="GetStats_receiver" covered="_QjvngYEkEeuZZ60jMaTCtw" message="_n6frgIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_n6frhoEkEeuZZ60jMaTCtw" name="GetStats" covered="_QjvngYEkEeuZZ60jMaTCtw" finish="_n6frhYEkEeuZZ60jMaTCtw" start="_n6frhIEkEeuZZ60jMaTCtw" behavior="_n6frgYEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tLmYwoEkEeuZZ60jMaTCtw" name="StatisticsApply_sender" covered="_QjvngYEkEeuZZ60jMaTCtw" message="_tLmYwIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tLmYw4EkEeuZZ60jMaTCtw" name="StatisticsApply_receiver" covered="_WkV4AYEkEeuZZ60jMaTCtw" message="_tLmYwIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_tLmYxIEkEeuZZ60jMaTCtw" name="StatisticsApply" covered="_WkV4AYEkEeuZZ60jMaTCtw" finish="_tLm_0IEkEeuZZ60jMaTCtw" start="_tLmYw4EkEeuZZ60jMaTCtw" behavior="_tLmYwYEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0jjdwoEkEeuZZ60jMaTCtw" name="DateTime_sender" covered="_WkV4AYEkEeuZZ60jMaTCtw" message="_0jjdwIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0jjdw4EkEeuZZ60jMaTCtw" name="DateTime_receiver" covered="_eYgX4YEkEeuZZ60jMaTCtw" message="_0jjdwIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_0jjdxIEkEeuZZ60jMaTCtw" name="DateTime" covered="_eYgX4YEkEeuZZ60jMaTCtw" finish="_0jjdxYEkEeuZZ60jMaTCtw" start="_0jjdw4EkEeuZZ60jMaTCtw" behavior="_0jjdwYEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0jjdxYEkEeuZZ60jMaTCtw" name="DateTime_finish" covered="_eYgX4YEkEeuZZ60jMaTCtw" execution="_0jjdxIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1WoggoEkEeuZZ60jMaTCtw" name="DateTime_sender" covered="_WkV4AYEkEeuZZ60jMaTCtw" message="_1WoggIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1Wogg4EkEeuZZ60jMaTCtw" name="DateTime_receiver" covered="_eYgX4YEkEeuZZ60jMaTCtw" message="_1WoggIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_1WoghIEkEeuZZ60jMaTCtw" name="DateTime" covered="_eYgX4YEkEeuZZ60jMaTCtw" finish="_1WoghYEkEeuZZ60jMaTCtw" start="_1Wogg4EkEeuZZ60jMaTCtw" behavior="_1WoggYEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_1WoghYEkEeuZZ60jMaTCtw" name="DateTime_finish" covered="_eYgX4YEkEeuZZ60jMaTCtw" execution="_1WoghIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_A6rygoElEeuZZ60jMaTCtw" name="SingleFilterStats_sender" covered="_WkV4AYEkEeuZZ60jMaTCtw" message="_A6rygIElEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_A6ryg4ElEeuZZ60jMaTCtw" name="SingleFilterStats_receiver" covered="_TFt1AYEkEeuZZ60jMaTCtw" message="_A6rygIElEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_A6ryhIElEeuZZ60jMaTCtw" name="SingleFilterStats" covered="_TFt1AYEkEeuZZ60jMaTCtw" finish="_A6ryhYElEeuZZ60jMaTCtw" start="_A6ryg4ElEeuZZ60jMaTCtw" behavior="_A6rygYElEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_K5Bq84ElEeuZZ60jMaTCtw" name="getFilteredStatistic_sender" covered="_QjvngYEkEeuZZ60jMaTCtw" message="_K5Bq8IElEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_K5Bq9IElEeuZZ60jMaTCtw" name="getFilteredStatistic_receiver" covered="_WkV4AYEkEeuZZ60jMaTCtw" message="_K5Bq8IElEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_K5Bq9oElEeuZZ60jMaTCtw" name="getFilteredStatistic" covered="_WkV4AYEkEeuZZ60jMaTCtw" finish="_K5Bq9YElEeuZZ60jMaTCtw" start="_K5Bq9IElEeuZZ60jMaTCtw" behavior="_K5Bq8YElEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_A6ryhYElEeuZZ60jMaTCtw" name="SingleFilterStats_finish" covered="_TFt1AYEkEeuZZ60jMaTCtw" execution="_A6ryhIElEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_K5Bq9YElEeuZZ60jMaTCtw" name="getFilteredStatistic_reply_sender" covered="_WkV4AYEkEeuZZ60jMaTCtw" message="_K5Bq8oElEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_K5Bq94ElEeuZZ60jMaTCtw" name="getFilteredStatistic_reply_receiver" covered="_QjvngYEkEeuZZ60jMaTCtw" message="_K5Bq8oElEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_tLm_0IEkEeuZZ60jMaTCtw" name="StatisticsApply_finish" covered="_WkV4AYEkEeuZZ60jMaTCtw" execution="_tLmYxIEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n6frhYEkEeuZZ60jMaTCtw" name="GetStats_reply_sender" covered="_QjvngYEkEeuZZ60jMaTCtw" message="_n6frgoEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_n6frh4EkEeuZZ60jMaTCtw" name="GetStats_reply_receiver" covered="_Ly2rYYEkEeuZZ60jMaTCtw" message="_n6frgoEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kSBwBYEkEeuZZ60jMaTCtw" name="getstats_reply_sender" covered="_Ly2rYYEkEeuZZ60jMaTCtw" message="_kSBwAoEkEeuZZ60jMaTCtw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kSBwB4EkEeuZZ60jMaTCtw" name="getstats_reply_receiver" covered="_JwX2QIEkEeuZZ60jMaTCtw" message="_kSBwAoEkEeuZZ60jMaTCtw"/>
+    <message xmi:id="_kSBwAIEkEeuZZ60jMaTCtw" name="getstats" receiveEvent="_kSBwBIEkEeuZZ60jMaTCtw" sendEvent="_kSBwA4EkEeuZZ60jMaTCtw" signature="_XH3zAH3bEeuwtqwVFElasg"/>
+    <message xmi:id="_kSBwAoEkEeuZZ60jMaTCtw" name="getstats_reply" messageSort="reply" receiveEvent="_kSBwB4EkEeuZZ60jMaTCtw" sendEvent="_kSBwBYEkEeuZZ60jMaTCtw"/>
+    <message xmi:id="_n6frgIEkEeuZZ60jMaTCtw" name="GetStats" receiveEvent="_n6frhIEkEeuZZ60jMaTCtw" sendEvent="_n6frg4EkEeuZZ60jMaTCtw" signature="_ZPfxYH3cEeuwtqwVFElasg"/>
+    <message xmi:id="_n6frgoEkEeuZZ60jMaTCtw" name="GetStats_reply" messageSort="reply" receiveEvent="_n6frh4EkEeuZZ60jMaTCtw" sendEvent="_n6frhYEkEeuZZ60jMaTCtw"/>
+    <message xmi:id="_tLmYwIEkEeuZZ60jMaTCtw" name="StatisticsApply" messageSort="asynchCall" receiveEvent="_tLmYw4EkEeuZZ60jMaTCtw" sendEvent="_tLmYwoEkEeuZZ60jMaTCtw" signature="_YhmusH-fEeua1Zo20T8DuA"/>
+    <message xmi:id="_0jjdwIEkEeuZZ60jMaTCtw" name="DateTime" messageSort="asynchCall" receiveEvent="_0jjdw4EkEeuZZ60jMaTCtw" sendEvent="_0jjdwoEkEeuZZ60jMaTCtw" signature="_AMoJEHX1EeuMHOX924W5Xg"/>
+    <message xmi:id="_1WoggIEkEeuZZ60jMaTCtw" name="DateTime" messageSort="asynchCall" receiveEvent="_1Wogg4EkEeuZZ60jMaTCtw" sendEvent="_1WoggoEkEeuZZ60jMaTCtw" signature="_AMoJEHX1EeuMHOX924W5Xg"/>
+    <message xmi:id="_A6rygIElEeuZZ60jMaTCtw" name="SingleFilterStats" messageSort="asynchCall" receiveEvent="_A6ryg4ElEeuZZ60jMaTCtw" sendEvent="_A6rygoElEeuZZ60jMaTCtw" signature="_UCfUgH-eEeua1Zo20T8DuA"/>
+    <message xmi:id="_K5Bq8IElEeuZZ60jMaTCtw" name="getFilteredStatistic" receiveEvent="_K5Bq9IElEeuZZ60jMaTCtw" sendEvent="_K5Bq84ElEeuZZ60jMaTCtw" signature="_5qciUIBkEeuc1t8AZKunhQ"/>
+    <message xmi:id="_K5Bq8oElEeuZZ60jMaTCtw" name="getFilteredStatistic_reply" messageSort="reply" receiveEvent="_K5Bq94ElEeuZZ60jMaTCtw" sendEvent="_K5Bq9YElEeuZZ60jMaTCtw"/>
+  </packagedElement>
 </uml:Model>

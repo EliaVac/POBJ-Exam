@@ -215,6 +215,11 @@
       <ownedOperation xmi:id="_XMVUsHtIEeuxNYbOVKWwaw" name="LowerThan">
         <ownedParameter xmi:id="_Z_vQcHtIEeuxNYbOVKWwaw" name="filterdate" type="_KdBQQHX0EeuMHOX924W5Xg"/>
       </ownedOperation>
+      <ownedOperation xmi:id="_DdUwkIE0Eeux94IFq52RKg" name="equals">
+        <ownedParameter xmi:id="_Fh6egIE0Eeux94IFq52RKg" name="obj">
+          <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_HBw1oH3cEeuwtqwVFElasg" name="SingleStatistic" visibility="public">
       <ownedAttribute xmi:id="_tpizsH3cEeuwtqwVFElasg" name="zone" visibility="private">
@@ -383,6 +388,29 @@
       <ownedOperation xmi:id="_p0yWYH3hEeuRorcQEqQ7ow" name="CheckDate" visibility="protected">
         <ownedParameter xmi:id="_ssx3MH3hEeuRorcQEqQ7ow" name="tocheck" type="_KdBQQHX0EeuMHOX924W5Xg"/>
       </ownedOperation>
+      <ownedOperation xmi:id="_BvF3sIE1Eeux94IFq52RKg" name="IntFilter" visibility="protected">
+        <ownedParameter xmi:id="_GuxdwIE1Eeux94IFq52RKg" name="collection" type="_HBw1oH3cEeuwtqwVFElasg" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ixtl4IE1Eeux94IFq52RKg" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_HH2FEIE1Eeux94IFq52RKg" name="min">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Hc5IAIE1Eeux94IFq52RKg" name="max">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Hw1-wIE1Eeux94IFq52RKg" name="field">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pieisIE0Eeux94IFq52RKg" name="CheckInt" visibility="protected">
+        <ownedParameter xmi:id="_tw0ycIE0Eeux94IFq52RKg" name="tocheck" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vHxXQIE0Eeux94IFq52RKg" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_uXNdAIE0Eeux94IFq52RKg" name="field">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_CGNIIHtLEeuxNYbOVKWwaw" name="FiltersApply" visibility="public">
       <ownedAttribute xmi:id="_HNl4sHtLEeuxNYbOVKWwaw" name="filterslist" visibility="private" type="_XV6nIHtLEeuxNYbOVKWwaw" isUnique="false">
@@ -400,6 +428,7 @@
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_MjOrMHtMEeuxNYbOVKWwaw" name="getFilteredDatabase"/>
+      <ownedOperation xmi:id="_X5v8AIE1Eeux94IFq52RKg" name="getFilterList"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_XV6nIHtLEeuxNYbOVKWwaw" name="SingleFilter" visibility="public">
       <ownedAttribute xmi:id="_ap8HMHtMEeuxNYbOVKWwaw" name="country" visibility="private">
@@ -430,6 +459,11 @@
       <ownedOperation xmi:id="_Cf1owHtOEeuxNYbOVKWwaw" name="getUpdatedatebeg"/>
       <ownedOperation xmi:id="_C0KS8HtOEeuxNYbOVKWwaw" name="getUpdatedateend"/>
       <ownedOperation xmi:id="_DPIXsHtOEeuxNYbOVKWwaw" name="isIsdead"/>
+      <ownedOperation xmi:id="_rkTbEIE1Eeux94IFq52RKg" name="equals">
+        <ownedParameter xmi:id="_tQiTYIE1Eeux94IFq52RKg" name="obj">
+          <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Veyv4H-dEeua1Zo20T8DuA" name="SingleFilterStats" visibility="public">
       <ownedAttribute xmi:id="_lq388H-dEeua1Zo20T8DuA" name="zone" visibility="private">
@@ -471,6 +505,11 @@
       <ownedOperation xmi:id="_WGGyEH-eEeua1Zo20T8DuA" name="getInc"/>
       <ownedOperation xmi:id="_WR7nkH-eEeua1Zo20T8DuA" name="getDec"/>
       <ownedOperation xmi:id="_W6SBAH-eEeua1Zo20T8DuA" name="getTot"/>
+      <ownedOperation xmi:id="_8kBEgIE1Eeux94IFq52RKg" name="equals">
+        <ownedParameter xmi:id="_-AlwMIE1Eeux94IFq52RKg" name="obj">
+          <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_cBWd8H-dEeua1Zo20T8DuA" name="StatisticsApply" visibility="public">
       <ownedAttribute xmi:id="_JjABYH-fEeua1Zo20T8DuA" name="collection" visibility="private" type="_HBw1oH3cEeuwtqwVFElasg" isUnique="false">
@@ -488,6 +527,7 @@
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_5qciUIBkEeuc1t8AZKunhQ" name="getFilteredStatistic"/>
+      <ownedOperation xmi:id="_EoB-QIE2Eeux94IFq52RKg" name="getFilterList"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ezCLEH3fEeuRorcQEqQ7ow" name="Filterproblem" visibility="public"/>

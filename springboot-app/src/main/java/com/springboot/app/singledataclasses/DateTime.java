@@ -111,8 +111,10 @@ public class DateTime {
 			return true;
 		return false;
 	}
+
 	/**
-	 * This function return a boolean that permit to verify if the object inserted as parameter matches to our object
+	 * This function return a boolean that permit to verify if the object inserted
+	 * as parameter matches to our object
 	 */
 	@Override
 	public boolean equals(Object obj) {

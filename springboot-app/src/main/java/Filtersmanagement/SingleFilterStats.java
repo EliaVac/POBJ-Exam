@@ -12,7 +12,7 @@ import com.springboot.app.singledataclasses.DateTime;
  * @author Federico Di Tullio
  * @author Elia Vaccarini
  */
-public class SingleFilterStats{
+public class SingleFilterStats {
 	/**
 	 * the string that identify the zone
 	 */
@@ -105,9 +105,11 @@ public class SingleFilterStats{
 	public int[] getTot() {
 		return tot;
 	}
-/**
- * This function return a boolean that permit to verify if the object inserted as parameter matches to our object
- */
+
+	/**
+	 * This function return a boolean that permit to verify if the object inserted
+	 * as parameter matches to our object
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

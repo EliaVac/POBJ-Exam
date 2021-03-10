@@ -112,9 +112,11 @@ public class SingleFilter {
 	public int isIsdead() {
 		return isdead;
 	}
-/**
- * This function return a boolean that permit to verify if the object inserted as parameter matches to our object
- */
+
+	/**
+	 * This function return a boolean that permit to verify if the object inserted
+	 * as parameter matches to our object
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -129,5 +131,5 @@ public class SingleFilter {
 				&& Objects.equals(updatedatebeg, other.updatedatebeg)
 				&& Objects.equals(updatedateend, other.updatedateend);
 	}
-	
+
 }

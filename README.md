@@ -94,15 +94,30 @@ The minimum-maximum object has to be written as:
 ## Java implementation
 The package Controller:
 
+![PackageController](./UmlDiagram/PackageController.JPG)
+
 The package Service:
+
+![PackageService](./UmlDiagram/PackageService.JPG)
+
+The package SingleDataClasses:
+
+![PackageSingleDataClasses](./UmlDiagram/PackageSingleDataClasses.JPG)
+
 
 The package Utilities:
 
-The package SingleClassesDomain:
-
-The package FilterManagement:
+![PackageUtilities](./UmlDiagram/PackageUtilities.JPG)
 
 The package Errors:
+
+![PackageErrors](./UmlDiagram/PackageErrors.JPG)
+
+
+The package FiltersManagement:
+
+![PackageFiltersManagement](./UmlDiagram/PackageFiltersManagement.JPG)
+
 
 ## Strengths
 This application provides to satisfy research about rent house domains. The first technology used is Spring-boot, usefull to interface with the user. All the operations are provided first by the controller, then by the class AppService. The last one is the class that manage all the different request. To minimize the serving time the AppService class saves the possible key-words, the possible filters, the complete database and the general statistics. Whenever the user request a filtered database it's necessary apply the filtering technique thanks to the extension of the class AllOperations. This class is used by StatisticApply too, class for the management of the filter for the statistic collection. So, AllOperations is the real filtering class used by different type. Another strength of this application is the use of the ArrayList for collection of variable dimension. The last but not least strength is the implementation of the exceptions handler with the obiective of a better feedback usefull for a quickly and easier understanding.

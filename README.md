@@ -24,6 +24,14 @@ This application is aimed to show data and statistics on domains that allows to 
 The user use case diagram shows the three possible work zones and the possible operations available for the user:
 ![UserUseCaseDiagram](./UmlDiagram/NewModelUserUseCaseDiagram.jpg)
 
+| Root | Type | what does it return |
+|---|---|---|
+| /getkeywords | GET |The root where you can see the keywords
+| /getfilters | GET |The root where you can see the filters of the app
+| /getdatabase | GET |The root that permits to have the database
+| /getdatabase | POST |
+| /getstats | GET |
+| /getstats | POST |
 
 The system case diagram shows the different operations to do first and during the execution for all work zones:
 ![SystemUseCaseDiagram](./UmlDiagram/NewModelSystemCaseDiagram.jpg)
@@ -50,7 +58,33 @@ The first one accept this fields:
 |isdead | boolean | identify if the requested domain are still alive (if false) or are dead (true)|
 
 
-An example of wright filter:
+An example of right filter:
+```
+[
+  {
+    "country":"US",
+    "minimum_createtime":{
+      "year":2018,
+      "month":7,
+      "day": 24,
+      "hour":14,
+      "minute":7
+    },
+    "maximum_createtime":{
+    },
+    "minimum_updatetime":{
+      "year":2018,
+      "month":7,
+      "day": 24
+    }, 
+    "maximum_updatetime":{   
+      "hour":14,
+      "minute":7
+    },
+    "isdead": "true"
+  }		      
+]
+```
 
 
 The filter for the statistic collection accept this fields:
@@ -63,34 +97,62 @@ The filter for the statistic collection accept this fields:
 | decrement | Object minimum-maximum | identify the range value of the field decrement for the filtered statistics collection|
 | total | Object minimum-maximum | identify the range value of the field total for the filtered statistics collection|
 
-An example of wright filter:
+An example of right filter:
+```
+[
+  {
+    "zone":"IT",
+    "minimum_date":{
+      "year":2020,
+      "month":6,
+      "day": 1,
+      "hour":0,
+      "minute":0
+    },
+    "maximum_date":{
+      "year":2021,
+      "month":5,
+      "day": 30,
+      "hour":23,
+      "minute":59
+    },
+    "increment":{
+      "minimum":20,
+      "maximum":25,
+    },
+    "decrement":{
+      "minimum":35,
+      "maximum":45,
+    },
+    "total":{
+      "minimum":37,
+      "maximum":67,
+    }
+  }		      
+]
 
+```
 
 The DateTime object has to be written as:
 
+```
 {
-
   "year": intvalue,         (if not setted the applications take the currently year)
- 
   "month": intvalue,        (if not setted the applications take the currently month)
- 
   "day": intvalue,          (if not setted the applications take the currently day of month)
-  
   "hour": intvalue,         (if not setted the application take the hour 00)
- 
   "minute": intvalue        (if not setted the application take the minute) 
-  
 }
+```
 
 The minimum-maximum object has to be written as:
-
+```
 {
-
   "minimum": intvalue,      (if not setted the application take 0)
-  
   "maximum": intvalue       (if not setted the application take tha maximum value for the class Integer: 2147483647)
-  
 }
+```
+
 ## Java implementation
 The package Controller:
 

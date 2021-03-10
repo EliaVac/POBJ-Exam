@@ -181,9 +181,9 @@ public class StatisticsApply extends AllOperations {
 	}
 
 	/**
-	 * Getters of the list of filter
+	 * Getters of the list of filters
 	 * 
-	 * @return
+	 * @return filerlist
 	 */
 	public ArrayList<SingleFilterStats> getFilterList() {
 		return filterslist;

@@ -199,6 +199,8 @@ public class AllOperations {
 		}
 	}
 /**
+ * Returns an ArrayList built by all elements of the statistic collection that
+ * have a parameter of increment and/or decrement and/or total between minimum and maximum
  * 
  * @param collection
  * @param min
@@ -222,7 +224,8 @@ public class AllOperations {
 		return filtered;
 	}
 	/**
-	 * 
+	 * It's a method that verifies the correct insertion of increment,decrement,total fields and manages possible
+	 * errors
 	 * @param tocheck
 	 * @param field
 	 * @throws FilterProblem

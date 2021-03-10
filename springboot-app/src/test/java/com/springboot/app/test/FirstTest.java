@@ -14,11 +14,26 @@ import Errors.FilterProblem;
 import Errors.JSONProblem;
 import Filtersmanagement.FiltersApply;
 import Filtersmanagement.SingleFilter;
+/**
+ * 
+ */
 
 public class FirstTest {
+	/**
+	 * 
+	 */
 	private FiltersApply filtersapply;
+	/**
+	 * 
+	 */
 	private String filter;
+	/**
+	 * 
+	 */
 	private SingleFilter expected;
+	/**
+	 * 
+	 */
 	@BeforeEach 
 	public void setUp () {
 		//a JSON filter written thanks to Postman
@@ -55,11 +70,19 @@ public class FirstTest {
 		DateTime fourthdate = new DateTime(now.getYear(),now.getMonthValue(),now.getDayOfMonth(),14,7);
 		expected = new SingleFilter("US", firstdate, seconddate, thirddate, fourthdate, 1);
 	}
+	/**
+	 * 
+	 */
 	@AfterEach
 	public void tearDown () {
 		
 	}
-	
+	/**
+	 * 
+	 * @throws JSONProblem
+	 * @throws JSONException
+	 * @throws FilterProblem
+	 */
 	@Test
 	public void test() throws JSONProblem, JSONException, FilterProblem {
 		filtersapply = new FiltersApply(filter, null);

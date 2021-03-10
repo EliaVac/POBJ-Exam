@@ -9,9 +9,20 @@ import org.junit.jupiter.api.Test;
 import Errors.FilterProblem;
 import Errors.JSONProblem;
 import Filtersmanagement.FiltersApply;
+/**
+ * 
+ * @author Asus
+ *
+ */
 
 public class SecondTest {
+	/**
+	 * 
+	 */
 	private String[] filter;
+	/**
+	 * 
+	 */
 	@BeforeEach 
 	public void setUp () {
 		filter = new String[3];
@@ -38,10 +49,19 @@ public class SecondTest {
 				+ "		          }"
 				+ "		      ]";
 	}
+	/**
+	 * 
+	 */
 	@AfterEach
 	public void tearDown () {
 		
 	}
+	/**
+	 * 
+	 * @throws JSONProblem
+	 * @throws JSONException
+	 * @throws FilterProblem
+	 */
 	
 	@Test
 	public void test() throws JSONProblem, JSONException, FilterProblem {

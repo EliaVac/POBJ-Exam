@@ -16,9 +16,20 @@ import Errors.JSONProblem;
 import Filtersmanagement.SingleFilterStats;
 import Filtersmanagement.StatisticsApply;
 
+/**
+ * 
+ * @author Elia Vaccarini
+ * @author Federico Di Tullio
+ */
 public class ThirdTest {
+	/**
+	 * 
+	 */
 	private String[] filter;
 	SingleFilterStats singlefilterstats;
+	/**
+	 * 
+	 */
 	@BeforeEach 
 	public void setUp () {
 		filter = new String[2];
@@ -70,11 +81,20 @@ public class ThirdTest {
 		int[] tot= {37,67};
 		singlefilterstats=new SingleFilterStats("IT", new DateTime(2020,6,1,0,0), new DateTime(2021,5,30,23,59),inc,dec,tot);
 	}
+	/**
+	 * 
+	 */
 	@AfterEach
 	public void tearDown () {
 		
 	}
-	
+	/**
+	 * 
+	 * @throws JSONProblem
+	 * @throws JSONException
+	 * @throws FilterProblem
+	 * @throws ConnectionProblem
+	 */
 	@Test
 	public void test() throws JSONProblem, JSONException, FilterProblem, ConnectionProblem {
 		//Compare the expected filter with the one to elaborate

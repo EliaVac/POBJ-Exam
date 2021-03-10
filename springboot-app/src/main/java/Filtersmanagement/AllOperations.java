@@ -204,7 +204,7 @@ public class AllOperations {
  * @param min
  * @param max
  * @param field
- * @return
+ * @return filtered
  */
 	protected ArrayList<SingleStatistic> IntFilter(ArrayList<SingleStatistic> collection, int min, int max, int field) {
 		ArrayList<SingleStatistic> filtered = new ArrayList<SingleStatistic>();

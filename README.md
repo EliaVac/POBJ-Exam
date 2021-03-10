@@ -29,9 +29,9 @@ The user use case diagram shows the three possible work zones and the possible o
 | /getkeywords | GET |The root where you can see the keywords
 | /getfilters | GET |The root where you can see the filters of the app
 | /getdatabase | GET |The root that permits to have the database
-| /getdatabase | POST |
-| /getstats | GET |
-| /getstats | POST |
+| /getdatabase | POST |The root that permits to have the filtered database
+| /getstats | GET |The root that permits to have the statistics
+| /getstats | POST |The root that permits to have the filtered statistics collection
 
 The system case diagram shows the different operations to do first and during the execution for all work zones:
 ![SystemUseCaseDiagram](./UmlDiagram/NewModelSystemCaseDiagram.jpg)

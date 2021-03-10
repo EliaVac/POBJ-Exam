@@ -10,18 +10,18 @@ import Errors.FilterProblem;
 import Errors.JSONProblem;
 import Filtersmanagement.FiltersApply;
 /**
- * 
- * @author Asus
- *
+ * This is the class to test the excpetions that are launched when the user insered a wrong filter of database
+ * @author Federico Di Tullio
+ * @author Elia Vaccarini
  */
-
 public class SecondTest {
 	/**
-	 * 
+	 * The filter array of string
 	 */
 	private String[] filter;
+
 	/**
-	 * 
+	 * This void sets up the filter
 	 */
 	@BeforeEach 
 	public void setUp () {
@@ -49,20 +49,18 @@ public class SecondTest {
 				+ "		          }"
 				+ "		      ]";
 	}
-	/**
-	 * 
-	 */
+
 	@AfterEach
 	public void tearDown () {
 		
 	}
 	/**
-	 * 
+	 * The test controls if the exceptions returned by the function is matching with the class that identify the type of error contained in the
+	 * filter
 	 * @throws JSONProblem
 	 * @throws JSONException
 	 * @throws FilterProblem
 	 */
-	
 	@Test
 	public void test() throws JSONProblem, JSONException, FilterProblem {
 		//It's found a second attribute with different case

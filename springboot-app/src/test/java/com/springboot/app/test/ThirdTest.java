@@ -17,18 +17,22 @@ import Filtersmanagement.SingleFilterStats;
 import Filtersmanagement.StatisticsApply;
 
 /**
- * 
+ * This class is used to test if the expected results for this filter of statistics collection are
+ * truthful and verify the matching of eventual errors
  * @author Elia Vaccarini
  * @author Federico Di Tullio
  */
 public class ThirdTest {
 	/**
-	 * 
+	 * The array of filter
 	 */
 	private String[] filter;
-	SingleFilterStats singlefilterstats;
 	/**
-	 * 
+	 * Single Filter Statistics expected
+	 */
+	private SingleFilterStats singlefilterstats;
+	/**
+	 * This void sets up the filter of the statistics collection
 	 */
 	@BeforeEach 
 	public void setUp () {
@@ -81,15 +85,13 @@ public class ThirdTest {
 		int[] tot= {37,67};
 		singlefilterstats=new SingleFilterStats("IT", new DateTime(2020,6,1,0,0), new DateTime(2021,5,30,23,59),inc,dec,tot);
 	}
-	/**
-	 * 
-	 */
+	
 	@AfterEach
 	public void tearDown () {
 		
 	}
 	/**
-	 * 
+	 * This void tests if the expected result is the same of the application and also if the message of error is the correct one
 	 * @throws JSONProblem
 	 * @throws JSONException
 	 * @throws FilterProblem

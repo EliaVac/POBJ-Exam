@@ -147,6 +147,10 @@ public class FiltersApply extends AllOperations {
 		}
 		return filteredDatabase;
 	}
+	/**
+	 * Getters of the all filters given
+	 * @return filterlist
+	 */
 	public ArrayList<SingleFilter> getFilterList(){
 		return filterslist;
 	}

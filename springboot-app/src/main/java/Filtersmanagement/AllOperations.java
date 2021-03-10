@@ -198,7 +198,14 @@ public class AllOperations {
 			throw new FilterProblem("You have setted an unexisting minute: " + minute);
 		}
 	}
-
+/**
+ * 
+ * @param collection
+ * @param min
+ * @param max
+ * @param field
+ * @return
+ */
 	protected ArrayList<SingleStatistic> IntFilter(ArrayList<SingleStatistic> collection, int min, int max, int field) {
 		ArrayList<SingleStatistic> filtered = new ArrayList<SingleStatistic>();
 		for (int i = 0; i < collection.size(); i++) {
@@ -214,6 +221,12 @@ public class AllOperations {
 		}
 		return filtered;
 	}
+	/**
+	 * 
+	 * @param tocheck
+	 * @param field
+	 * @throws FilterProblem
+	 */
 	protected void CheckInt(int[] tocheck, String field) throws FilterProblem {
 		for(int i=0;i<tocheck.length;i++) {
 			if(tocheck[i]<0)

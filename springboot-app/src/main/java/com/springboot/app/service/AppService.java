@@ -56,7 +56,7 @@ public class AppService {
 		FiltersCreator filtercollector = new FiltersCreator();
 		possiblefilters = filtercollector.GetFiltersCollection();
 		DatabaseCreator datacreator = new DatabaseCreator();
-		database = datacreator.getDatabase();
+		database= datacreator.getDatabase();
 		KeyWordsCreator keywordscollector = new KeyWordsCreator();
 		possiblekeywords = keywordscollector.GetKeyWordsCollection();
 		StatisticsCreator statisticscollector = new StatisticsCreator("bundle_all_zones");
@@ -74,7 +74,7 @@ public class AppService {
 
 	/**
 	 * Getters of the database attribute
-	 * 
+	 *         
 	 * @return the database
 	 */
 	public ArrayList<SingleDomain> GetDatabase() {

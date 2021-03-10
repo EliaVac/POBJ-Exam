@@ -82,7 +82,7 @@ public class FiltersCreator {
 	 */
 	public FiltersCreator() {
 		possiblefilter = new PossibleFilter();
-		possiblefilter.filterIntroduction = "A simply filter for database can be described by:";
+		possiblefilter.filterIntroduction = "A simple filter for database is a JSONArray of JSONobject that can be described by:";
 		possiblefilter.filterscollection = new HashMap<String, String>();
 		possiblefilter.filterscollection.put("country", "The country that host the domain: undefined,US,RU,HK");
 		possiblefilter.filterscollection.put("minimum_createtime", "Identify the date of start with an object, composed by: 'year', 'month', 'day', 'hour', 'minute'. The default date is today at 00:00");
@@ -90,7 +90,7 @@ public class FiltersCreator {
 		possiblefilter.filterscollection.put("minimum_updatetime", "Identify the date of start with an object, composed by: 'year', 'month', 'day', 'hour', 'minute'. The default date is today at 00:00");
 		possiblefilter.filterscollection.put("maximum_updatetime", "Identify the date of end with an object, composed by: 'year', 'month', 'day', 'hour', 'minute'. The default date is today at 00:00");
 		possiblefilter.filterscollection.put("isdead", "Identify if the domain is still alive: Alive or Dead");
-		possiblefilter.filterStatIntroduction = "A simply filter for statistic can be described by:";
+		possiblefilter.filterStatIntroduction = "A simple filter for statistic is a JSONArray of JSONobject that can be described by:";
 		possiblefilter.filtersStatcollection = new HashMap<String, String>();
 		possiblefilter.filtersStatcollection.put("zone", "The zone where are analyzed the statistics: undefined,US,RU,HK");
 		possiblefilter.filtersStatcollection.put("minimum_date", "Identify the date of start with an object, composed by: 'year', 'month', 'day', 'hour', 'minute'. The default date is today at 00:00");

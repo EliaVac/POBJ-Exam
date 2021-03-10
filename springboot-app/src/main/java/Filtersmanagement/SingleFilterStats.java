@@ -35,7 +35,7 @@ public class SingleFilterStats {
 	 * The constructor requires all the parameters to initialize them
 	 * 
 	 * @param zone
-	 * @param minimun_date
+	 * @param minimum_date
 	 * @param maximum_date
 	 * @param inc
 	 * @param dec

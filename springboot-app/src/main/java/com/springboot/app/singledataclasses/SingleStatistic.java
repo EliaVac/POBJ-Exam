@@ -34,7 +34,7 @@ public class SingleStatistic {
 	 * initialize them
 	 * 
 	 * @param zone
-	 * @param data
+	 * @param date
 	 * @param increment
 	 * @param decrement
 	 * @param total

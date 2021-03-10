@@ -214,4 +214,10 @@ public class AllOperations {
 		}
 		return filtered;
 	}
+	protected void CheckInt(int[] tocheck, String field) throws FilterProblem {
+		for(int i=0;i<tocheck.length;i++) {
+			if(tocheck[i]<0)
+				throw new FilterProblem("The field "+field+" has a negative value, the filter request only positive value");
+		}
+	}
 }

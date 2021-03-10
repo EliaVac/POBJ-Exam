@@ -8,6 +8,8 @@ Exam project for the object programming course.
 
 * [App working](#App-working)
 
+* [Filter](FIlter)
+
 * [Java implementation](#Java-implementation)
 
 * [Strengths](#Strengths)
@@ -16,7 +18,7 @@ Exam project for the object programming course.
 
 ## Introduction
 
-The designed application is aimed to show data and statistics on domains that allows to rent houses. The user can apply the same commands on a sample of all the data, by using filters. It implements three JUnit test and is correlated with the Javadoc Documentation, where the user can see the difference class, with their method and a short description of how they work.
+This application is aimed to show data and statistics on domains that allows to rent houses. The application gives to the user six different roots that allow to satisfy all the possible requests. There are implemented three JUnit test and the Javadoc Documentation, respectively for trial of the filter conversion and for shorts descriptions of the methods and the attributes.
 
 ## App working
 The user use case diagram shows the three possible work zones and the possible operations available for the user:
@@ -25,3 +27,92 @@ The user use case diagram shows the three possible work zones and the possible o
 
 The system case diagram shows the different operations to do first and during the execution for all work zones:
 ![SystemUseCaseDiagram](./UmlDiagram/NewModelSystemCaseDiagram.jpg)
+
+An example of initializing of the application and later the request sequance of the key-words, the possible filters that the user can use, the complete database and the statistics about "all-bounded-zones":
+![SequenceDiagram](./UmlDiagram/NewModelSequenceDiagram.jpg)
+
+If we want take the case of a request of a filtered database, instead we got a different sequence diagram:
+![SequenceDiagram2](./UmlDiagram/NewModelSequenceDiagram2.jpg)
+
+Similarly, for a filtered statistic collection, or a static collection about specified zones, the sequence diagram:
+![SequenceDiagram3](./UmlDiagram/NewModelSequenceDiagram3.jpg)
+
+## Filter
+First of all we need to specify that there are two different types of filter: one for the database of domain, the other for the statistic collection.
+The first one accept this fields:
+| Field | Type | About it |
+|---------|-------------------|------|
+| country | String of 2 char | identify the countrycode of the country requested |
+| minimum_createtime | Object DateTime | identify the lower extreme date for the filtered database|
+| maximum_createtime | Object DateTime | identify the upper extreme date for the filtered database|
+| minimum_updatetime | Object DateTime | identify the lower extreme date for the filtered database|
+| maximum_updatetime | Object DateTime | identify the upper extreme date for the filtered database|
+|isdead | boolean | identify if the requested domain are still alive (if false) or are dead (true)|
+
+
+An example of wright filter:
+
+
+The filter for the statistic collection accept this fields:
+| Field | Type | About it |
+|---------|-------------------|------|
+| zone | String of 2 char | identify the countrycode of the country requested |
+| minimum_datetime | Object DateTime | identify the lower extreme date for the filtered statistics collection|
+| maximum_datetime | Object DateTime | identify the upper extreme date for the filtered statistics collection|
+| increment | Object minimum-maximum | identify the range value of the field increment for the filtered statistics collection|
+| decrement | Object minimum-maximum | identify the range value of the field decrement for the filtered statistics collection|
+| total | Object minimum-maximum | identify the range value of the field total for the filtered statistics collection|
+
+An example of wright filter:
+
+
+The DateTime object has to be written as:
+
+{
+
+  "year": intvalue,         (if not setted the applications take the currently year)
+ 
+  "month": intvalue,        (if not setted the applications take the currently month)
+ 
+  "day": intvalue,          (if not setted the applications take the currently day of month)
+  
+  "hour": intvalue,         (if not setted the application take the hour 00)
+ 
+  "minute": intvalue        (if not setted the application take the minute) 
+  
+}
+
+The minimum-maximum object has to be written as:
+
+{
+
+  "minimum": intvalue,      (if not setted the application take 0)
+  
+  "maximum": intvalue       (if not setted the application take tha maximum value for the class Integer: 2147483647)
+  
+}
+## Java implementation
+The package Controller:
+
+The package Service:
+
+The package Utilities:
+
+The package SingleClassesDomain:
+
+The package FilterManagement:
+
+The package Errors:
+
+## Strengths
+This application provides to satisfy research about rent house domains. The first technology used is Spring-boot, usefull to interface with the user. All the operations are provided first by the controller, then by the class AppService. The last one is the class that manage all the different request. To minimize the serving time the AppService class saves the possible key-words, the possible filters, the complete database and the general statistics. Whenever the user request a filtered database it's necessary apply the filtering technique thanks to the extension of the class AllOperations. This class is used by StatisticApply too, class for the management of the filter for the statistic collection. So, AllOperations is the real filtering class used by different type. Another strength of this application is the use of the ArrayList for collection of variable dimension. The last but not least strength is the implementation of the exceptions handler with the obiective of a better feedback usefull for a quickly and easier understanding.
+
+
+## Authors
+
+We are two students of the politecnicnal university of Marche
+
+- ### Federico Di Tullio
+- ### Elia Vaccarini
+
+

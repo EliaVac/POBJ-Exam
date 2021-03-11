@@ -116,6 +116,7 @@ public class SingleFilter {
 	/**
 	 * This function return a boolean that permit to verify if the object inserted
 	 * as parameter matches to our object
+	 * 
 	 * @param obj
 	 * @return true if the objects matches
 	 */

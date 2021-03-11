@@ -8,7 +8,7 @@ Exam project for the object programming course.
 
 * [App working](#App-working)
 
-* [Filter](FIlter)
+* [Filter](#FIlter)
 
 * [Java implementation](#Java-implementation)
 

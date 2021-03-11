@@ -119,7 +119,7 @@ public class Controller {
 	 * @return the connection problem message
 	 */
 	@ExceptionHandler(ConnectionProblem.class)
-	public final ResponseEntity<ErrorResponse> exceptionConnection(NoHandlerFoundException e) {
+	public final ResponseEntity<ErrorResponse> exceptionConnection(Exception e) {
 		ErrorResponse er = new ErrorResponse(409, e.getMessage());
 		return new ResponseEntity<ErrorResponse>(er, HttpStatus.GATEWAY_TIMEOUT);
 	}

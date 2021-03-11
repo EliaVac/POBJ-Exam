@@ -102,7 +102,7 @@ public class AppService {
 	 */
 
 	public ArrayList<SingleDomain> GetDatabase(String filter) throws JSONProblem, JSONException, FilterProblem {
-		FiltersApply filtering = new FiltersApply(filter, database);
+		FiltersApply filtering = new FiltersApply(filter, (ArrayList<SingleDomain>)database.clone());
 		return filtering.getFilteredDatabase();
 	}
 
@@ -127,7 +127,7 @@ public class AppService {
 	 */
 	public ArrayList<SingleStatistic> GetStats(String filter)
 			throws JSONException, FilterProblem, JSONProblem, ConnectionProblem {
-		StatisticsApply filtering = new StatisticsApply(filter, statistics);
+		StatisticsApply filtering = new StatisticsApply(filter,(ArrayList<SingleStatistic>)statistics.clone());
 
 		return filtering.getFilteredStatistic();
 	}

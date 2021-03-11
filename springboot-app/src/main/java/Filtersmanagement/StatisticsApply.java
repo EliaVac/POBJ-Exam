@@ -139,8 +139,7 @@ public class StatisticsApply extends AllOperations {
 		ArrayList<SingleStatistic> temp; // arraylist appoggio
 		ArrayList<String> imported = new ArrayList<String>();
 		for (int i = 0; i < filterslist.size(); i++) {
-			if (filterslist.get(i).getZone() != null
-					&& filterslist.get(i).getZone().compareToIgnoreCase("bundle_all_zones") != 0) {
+			if (filterslist.get(i).getZone() != null && filterslist.get(i).getZone().compareToIgnoreCase("bundle_all_zones") != 0) {
 				boolean ok = true;
 				for (int j = 0; j < imported.size() && ok; j++) {
 					if (filterslist.get(i).getZone().compareToIgnoreCase(imported.get(j)) == 0)

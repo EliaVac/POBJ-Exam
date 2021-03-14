@@ -95,9 +95,9 @@ public class FiltersCreator {
 		possiblefilter.filtersStatcollection.put("zone", "The zone where are analyzed the statistics: undefined,US,RU,HK");
 		possiblefilter.filtersStatcollection.put("minimum_date", "Identify the date of start with an object, composed by: 'year', 'month', 'day', 'hour', 'minute'. The default date is today at 00:00");
 		possiblefilter.filtersStatcollection.put("maximum_date", "Identify the date of end with an object, composed by: 'year', 'month', 'day', 'hour', 'minute'. The default date is today at 00:00");
-		possiblefilter.filtersStatcollection.put("increment", "Identify the records increment");
-		possiblefilter.filtersStatcollection.put("decrement", "Identify the records decrement");
-		possiblefilter.filtersStatcollection.put("total", "Identify the total records");
+		possiblefilter.filtersStatcollection.put("increment", "Identify the 'minimum' and 'maximum' of records increment with an object");
+		possiblefilter.filtersStatcollection.put("decrement", "Identify the 'minimum' and 'maximum' of records decrement with an object");
+		possiblefilter.filtersStatcollection.put("total", "Identify the 'minimum' and 'maximum' of total records with an object");
 	}
 
 	/**

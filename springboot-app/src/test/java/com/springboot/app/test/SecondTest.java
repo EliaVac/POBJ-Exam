@@ -10,7 +10,7 @@ import Errors.FilterProblem;
 import Errors.JSONProblem;
 import Filtersmanagement.FiltersApply;
 /**
- * This is the class to test the excpetions that are launched when the user insered a wrong filter of database
+ * This is the class to test the exceptions that are launched when the user inserted a wrong filter of database
  * @author Federico Di Tullio
  * @author Elia Vaccarini
  */

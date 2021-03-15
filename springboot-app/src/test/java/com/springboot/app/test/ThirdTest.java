@@ -52,7 +52,7 @@ public class ThirdTest {
 				+ "					  \"maximum_date\":"
 				+ "		               {\n"
 				+ "		                  \"year\":2021,\n"
-				+ "		                  \"month\":5,\n"
+				+ "		                  \"month\":1,\n"
 				+ "		                  \"day\": 30,\n"
 				+ "		                  \"hour\":23,\n"
 				+ "		                  \"minute\":59\n"
@@ -83,7 +83,7 @@ public class ThirdTest {
 		int[] inc= {20,25};
 		int[] dec={35,45};
 		int[] tot= {37,67};
-		singlefilterstats=new SingleFilterStats("IT", new DateTime(2020,6,1,0,0), new DateTime(2021,5,30,23,59),inc,dec,tot);
+		singlefilterstats=new SingleFilterStats("IT", new DateTime(2020,6,1,0,0), new DateTime(2021,1,30,23,59),inc,dec,tot);
 	}
 	
 	@AfterEach

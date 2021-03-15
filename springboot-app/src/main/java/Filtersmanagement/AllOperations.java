@@ -182,8 +182,8 @@ public class AllOperations {
 		int minute = Integer.parseInt(day_hour[1].split(":")[1].trim());
 		LocalDateTime now = LocalDateTime.now();
 		int[] DayForMonth = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-		if (year < 1950 || year > now.getYear()) {
-			throw new FilterProblem("Please set an year bigger than 1950 and smaller than this year");
+		if (year < 1950 || tocheck.BiggerThan(new DateTime(now.getYear(), now.getMonthValue(), now.getDayOfMonth(), now.getHour(), now.getMinute()))) {
+			throw new FilterProblem("Please set an year bigger than 1950 and a date lower than today");
 		}
 		if (month < 1 || month > 12) {
 			throw new FilterProblem("You have setted an unexisting month: " + month);

@@ -24,14 +24,14 @@ This application is aimed to show data and statistics on domains that allows to 
 The user use case diagram shows the three possible work zones and the possible operations available for the user:
 ![UserUseCaseDiagram](./UmlDiagram/NewModelUserUseCaseDiagram.jpg)
 
-| Root | Type | what does it return |
-|---|---|---|
-| /getkeywords | GET |The root where you can see the keywords
-| /getfilters | GET |The root where you can see the filters of the app
-| /getdatabase | GET |The root that permits to have the database
-| /getdatabase | POST |The root that permits to have the filtered database
-| /getstats | GET |The root that permits to have the statistics
-| /getstats | POST |The root that permits to have the filtered statistics collection
+| Root | Type | what does it return | Body |
+|---|---|---|---|
+| /getkeywords | GET |The root where you can see the keywords | - |
+| /getfilters | GET |The root where you can see the filters of the app | - |
+| /getdatabase | GET |The root that permits to have the database | - |
+| /getdatabase | POST |The root that permits to have the filtered database | Array of JSONObjects representing database filters |
+| /getstats | GET |The root that permits to have the statistics | - |
+| /getstats | POST |The root that permits to have the filtered statistics collection | Array of JSONObjects representing statistics collection filters |
 
 The system case diagram shows the different operations to do first and during the execution for all work zones:
 ![SystemUseCaseDiagram](./UmlDiagram/NewModelSystemCaseDiagram.jpg)

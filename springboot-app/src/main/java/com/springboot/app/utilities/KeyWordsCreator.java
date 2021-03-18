@@ -24,8 +24,8 @@ public class KeyWordsCreator {
 		keywordscollection.put("/getfilters (GET)", "it describes the structure of all the possible filters");
 		keywordscollection.put("/getdatabase (GET)", "it provides the database");
 		keywordscollection.put("/getdatabase (POST)", "it requires a JSONArray filter; provides the filtered database");
-		keywordscollection.put("/getstatistics (GET)", "it provides all the statistics");
-		keywordscollection.put("/getstatistics (POST)", "it requires a JSONArray of fields; provides the statistics on the request fields");
+		keywordscollection.put("/getstats (GET)", "it provides all the statistics");
+		keywordscollection.put("/getstats (POST)", "it requires a JSONArray of fields; provides the statistics on the request fields");
 	}
 
 	/**
